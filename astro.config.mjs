@@ -7,5 +7,5 @@ import svelte from "@astrojs/svelte";
 export default defineConfig({
     integrations: [svelte()],
     site: "https://Oblivious-Oblivious.github.io",
-    base: "/astro-svelte-sass-template"
+    base: "/dreamnotexpiring"
 });
