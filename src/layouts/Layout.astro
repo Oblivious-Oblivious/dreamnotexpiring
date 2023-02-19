@@ -15,11 +15,10 @@ import Header from "@components/Header/Header.svelte";
 
     <body>
         <Header/>
-        <main id="swup">
+
+        <main id="swup" class="transition-fade">
             <slot/>
         </main>
-
-        <script type="module" src="/app.js"></script>
     </body>
 </html>
 
@@ -87,5 +86,18 @@ import Header from "@components/Header/Header.svelte";
 
     code {
         font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+    }
+
+    .transition-fade {
+        opacity: 1;
+        transition: 600ms;
+    }
+    html.is-animating .transition-fade {
+        opacity: 1;
+        transform: translateY(15vh);
+    }
+    html.is-leaving .transition-fade {
+        opacity: 0;
+        transform: translateY(0);
     }
 </style>

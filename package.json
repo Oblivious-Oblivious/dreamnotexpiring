@@ -1,5 +1,5 @@
 {
-    "name": "astro-sass-template",
+    "name": "dreamnotexpiring",
     "type": "module",
     "version": "0.1.0",
     "scripts": {
@@ -15,7 +15,6 @@
         "svelte": "^3.55.1"
     },
     "devDependencies": {
-        "sass": "^1.58.3",
-        "swup": "^3.0.4"
+        "sass": "^1.58.3"
     }
 }
