@@ -9,6 +9,7 @@
     <meta name="description" content={"Thanasis's Portfolio"}>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <script is:inline src="/Swup.js"></script>
+    <script is:inline src="/SwupHeadPlugin.js"></script>
     <script is:inline defer src="/app.js"></script>
     <title>{title}</title>
 

@@ -1,1 +1,4 @@
-const swup = new Swup();
+new Swup({
+    animateHistoryBrowsing: true,
+    plugins: [new SwupHeadPlugin()],
+});
