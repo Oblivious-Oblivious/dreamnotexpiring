@@ -1,20 +1,8 @@
 ---
 import Layout from "@layouts/Layout.astro";
+import About from "@routes/about.svelte";
 ---
 
 <Layout title="Thanasis Papapostolou - oblivious to the dream">
-    <main>
-        <h1>ABOUT</h1>
-    </main>
+    <About client:idle/>
 </Layout>
-
-<style lang="scss">
-    main {
-        text-align: center;
-        padding-top: 6rem;
-
-        h1 {
-            font-size: 6rem;
-        }
-    }
-</style>

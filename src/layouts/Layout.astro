@@ -9,7 +9,7 @@ import Header from "@components/Header/Header.svelte";
     <Head {title}/>
 
     <body>
-        <Header/>
+        <Header client:load/>
 
         <main id="swup" class="transition-fade">
             <slot/>
