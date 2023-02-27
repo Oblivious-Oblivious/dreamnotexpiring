@@ -11,7 +11,7 @@ import Header from "@components/Header/index.svelte";
     <body>
         <Header client:load/>
 
-        <main id="swup" class="transition-fade">
+        <main>
             <slot/>
         </main>
     </body>
@@ -66,7 +66,7 @@ import Header from "@components/Header/index.svelte";
         background-color: var(--bg-color);
 
         /* Manage scroll */
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
     @media (prefers-color-scheme: light) {
@@ -84,18 +84,5 @@ import Header from "@components/Header/index.svelte";
 
     code {
         font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-    }
-
-    .transition-fade {
-        opacity: 1;
-        transition: 600ms;
-    }
-    html.is-animating .transition-fade {
-        opacity: 1;
-        transform: translateY(15vh);
-    }
-    html.is-leaving .transition-fade {
-        opacity: 0;
-        transform: translateY(0);
     }
 </style>

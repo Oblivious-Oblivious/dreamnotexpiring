@@ -10,3 +10,10 @@ export default defineConfig({
 
 // TODO Add vercel analytics
 // TODO Possibly add a CDN
+// TODO Add gsap and barbajs
+
+// import barba from "@barba/core";
+// import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+// gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
