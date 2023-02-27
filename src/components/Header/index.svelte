@@ -83,6 +83,7 @@
                         /* Full opacity and underline on active */
                         &.active {
                             cursor: default;
+                            pointer-events: none;
                             opacity: 1;
                         }
                         &.active:after {
