@@ -9,11 +9,9 @@ import Header from "@components/Header/index.svelte";
     <Head {title}/>
 
     <body>
-        <div data-turbo-permanent id="header">
-            <Header client:load/>
-        </div>
+        <Header client:load/>
 
-        <main>
+        <main id="swup">
             <slot/>
         </main>
     </body>
