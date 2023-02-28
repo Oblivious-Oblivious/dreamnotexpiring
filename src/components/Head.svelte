@@ -8,6 +8,10 @@
     <title>{title}</title>
     <meta name="description" content={"Thanasis's Portfolio"}>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@hotwired/turbo@7.2.5/dist/turbo.es2017-umd.min.js"></script>
+    <script defer src="/main.js"></script>
     <title>{title}</title>
 
     <!-- Sitemap -->
