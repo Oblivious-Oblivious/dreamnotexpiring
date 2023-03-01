@@ -1,7 +1,8 @@
 ---
-const { title } = Astro.props;
+const { title, current_page } = Astro.props;
 import Head from "@components/Head.svelte";
 import Header from "@components/Header/index.svelte";
+import PageLifecycle from "@components/PageLifecycle.svelte";
 ---
 
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script> -->
@@ -48,6 +49,7 @@ import Header from "@components/Header/index.svelte";
 
     <body>
         <Header client:load/>
+        <PageLifecycle {current_page} client:load/>
 
         <main id="swup">
             <slot/>
