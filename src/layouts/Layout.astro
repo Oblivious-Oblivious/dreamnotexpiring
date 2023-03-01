@@ -4,6 +4,44 @@ import Head from "@components/Head.svelte";
 import Header from "@components/Header/index.svelte";
 ---
 
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script> -->
+
+<script>
+    import gsap from "gsap";
+    import Swup from "swup";
+    import SwupHeadPlugin from "@swup/head-plugin";
+    import SwupJsPlugin from "@swup/js-plugin";
+
+    const options = [{
+        from: "(.*)",
+        to: "(.*)",
+        in: (next, _infos) => {
+            document.querySelector<HTMLElement>("#swup").style.opacity = "0";
+            gsap.to(document.querySelector("#swup"), {
+                duration: 1,
+                opacity: 1,
+                onComplete: next,
+            });
+        },
+        out: (next, _infos) => {
+            document.querySelector<HTMLElement>("#swup").style.opacity = "1";
+            gsap.to(document.querySelector("#swup"), 0.5, {
+                duration: 1,
+                opacity: 0,
+                onComplete: next,
+            });
+        },
+    }];
+
+    new Swup({
+        animateHistoryBrowsing: true,
+        plugins: [
+            new SwupHeadPlugin(),
+            new SwupJsPlugin(options),
+        ],
+    });
+</script>
+
 <!DOCTYPE html>
 <html lang="en">
     <Head {title}/>
