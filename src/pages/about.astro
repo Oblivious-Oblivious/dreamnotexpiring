@@ -1,20 +1,38 @@
 ---
 import Layout from "@layouts/Layout.astro";
+
+var years_of_experience = new Date().getUTCFullYear() - 2012;
 ---
 
 <Layout title="Thanasis Papapostolou - oblivious to the dream" current_page="about">
     <main>
-        <h1>ABOUT</h1>
+        <div class="about-description">
+            I am a software developer and designer blending
+            technical and artistic skills with
+            <span>{years_of_experience}</span>
+            years of building interactive experiences.
+
+            <br><br>
+
+            I vow to create dynamic systems that interact in
+            meaningful and internalized ways with the individual.
+        </div>
     </main>
 </Layout>
 
 <style lang="scss">
     main {
-        text-align: center;
-        padding-top: 6rem;
+        margin: 10vw auto;
+        padding: 2rem;
+        width: 50vw;
 
-        h1 {
-            font-size: 6rem;
+        .about-description {
+            font-size: 2.3rem;
+            font-weight: 500;
+
+            span {
+                font-style: italic;
+            }
         }
     }
 </style>
