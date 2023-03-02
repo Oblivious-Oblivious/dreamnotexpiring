@@ -13,26 +13,48 @@ import PageLifecycle from "@components/PageLifecycle.svelte";
     import SwupHeadPlugin from "@swup/head-plugin";
     import SwupJsPlugin from "@swup/js-plugin";
 
-    const options = [{
-        from: "(.*)",
-        to: "(.*)",
-        in: (next, _infos) => {
-            document.querySelector<HTMLElement>("#swup").style.opacity = "0";
-            gsap.to(document.querySelector("#swup"), {
-                duration: 1,
-                opacity: 1,
-                onComplete: next,
-            });
+    const select = e => document.querySelector(e);
+
+    const to_about_in = next =>
+        gsap.to(select("#swup"), {
+            onComplete: next,
+        });
+    
+    const to_about_out = next =>
+        gsap.to(select("#swup"), {
+            duration: 0.1,
+            onComplete: next,
+        });
+    
+    const to_work_in = next =>
+        gsap.to(select("#swup"), {
+            ease: "power2.inOut",
+            autoAlpha: 1,
+            onComplete: next,
+        });
+    
+    const to_work_out = next =>
+        gsap.to(select("#swup"), {
+            duration: 0.8,
+            ease: "power2.inOut",
+            autoAlpha: 0,
+            onComplete: next,
+    });
+
+    const options = [
+        {
+            from: "/",
+            to: "/about",
+            in: (next, _infos) => to_about_in(next),
+            out: (next, _infos) => to_about_out(next),
         },
-        out: (next, _infos) => {
-            document.querySelector<HTMLElement>("#swup").style.opacity = "1";
-            gsap.to(document.querySelector("#swup"), 0.5, {
-                duration: 1,
-                opacity: 0,
-                onComplete: next,
-            });
-        },
-    }];
+        {
+            from: "/about",
+            to: "/",
+            in: (next, _infos) => to_work_in(next),
+            out: (next, _infos) => to_work_out(next),
+        }
+    ];
 
     new Swup({
         animateHistoryBrowsing: true,
