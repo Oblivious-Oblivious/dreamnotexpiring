@@ -15,31 +15,9 @@ import PageLifecycle from "@components/PageLifecycle.svelte";
     import SwupHeadPlugin from "@swup/head-plugin";
     import SwupJsPlugin from "@swup/js-plugin";
 
-    // Smooth Scrollbar + GSAP ScrollTrigger
-    import Scrollbar from "smooth-scrollbar";
-
     const select = e => document.querySelector(e);
 
-    let smooth_scrollbar = Scrollbar.init(select("#viewport"), {
-        continuousScrolling: false,
-        damping: 0.08,
     });
-
-    gsap.registerPlugin(ScrollTrigger);
-
-    smooth_scrollbar.track.xAxis.element.remove();
-    smooth_scrollbar.track.yAxis.element.remove();
-
-    ScrollTrigger.scrollerProxy(select("#viewport"), {
-        scrollTop(value) {
-            if(arguments.length)
-                smooth_scrollbar.scrollTop = value;
-            else
-                return smooth_scrollbar.scrollTop;
-        },
-    });
-
-    smooth_scrollbar.addListener(ScrollTrigger.update);
 
     const to_about_in = next =>
         gsap.to(select("#swup"), {
@@ -99,10 +77,10 @@ import PageLifecycle from "@components/PageLifecycle.svelte";
         <Header client:load/>
         <PageLifecycle {current_page} client:load/>
 
-        <div id="viewport">
             <main id="swup">
                 <slot/>
             </main>
+            </div>
         </div>
     </body>
 </html>
@@ -171,15 +149,5 @@ import PageLifecycle from "@components/PageLifecycle.svelte";
 
     code {
         font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-    }
-
-    #viewport {
-        /* margin-top: 6rem; */
-        overflow: hidden;
-        position: fixed;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
     }
 </style>
