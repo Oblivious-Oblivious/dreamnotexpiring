@@ -27,6 +27,7 @@
 
 <style lang="scss">
     header {
+        z-index: 99999;
         position: fixed;
         top: 2rem;
         width: 100vw;
