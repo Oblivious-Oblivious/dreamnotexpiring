@@ -8,6 +8,7 @@
     <title>{title}</title>
     <meta name="description" content={"Thanasis's Portfolio"}>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <script src="/ScrollSmoother.min.js"></script>
     <title>{title}</title>
 
     <!-- Sitemap -->

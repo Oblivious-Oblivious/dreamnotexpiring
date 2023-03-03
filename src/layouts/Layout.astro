@@ -15,8 +15,14 @@ import PageLifecycle from "@components/PageLifecycle.svelte";
     import SwupHeadPlugin from "@swup/head-plugin";
     import SwupJsPlugin from "@swup/js-plugin";
 
+    gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
     const select = e => document.querySelector(e);
 
+    // Smooth Scrollbar + GSAP ScrollTrigger
+    ScrollSmoother.create({
+        smooth: 1.5,
+        effects: true,
+        smoothTouch: 0.1,
     });
 
     const to_about_in = next =>
@@ -77,9 +83,11 @@ import PageLifecycle from "@components/PageLifecycle.svelte";
         <Header client:load/>
         <PageLifecycle {current_page} client:load/>
 
-            <main id="swup">
-                <slot/>
-            </main>
+        <div class="smooth-wrapper">
+            <div id="smooth-content">
+                <main id="swup">
+                    <slot/>
+                </main>
             </div>
         </div>
     </body>
