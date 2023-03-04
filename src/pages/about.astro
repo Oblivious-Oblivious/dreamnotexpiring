@@ -11,14 +11,10 @@ var years_of_experience = new Date().getUTCFullYear() - 2012;
             <p>blending technical and artistic skills with</p>
             <p><span>{years_of_experience}</span> years of building interactive</p>
             <p>experiences.</p>
-
             <br>
-
             <p>I vow to create dynamic systems that</p>
             <p>interact in meaningful and internalized</p>
             <p>ways with the individual.</p>
-
-            <br><br><br>
         </div>
 
         <div class="what-interests-me">
@@ -26,7 +22,6 @@ var years_of_experience = new Date().getUTCFullYear() - 2012;
             <p>Software Development (links)</p>
             <p>Music and DJing (parallax images links)</p>
             <p>Mixology (horizontal photo cards)</p>
-            <br><br><br>
         </div>
 
         <div class="how-i-learn">
@@ -38,7 +33,6 @@ var years_of_experience = new Date().getUTCFullYear() - 2012;
             <p>2019-2021 - (Dread/Despair/Hate) - stare at the problem</p>
             <p>2021-2023 - (Light) - visualize the result, work backwards toward the solution</p>
             <p>Show full diagram in the end</p>
-            <br><br><br>
         </div>
 
         <div class="computer-related-topics-i-enjoy">
@@ -48,16 +42,14 @@ var years_of_experience = new Date().getUTCFullYear() - 2012;
             <p>* Object Oriented Programming</p>
             <p>* Garbage Collectors</p>
             <p>* Obfuscated Quines</p>
-            <br><br><br>
         </div>
 
         <div class="get-in-touch">
             <p>Get in touch</p>
-            <h3><a href="#">Email</a></h3>
-            <h3><a href="#">Instagram</a></h3>
-            <h3><a href="#">LinkedIn</a></h3>
-            <h3><a href="#">Twitter</a></h3>
-            <br><br><br>
+            <h3><a href="mailto:thanos.papap42@gmail.com">Email</a></h3>
+            <h3><a href="https://www.instagram.com/thanasis_papap/">Instagram</a></h3>
+            <h3><a href="https://www.linkedin.com/in/thanasis-papapostolou/">LinkedIn</a></h3>
+            <h3><a href="https://twitter.com/itsoblivious99">Twitter</a></h3>
         </div>
     </main>
 </Layout>
@@ -67,32 +59,37 @@ var years_of_experience = new Date().getUTCFullYear() - 2012;
         margin: 0 auto;
         width: 50vw;
 
-        p {
-            font-size: 2.3rem;
-            font-weight: 500;
+        div {
+            height: 100vh;
+
+            p {
+                font-size: 2.5vw;
+                font-weight: 500;
+            }
         }
 
         .intro-description {
-            transform: translateY(25vh) translateX(25vh);
+            transform: translateX(17vw);
+            padding-top: 25vh;
             span {
                 font-style: italic;
             }
         }
 
         .what-interests-me {
-            transform: translateY(25vh) translateX(-25vh);
+            transform: translateX(-17vw);
         }
 
         .how-i-learn {
-            transform: translateY(25vh) translateX(25vh);
+            transform: translateX(17vw);
         }
 
         .computer-related-topics-i-enjoy {
-            transform: translateY(25vh) translateX(-25vh);
+            transform: translateX(-17vw);
         }
 
         .get-in-touch {
-            transform: translateY(25vh) translateX(25vh);
+            transform: translateX(17vw);
         }
     }
 </style>
