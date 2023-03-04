@@ -142,6 +142,17 @@ import PageLifecycle from "@components/PageLifecycle.svelte";
         background-color: var(--bg-color);
     }
 
+    /* Hide scrollbar */
+    body {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        overflow-y: scroll; 
+    }
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
     @media (prefers-color-scheme: light) {
         :root {
             --fg-color: var(--night);
