@@ -51,26 +51,25 @@ import PageLifecycle from "@components/PageLifecycle.svelte";
             onComplete: next,
     });
 
-    const options = [
-        {
-            from: "/",
-            to: "/about",
-            in: (next, _infos) => to_about_in(next),
-            out: (next, _infos) => to_about_out(next),
-        },
-        {
-            from: "/about",
-            to: "/",
-            in: (next, _infos) => to_work_in(next),
-            out: (next, _infos) => to_work_out(next),
-        }
-    ];
 
     new Swup({
         animateHistoryBrowsing: true,
         plugins: [
             new SwupHeadPlugin(),
-            new SwupJsPlugin(options),
+            new SwupJsPlugin([
+                {
+                    from: "/",
+                    to: "/about",
+                    in: (next, _infos) => to_about_in(next),
+                    out: (next, _infos) => to_about_out(next),
+                },
+                {
+                    from: "/about",
+                    to: "/",
+                    in: (next, _infos) => to_work_in(next),
+                    out: (next, _infos) => to_work_out(next),
+                },
+            ]),
         ],
     });
 </script>
