@@ -1,56 +1,19 @@
 ---
 import Layout from "@layouts/Layout.astro";
-
-var years_of_experience = new Date().getUTCFullYear() - 2012;
+import IntroDescription from "@components/About/IntroDescription.svelte";
+import WhatInterestsMe from "@components/About/WhatInterestsMe.svelte";
+import HowILearn from "@components/About/HowILearn.svelte";
+import ComputerRelatedTopicsIEnjoy from "@components/About/ComputerRelatedTopicsIEnjoy.svelte";
+import GetInTouch from "@components/About/GetInTouch.svelte";
 ---
 
 <Layout title="Thanasis Papapostolou - oblivious to the dream" current_page="about">
     <main>
-        <div class="intro-description">
-            <p>I am a software developer and designer</p>
-            <p>blending technical and artistic skills with</p>
-            <p><span>{years_of_experience}</span> years of building interactive</p>
-            <p>experiences.</p>
-            <br>
-            <p>I vow to create dynamic systems that</p>
-            <p>interact in meaningful and internalized</p>
-            <p>ways with the individual.</p>
-        </div>
-
-        <div class="what-interests-me">
-            <p>What interests me.</p>
-            <p>Software Development (links)</p>
-            <p>Music and DJing (parallax images links)</p>
-            <p>Mixology (horizontal photo cards)</p>
-        </div>
-
-        <div class="how-i-learn">
-            <p>How I learn.</p>
-            <p>Horizontal graph, animate line</p>
-            <p>2012-2016 - (Ascent) - watch a video tutorial</p>
-            <p>2016-2017 - (Golden Years) - combine knowledge, ambitiously create</p>
-            <p>2017-2019 - (Deep Understanding) - read a book</p>
-            <p>2019-2021 - (Dread/Despair/Hate) - stare at the problem</p>
-            <p>2021-2023 - (Light) - visualize the result, work backwards toward the solution</p>
-            <p>Show full diagram in the end</p>
-        </div>
-
-        <div class="computer-related-topics-i-enjoy">
-            <p>Computer related topics I enjoy.</p>
-            <p>* Penetration Testing</p>
-            <p>* Interpreters</p>
-            <p>* Object Oriented Programming</p>
-            <p>* Garbage Collectors</p>
-            <p>* Obfuscated Quines</p>
-        </div>
-
-        <div class="get-in-touch">
-            <p>Get in touch</p>
-            <h3><a href="mailto:thanos.papap42@gmail.com">Email</a></h3>
-            <h3><a href="https://www.instagram.com/thanasis_papap/">Instagram</a></h3>
-            <h3><a href="https://www.linkedin.com/in/thanasis-papapostolou/">LinkedIn</a></h3>
-            <h3><a href="https://twitter.com/itsoblivious99">Twitter</a></h3>
-        </div>
+        <IntroDescription/>
+        <WhatInterestsMe/>
+        <HowILearn/>
+        <ComputerRelatedTopicsIEnjoy/>
+        <GetInTouch/>
     </main>
 </Layout>
 
@@ -58,38 +21,5 @@ var years_of_experience = new Date().getUTCFullYear() - 2012;
     main {
         margin: 0 auto;
         width: 50vw;
-
-        div {
-            height: 100vh;
-
-            p {
-                font-size: 2.5vw;
-                font-weight: 500;
-            }
-        }
-
-        .intro-description {
-            transform: translateX(17vw);
-            padding-top: 25vh;
-            span {
-                font-style: italic;
-            }
-        }
-
-        .what-interests-me {
-            transform: translateX(-17vw);
-        }
-
-        .how-i-learn {
-            transform: translateX(17vw);
-        }
-
-        .computer-related-topics-i-enjoy {
-            transform: translateX(-17vw);
-        }
-
-        .get-in-touch {
-            transform: translateX(17vw);
-        }
     }
 </style>
