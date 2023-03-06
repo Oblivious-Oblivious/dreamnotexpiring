@@ -19,7 +19,7 @@ import PageLifecycle from "@components/PageLifecycle.svelte";
     const select = e => document.querySelector(e);
 
     // Smooth Scrollbar + GSAP ScrollTrigger
-    ScrollSmoother.create({
+    const scroll_smoother = ScrollSmoother.create({
         smooth: 1.25,
         effects: true,
         smoothTouch: true,
@@ -51,6 +51,7 @@ import PageLifecycle from "@components/PageLifecycle.svelte";
             onComplete: next,
     });
 
+    const start_from_page_top = () => scroll_smoother.scrollTop(1);
 
     new Swup({
         animateHistoryBrowsing: true,
@@ -71,7 +72,7 @@ import PageLifecycle from "@components/PageLifecycle.svelte";
                 },
             ]),
         ],
-    });
+    }).on("pageView", start_from_page_top);
 </script>
 
 <!DOCTYPE html>
