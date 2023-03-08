@@ -1,9 +1,19 @@
 <script>
     import { onMount } from "svelte";
+    import gsap from "gsap";
 
     var years_of_experience = new Date().getUTCFullYear() - 2012;
     
     onMount(() => {
+
+        gsap.fromTo("p", {
+            yPercent: 100,
+            opacity: 0,
+        }, {
+            yPercent: 0,
+            opacity: 1,
+            stagger: 0.01,
+        });
     });
 </script>
 

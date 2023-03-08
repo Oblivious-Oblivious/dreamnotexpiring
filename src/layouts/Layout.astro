@@ -29,15 +29,6 @@ import PageLifecycle from "@components/PageLifecycle.svelte";
         gsap.to("#swup", {
             onComplete: next,
         });
-
-        gsap.fromTo("p", {
-            yPercent: 100,
-            opacity: 0,
-        }, {
-            yPercent: 0,
-            opacity: 1,
-            stagger: 0.01,
-        });
     }
 
     const to_about_out = next => {
