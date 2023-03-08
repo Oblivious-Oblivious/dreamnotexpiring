@@ -17,7 +17,6 @@ import PageLifecycle from "@components/PageLifecycle.svelte";
     import SwupJsPlugin from "@swup/js-plugin";
 
     gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-    const select = e => document.querySelector(e);
 
     // Smooth Scrollbar + GSAP ScrollTrigger
     const scroll_smoother = ScrollSmoother.create({
@@ -27,7 +26,7 @@ import PageLifecycle from "@components/PageLifecycle.svelte";
     });
 
     const to_about_in = next => {
-        gsap.to(select("#swup"), {
+        gsap.to("#swup", {
             onComplete: next,
         });
 
@@ -42,7 +41,7 @@ import PageLifecycle from "@components/PageLifecycle.svelte";
     }
 
     const to_about_out = next => {
-        gsap.to(select("#swup"), {
+        gsap.to("#swup", {
             duration: 0.95,
             onComplete: next,
         });
@@ -57,7 +56,7 @@ import PageLifecycle from "@components/PageLifecycle.svelte";
     }
 
     const to_work_in = next => {
-        gsap.fromTo(select("#swup"), {
+        gsap.fromTo("#swup", {
             duration: 0.8,
             autoAlpha: 0,
         }, {
@@ -77,7 +76,7 @@ import PageLifecycle from "@components/PageLifecycle.svelte";
     }
 
     const to_work_out = next => {
-        gsap.to(select("#swup"), {
+        gsap.to("#swup", {
             duration: 0.8,
             ease: "power2.inOut",
             autoAlpha: 0,
