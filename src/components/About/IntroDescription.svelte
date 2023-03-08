@@ -7,7 +7,7 @@
     });
 </script>
 
-<div>
+<div class="intro-description">
     <p>I am a software developer and designer</p>
     <p>blending technical and artistic skills with</p>
     <p><span>{years_of_experience}</span> years of building interactive</p>
@@ -23,6 +23,7 @@
 
     div {
         padding-top: 25vh;
+        height: 300vh;
 
         span {
             font-style: italic;
