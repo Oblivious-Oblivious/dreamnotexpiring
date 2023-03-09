@@ -5,7 +5,7 @@
     onMount(() => {
         gsap.to(".noise", {
             duration: 0.1,
-            repeat: 35,
+            repeat: 50,
             onRepeat: () => {
                 gsap.set(".noise", {
                     backgroundPosition: Math.floor(Math.random() * 100) + 1 + "% " + Math.floor(Math.random() * 10) + 1 + "%",
@@ -14,8 +14,16 @@
             ease: "steps(1)",
         });
 
-        const tl = gsap.timeline();
+        const tl = gsap.timeline({
+            delay: 0.5,
+        });
 
+        var intro_fade_out_duration;
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
+            intro_fade_out_duration = 0;
+        else
+            intro_fade_out_duration = 0.8;
+        
         tl.to(".glitch", {
             duration: 0.1,
             skewX: 70,
@@ -77,7 +85,7 @@
         })
 
         .to(".glitch", {
-            duration: 0.4,
+            duration: 0.8,
             onComplete: () => {
                 document.querySelector(".top").innerHTML = "&nbsp&nbspTO THE";
                 document.querySelector(".bottom").innerHTML = "&nbsp&nbspTO THE";
@@ -231,14 +239,14 @@
             ease: "power4.inOut",
         })
         .to(".noise", {
-            duration: 0,
+            duration: intro_fade_out_duration,
             opacity: 0,
             ease: "power2.inOut",
         })
         .fromTo("#swup", {
             opacity: 0,
         }, {
-            duration: 1,
+            duration: 0.8,
             ease: "power2.inOut",
             opacity: 1,
             onStart: () => {
