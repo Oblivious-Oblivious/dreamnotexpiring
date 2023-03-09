@@ -1,10 +1,12 @@
 <script>
     import { onMount } from "svelte";
     import gsap from "gsap";
+    import ScrollTrigger from "gsap/ScrollTrigger";
 
     var years_of_experience = new Date().getUTCFullYear() - 2012;
     
     onMount(() => {
+        gsap.registerPlugin(ScrollTrigger);
 
         gsap.fromTo("p", {
             yPercent: 100,
