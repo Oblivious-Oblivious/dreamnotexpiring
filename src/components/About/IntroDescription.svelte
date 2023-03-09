@@ -13,6 +13,7 @@
             opacity: 0,
         }, {
             yPercent: 0,
+            visibility: "visible",
             opacity: 1,
             stagger: 0.01,
         });
@@ -36,6 +37,7 @@
     div {
         padding-top: 25vh;
         height: 300vh;
+        visibility: hidden;
 
         span {
             font-style: italic;
