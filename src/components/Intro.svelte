@@ -260,7 +260,15 @@
 <style>
     @import "../layouts/commons.css";
 
+    :root {
+        --noise: var(--silver);
+    }
+
     @media (prefers-color-scheme: light) {
+        :root {
+            background-color: var(--bg-color);
+        }
+
         .noise {
             -webkit-filter: invert(100%);
             filter: invert(100%);
@@ -271,6 +279,10 @@
         }
     }
     @media (prefers-color-scheme: dark) {
+        :root {
+            background-color: var(--fg-color);
+        }
+
         .red-shadow {
             text-shadow: -7px 0 rgba(255, 0, 106, 0.5);
         }
@@ -279,11 +291,6 @@
     @font-face {
         font-family: "Road Rage";
         src: url("/RoadRage.otf");
-    }
-
-    :root {
-        background-color: var(--bone);
-        --noise: var(--silver);
     }
     
     .noise {
