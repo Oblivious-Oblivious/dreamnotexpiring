@@ -8,14 +8,14 @@
     onMount(() => {
         gsap.registerPlugin(ScrollTrigger);
 
-        gsap.fromTo("p", {
+        gsap.fromTo(".intro-description p", {
             yPercent: 100,
             opacity: 0,
         }, {
             yPercent: 0,
             visibility: "visible",
             opacity: 1,
-            stagger: 0.01,
+            stagger: 0.05,
         });
     });
 </script>
