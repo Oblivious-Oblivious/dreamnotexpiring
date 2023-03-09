@@ -300,7 +300,7 @@
         mix-blend-mode: multiply;
         background-image: url("/noise.jpg");
         height: 100vh;
-        width: 100%;
+        width: 100vw;
         position: absolute;
         top: 0;
         left: 0;
