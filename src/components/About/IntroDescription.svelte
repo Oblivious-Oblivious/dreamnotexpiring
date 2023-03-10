@@ -18,7 +18,11 @@
             stagger: 0.05,
         });
     });
+
+    let class_prop_warning_fix = "";
+    export { class_prop_warning_fix as class };
 </script>
+<div this={class_prop_warning_fix}></div>
 
 <div class="intro-description">
     <p>I am a software developer and designer</p>

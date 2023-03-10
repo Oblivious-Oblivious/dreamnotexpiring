@@ -15,6 +15,9 @@
             opacity: 1,
         });
     });
+
+    let class_prop_warning_fix = "";
+    export { class_prop_warning_fix as class };
 </script>
 
 <div class="how-i-learn">
