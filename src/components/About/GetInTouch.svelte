@@ -1,11 +1,23 @@
 <script>
     import { onMount } from "svelte";
+    import gsap from "gsap";
+    // import ScrollTrigger from "gsap/ScrollTrigger";
     
     onMount(() => {
+        // gsap.registerPlugin(ScrollTrigger);
+
+        gsap.fromTo(".get-in-touch", {
+            yPercent: 100,
+            opacity: 0,
+        }, {
+            yPercent: 0,
+            visibility: "visible",
+            opacity: 1,
+        });
     });
 </script>
 
-<div>
+<div class="get-in-touch">
     <p>Get in touch</p>
     <h3><a href="mailto:thanos.papap42@gmail.com">Email</a></h3>
     <h3><a href="https://www.instagram.com/thanasis_papap/">Instagram</a></h3>
@@ -14,9 +26,15 @@
 </div>
 
 <style lang="scss">
-    @import "commons.scss";
+    .get-in-touch {
+        padding-bottom: 27vh;
+        visibility: hidden;
 
-    div {
+        p {
+            font-size: 2.5vw;
+            font-weight: 500;
+        }
+
         h3 {
             font-size: 1.1vw;
         }
