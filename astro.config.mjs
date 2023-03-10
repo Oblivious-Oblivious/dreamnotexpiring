@@ -7,6 +7,3 @@ import svelte from "@astrojs/svelte";
 export default defineConfig({
     integrations: [svelte()],
 });
-
-// TODO Add vercel analytics
-// TODO Possibly add a CDN
