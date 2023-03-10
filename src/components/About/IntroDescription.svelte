@@ -32,8 +32,6 @@
 </div>
 
 <style lang="scss">
-    @import "commons.scss";
-
     div {
         padding-top: 25vh;
         height: 300vh;
