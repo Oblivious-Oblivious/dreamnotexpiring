@@ -8,7 +8,6 @@
 
         gsap.fromTo(".intro-line", {
             yPercent: 100,
-            visibility: "hidden",
         }, {
             yPercent: 0,
             visibility: "visible",
@@ -120,13 +119,12 @@
 
     .intro-description {
         padding-top: 25vh;
-        visibility: hidden;
         transform: translate(17vw);
-        will-change: transform;
     }
 
     .intro-line {
         display: flex;
+        visibility: hidden;
         gap: 0.7vw;
     }
 
