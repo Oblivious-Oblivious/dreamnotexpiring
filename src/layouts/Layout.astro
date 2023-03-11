@@ -150,12 +150,10 @@ import PageLifecycle from "@components/PageLifecycle.svelte";
     }
 
     /* Hide scrollbar */
-    body {
-        -ms-overflow-style: none;
+    * {
+        /* Firefox */
         scrollbar-width: none;
-        overflow-y: scroll;
     }
-
     body::-webkit-scrollbar {
         display: none;
     }
