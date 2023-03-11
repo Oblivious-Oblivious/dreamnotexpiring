@@ -112,6 +112,12 @@
 </div>
 
 <style lang="scss">
+    .intro-description,
+    .intro-line,
+    .intro-word {
+        will-change: transform;
+    }
+
     .intro-description {
         padding-top: 25vh;
         visibility: hidden;
