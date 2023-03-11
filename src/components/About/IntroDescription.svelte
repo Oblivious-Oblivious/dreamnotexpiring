@@ -6,11 +6,17 @@
     onMount(() => {
         gsap.registerPlugin(ScrollTrigger);
 
+        gsap.set(".intro-description", {
+            autoAlpha: 1,
+            x: "17vw",
+            y: "25vh",
+        });
+
         gsap.fromTo(".intro-line", {
             yPercent: 100,
+            autoAlpha: 0,
         }, {
             yPercent: 0,
-            visibility: "visible",
             autoAlpha: 1,
             stagger: 0.05,
         });
@@ -18,7 +24,7 @@
         gsap.timeline({
             scrollTrigger: {
                 trigger: ".intro-description",
-                start: "top top",
+                start: "top 25%",
                 end: "+=2500",
                 // markers: true,
                 pin: true,
@@ -53,7 +59,7 @@
     });
 </script>
 
-<div class="intro-description">
+<div class="intro-description" style="visibility: hidden;">
     <div class="intro-line">
         <div class="intro-word">I</div>
         <div class="intro-word">am</div>
@@ -113,14 +119,8 @@
         will-change: transform;
     }
 
-    .intro-description {
-        padding-top: 25vh;
-        transform: translate(17vw);
-    }
-
     .intro-line {
         display: flex;
-        visibility: hidden;
         gap: 0.7vw;
     }
 
