@@ -9,6 +9,11 @@
 
         gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
+        // Fixes flickering
+        gsap.set("main", {
+            visibility: "visible",
+        });
+
         // Smooth Scrollbar + GSAP ScrollTrigger
         const scroll_smoother = ScrollSmoother.create({
             smooth: 1.25,
