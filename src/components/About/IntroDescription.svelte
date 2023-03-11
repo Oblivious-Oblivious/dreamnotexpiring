@@ -8,6 +8,7 @@
 
         gsap.fromTo(".intro-line", {
             yPercent: 100,
+            visibility: "hidden",
             opacity: 0,
         }, {
             yPercent: 0,
