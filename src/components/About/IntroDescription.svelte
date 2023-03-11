@@ -9,11 +9,10 @@
         gsap.fromTo(".intro-line", {
             yPercent: 100,
             visibility: "hidden",
-            opacity: 0,
         }, {
             yPercent: 0,
             visibility: "visible",
-            opacity: 1,
+            autoAlpha: 1,
             stagger: 0.05,
         });
 
@@ -117,6 +116,7 @@
         padding-top: 25vh;
         visibility: hidden;
         transform: translate(17vw);
+        will-change: transform;
     }
 
     .intro-line {
