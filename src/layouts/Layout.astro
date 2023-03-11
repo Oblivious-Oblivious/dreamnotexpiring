@@ -7,15 +7,6 @@ import PageLifecycle from "@components/PageLifecycle.svelte";
 ---
 
 <script>
-    // GSAP Animations
-    import gsap from "gsap";
-    import ScrollTrigger from "gsap/ScrollTrigger";
-
-    // Page smooth loader + GSAP tween
-    import Swup from "swup";
-    import SwupHeadPlugin from "@swup/head-plugin";
-    import SwupJsPlugin from "@swup/js-plugin";
-
     gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
     // Smooth Scrollbar + GSAP ScrollTrigger

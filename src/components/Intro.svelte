@@ -1,6 +1,5 @@
 <script>
     import { onMount } from "svelte";
-    import gsap from "gsap";
 
     onMount(() => {
         gsap.to(".noise", {
