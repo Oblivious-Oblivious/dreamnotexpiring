@@ -51,11 +51,7 @@
             opacity: 0,
         }, "at-bold-word-repositioning");
     });
-
-    let class_prop_warning_fix = "";
-    export { class_prop_warning_fix as class };
 </script>
-<div this={class_prop_warning_fix}></div>
 
 <div class="intro-description">
     <div class="intro-line">
