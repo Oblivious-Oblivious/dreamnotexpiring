@@ -9,6 +9,7 @@
                 <a
                     class:active={$underline_value === "work"}
                     on:click={() => $underline_value = "work"}
+                    rel="prefetch"
                     href="/"
                     draggable="false"
                 >Work</a>
@@ -17,6 +18,7 @@
                 <a
                     class:active={$underline_value === "about"}
                     on:click={() => $underline_value = "about"}
+                    rel="prefetch"
                     href="/about"
                     draggable="false"
                 >About</a>
