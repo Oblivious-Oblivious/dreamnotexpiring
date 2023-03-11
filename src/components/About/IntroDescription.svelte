@@ -8,7 +8,7 @@
     onMount(() => {
         gsap.registerPlugin(ScrollTrigger);
 
-        gsap.fromTo(".intro-description .intro-line", {
+        gsap.fromTo(".intro-line", {
             yPercent: 100,
             opacity: 0,
         }, {
