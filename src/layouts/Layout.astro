@@ -1,9 +1,8 @@
 ---
-const { title, current_page } = Astro.props;
+const { title } = Astro.props;
 import Intro from "@components/Intro.svelte";
 import Head from "@components/Head.svelte";
 import Header from "@components/Header/index.svelte";
-import PageLifecycle from "@components/PageLifecycle.svelte";
 ---
 
 <!DOCTYPE html>
@@ -24,8 +23,6 @@ import PageLifecycle from "@components/PageLifecycle.svelte";
                 </div>
             </div>
         </div>
-        
-        <PageLifecycle {current_page} client:load/>
     </body>
 </html>
 

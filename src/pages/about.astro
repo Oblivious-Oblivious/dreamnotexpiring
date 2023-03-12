@@ -5,9 +5,10 @@ import WhatInterestsMe from "@components/About/WhatInterestsMe.svelte";
 import HowILearn from "@components/About/HowILearn.svelte";
 import ComputerRelatedTopicsIEnjoy from "@components/About/ComputerRelatedTopicsIEnjoy.svelte";
 import GetInTouch from "@components/About/GetInTouch.svelte";
+import PageLifecycle from "@components/PageLifecycle.svelte";
 ---
 
-<Layout title="Thanasis Papapostolou - oblivious to the dream" current_page="about">
+<Layout title="Thanasis Papapostolou - oblivious to the dream">
     <main>
         <IntroDescription client:load/>
         <WhatInterestsMe client:load/>
@@ -16,6 +17,8 @@ import GetInTouch from "@components/About/GetInTouch.svelte";
         <GetInTouch client:load/>
     </main>
 </Layout>
+
+<PageLifecycle current_page="about" client:load/>
 
 <style lang="scss">
     main {
