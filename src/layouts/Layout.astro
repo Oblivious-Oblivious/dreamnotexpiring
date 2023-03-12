@@ -15,7 +15,6 @@ import PageLifecycle from "@components/PageLifecycle.svelte";
 
         <div class="display-none">
             <Header client:load/>
-            <PageLifecycle {current_page} client:load/>
     
             <div class="smooth-wrapper">
                 <div id="smooth-content">
@@ -26,6 +25,8 @@ import PageLifecycle from "@components/PageLifecycle.svelte";
             </div>
         </div>
     </body>
+
+    <PageLifecycle {current_page} client:load/>
 </html>
 
 <style is:global>
