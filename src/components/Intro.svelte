@@ -267,7 +267,7 @@
     });
 </script>
 
-<main class="intro-main" style="visibility=hidden;">
+<div class="intro-wrapper" style="visibility=hidden;">
     <img class="crt" src={crt_source} alt="A 90s CRT tv">
     <div class="noise">
         <div id="txt">
@@ -275,7 +275,7 @@
             <div class="glitch bottom red-shadow">OBLIVIOUS</div>
         </div>
     </div>
-</main>
+</div>
 
 <style>
     @import "../layouts/commons.css";
