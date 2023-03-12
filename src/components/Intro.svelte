@@ -8,7 +8,7 @@
         else
             crt_source = "crt-light.jpg";
 
-        gsap.set(".intro-main", {
+        gsap.set(".intro-wrapper", {
             autoAlpha: 1,
         });
 
