@@ -1,7 +1,13 @@
 <script>
     import { onMount } from "svelte";
+    var crt_source;
 
     onMount(() => {
+        if(window.matchMedia("(prefers-color-scheme: dark)").matches)
+            crt_source = "crt-dark.jpg";
+        else
+            crt_source = "crt-light.jpg";
+
         gsap.to(".noise", {
             duration: 0.1,
             repeat: 50,
@@ -237,7 +243,7 @@
             scaleY: 1,
             ease: "power4.inOut",
         })
-        .to(".noise", {
+        .to([".noise", ".crt"], {
             duration: intro_fade_out_duration,
             opacity: 0,
             ease: "power2.inOut",
@@ -257,6 +263,7 @@
     });
 </script>
 
+<img class="crt" src={crt_source} alt="A 90s CRT tv">
 <div class="noise">
     <div id="txt">
         <div class="glitch top red-shadow">OBLIVIOUS</div>
@@ -282,7 +289,7 @@
         }
 
         .red-shadow {
-            text-shadow: -7px 0 rgba(0, 255, 191, 0.5);
+            text-shadow: -7px 0 var(--bone);
         }
     }
     @media (prefers-color-scheme: dark) {
@@ -299,6 +306,12 @@
         font-family: "Road Rage";
         src: url("/RoadRage.otf");
     }
+
+    img {
+        width: 100vw;
+        height: 100vh;
+        /* filter: brightness(60%); */
+    }
     
     .noise {
         font-family: "Road Rage";
@@ -306,8 +319,10 @@
 
         mix-blend-mode: multiply;
         background-image: url("/noise.jpg");
-        height: 100vh;
-        width: 100%;
+        height: 86vh;
+        width: 86vw;
+        transform: translateY(7vh) translateX(7vw);
+        border-radius: 75px;
         position: absolute;
         top: 0;
         left: 0;
