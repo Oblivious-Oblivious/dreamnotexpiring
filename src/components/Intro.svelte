@@ -3,7 +3,7 @@
     var crt_source;
 
     onMount(() => {
-        if(window.matchMedia("(prefers-color-scheme: dark)").matches)
+        if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
             crt_source = "crt-dark.jpg";
         else
             crt_source = "crt-light.jpg";
@@ -24,7 +24,7 @@
         });
 
         var intro_fade_out_duration;
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
+        if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
             intro_fade_out_duration = 0;
         else
             intro_fade_out_duration = 0.8;
