@@ -8,6 +8,10 @@
         else
             crt_source = "crt-light.jpg";
 
+        gsap.set(".intro-main", {
+            autoAlpha: 1,
+        });
+
         gsap.to(".noise", {
             duration: 0.1,
             repeat: 50,
@@ -263,13 +267,15 @@
     });
 </script>
 
-<img class="crt" src={crt_source} alt="A 90s CRT tv">
-<div class="noise">
-    <div id="txt">
-        <div class="glitch top red-shadow">OBLIVIOUS</div>
-        <div class="glitch bottom red-shadow">OBLIVIOUS</div>
+<main class="intro-main" style="visibility=hidden;">
+    <img class="crt" src={crt_source} alt="A 90s CRT tv">
+    <div class="noise">
+        <div id="txt">
+            <div class="glitch top red-shadow">OBLIVIOUS</div>
+            <div class="glitch bottom red-shadow">OBLIVIOUS</div>
+        </div>
     </div>
-</div>
+</main>
 
 <style>
     @import "../layouts/commons.css";
