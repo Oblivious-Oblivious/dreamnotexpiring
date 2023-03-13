@@ -25,6 +25,8 @@
     <script is:inline src="https://unpkg.com/swup@3"></script>
     <script is:inline src="https://cdn.jsdelivr.net/npm/@swup/js-plugin@1.0.5/dist/SwupJsPlugin.min.js"></script>
     <script is:inline src="https://cdn.jsdelivr.net/npm/@swup/head-plugin@1.3.0/dist/SwupHeadPlugin.min.js"></script>
+    <script is:inline src="https://cdn.jsdelivr.net/npm/@swup/body-class-plugin@2.0.1/dist/SwupBodyClassPlugin.min.js"></script>
+    <script is:inline src="https://unpkg.com/@swup/preload-plugin@2"></script>
 
     <!-- Sitemap -->
     <!-- <link rel="sitemap" href="/sitemap.xml"> -->

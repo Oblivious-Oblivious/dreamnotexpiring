@@ -74,6 +74,7 @@
             animateHistoryBrowsing: true,
             plugins: [
                 new SwupHeadPlugin(),
+                new SwupBodyClassPlugin(),
                 new SwupJsPlugin([
                     {
                         from: "/",
@@ -88,6 +89,7 @@
                         out: (next, _infos) => from_about_out(next),
                     },
                 ]),
+                new SwupPreloadPlugin(),
             ],
         }).on("pageView", start_from_page_top);
     });
