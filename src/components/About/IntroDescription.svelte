@@ -8,7 +8,7 @@
 
         gsap.set(".intro-description", {
             autoAlpha: 1,
-            x: "17vw",
+            x: "42vw",
             y: "25vh",
         });
 
@@ -30,7 +30,8 @@
                 pin: true,
                 scrub: true,
             },
-        }).fromTo(".intro-word", {
+        })
+        .fromTo(".intro-word", {
             xPercent: 0,
             yPercent: 0,
             rotate: 0,
@@ -55,7 +56,10 @@
             xPercent: -80,
             yPercent: 150,
             opacity: 0,
-        }, "at-bold-word-repositioning");
+        }, "at-bold-word-repositioning")
+        .set(".technical", {
+            opacity: 0,
+        });
     });
 </script>
 
