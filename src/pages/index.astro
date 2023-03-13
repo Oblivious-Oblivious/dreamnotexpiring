@@ -1,10 +1,10 @@
 ---
 import Work from "@components/Work/Work.svelte";
-import Layout from "@layouts/Layout.astro";
+import MainLayout from "@layouts/MainLayout.astro";
 import PageLifecycle from "@components/PageLifecycle.svelte";
 ---
 
-<Layout title="Thanasis Papapostolou - oblivious to the dream">
+<MainLayout title="Thanasis Papapostolou - oblivious to the dream">
     <main>
         <Work number="1"/>
         <Work number="2"/>
@@ -20,7 +20,7 @@ import PageLifecycle from "@components/PageLifecycle.svelte";
         <Work number="12"/>
         <Work number="13"/>
     </main>
-</Layout>
+</MainLayout>
 
 <PageLifecycle current_page="work" client:load/>
 
