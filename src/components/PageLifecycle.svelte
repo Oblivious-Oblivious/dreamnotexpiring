@@ -74,7 +74,6 @@
             animateHistoryBrowsing: true,
             plugins: [
                 new SwupHeadPlugin(),
-                new SwupBodyClassPlugin(),
                 new SwupJsPlugin([
                     {
                         from: "/",
