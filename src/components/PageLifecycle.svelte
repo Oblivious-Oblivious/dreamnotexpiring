@@ -22,7 +22,7 @@
             });
         }
 
-        const to_about_out = next => {
+        const from_work_out = next => {
             gsap.to("#swup", {
                 duration: 0.95,
                 onComplete: next,
@@ -57,7 +57,7 @@
             });
         }
 
-        const to_work_out = next => {
+        const from_about_out = next => {
             gsap.to("#swup", {
                 duration: 0.8,
                 ease: "power2.inOut",
@@ -78,13 +78,13 @@
                         from: "/",
                         to: "/about",
                         in: (next, _infos) => to_about_in(next),
-                        out: (next, _infos) => to_about_out(next),
+                        out: (next, _infos) => from_work_out(next),
                     },
                     {
                         from: "/about",
                         to: "/",
                         in: (next, _infos) => to_work_in(next),
-                        out: (next, _infos) => to_work_out(next),
+                        out: (next, _infos) => from_about_out(next),
                     },
                 ]),
             ],
