@@ -27,12 +27,6 @@
             delay: 0.5,
         });
 
-        var intro_fade_out_duration;
-        if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
-            intro_fade_out_duration = 0;
-        else
-            intro_fade_out_duration = 0.8;
-        
         tl.to(".glitch", {
             duration: 0.1,
             skewX: 70,
@@ -248,7 +242,7 @@
             ease: "power4.inOut",
         })
         .to([".noise", ".crt"], {
-            duration: intro_fade_out_duration,
+            duration: 0.8,
             opacity: 0,
             ease: "power2.inOut",
         })
@@ -278,17 +272,12 @@
 </div>
 
 <style>
-    @import "../layouts/commons.css";
-
     :root {
         --noise: var(--silver);
+        background-color: var(--bg-color);
     }
 
     @media (prefers-color-scheme: light) {
-        :root {
-            background-color: var(--bg-color);
-        }
-
         .noise {
             -webkit-filter: invert(100%);
             filter: invert(100%);
@@ -299,10 +288,6 @@
         }
     }
     @media (prefers-color-scheme: dark) {
-        :root {
-            background-color: var(--fg-color);
-        }
-
         .red-shadow {
             text-shadow: -7px 0 rgba(255, 0, 106, 0.5);
         }
@@ -316,7 +301,6 @@
     img {
         width: 100vw;
         height: 100vh;
-        /* filter: brightness(60%); */
     }
     
     .noise {
