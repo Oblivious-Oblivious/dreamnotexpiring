@@ -79,14 +79,14 @@
                     {
                         from: "/",
                         to: "/about",
-                        in: (next, _infos) => to_about_in(next),
-                        out: (next, _infos) => from_work_out(next),
+                        in: next => to_about_in(next),
+                        out: next => from_work_out(next),
                     },
                     {
                         from: "/about",
                         to: "/",
-                        in: (next, _infos) => to_work_in(next),
-                        out: (next, _infos) => from_about_out(next),
+                        in: next => to_work_in(next),
+                        out: next => from_about_out(next),
                     },
                 ]),
                 new SwupPreloadPlugin(),
