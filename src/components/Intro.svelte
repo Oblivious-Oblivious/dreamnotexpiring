@@ -261,7 +261,7 @@
     });
 </script>
 
-<div class="intro-wrapper" style="visibility=hidden;">
+<div class="intro-wrapper" style="visibility: hidden;">
     <img class="crt" src={crt_source} alt="A 90s CRT tv">
     <div class="noise">
         <div id="txt">
