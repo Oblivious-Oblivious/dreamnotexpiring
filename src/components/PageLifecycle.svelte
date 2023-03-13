@@ -54,7 +54,7 @@
             }, {
                 ease: "power1.out",
                 yPercent: 0,
-                stagger: 0.05,
+                stagger: 0.04,
             });
         }
 
