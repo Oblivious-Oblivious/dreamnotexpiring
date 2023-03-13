@@ -24,22 +24,22 @@
 
         const from_work_out = next => {
             gsap.to("#swup", {
-                duration: 0.95,
+                duration: 0.8,
                 onComplete: next,
             });
 
             gsap.to("#work-section", {
-                duration: 0.8,
+                duration: 0.65,
                 opacity: 0,
                 yPercent: -300,
                 stagger: 0.015,
-                ease: "power2.inOut",
+                ease: "power2.in",
             });
         }
 
         const to_work_in = next => {
             gsap.fromTo("#swup", {
-                duration: 0.8,
+                duration: 0.5,
                 autoAlpha: 0,
             }, {
                 ease: "power1.out",
@@ -49,18 +49,19 @@
             });
 
             gsap.fromTo("#work-section", {
+                duration: 0.5,
                 yPercent: 120,
             }, {
                 ease: "power1.out",
                 yPercent: 0,
-                stagger: 0.075,
+                stagger: 0.05,
             });
         }
 
         const from_about_out = next => {
             gsap.to("#swup", {
-                duration: 0.8,
-                ease: "power2.inOut",
+                duration: 0.65,
+                ease: "power4.out",
                 autoAlpha: 0,
                 onComplete: next,
             });
