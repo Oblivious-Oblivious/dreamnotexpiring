@@ -3,6 +3,10 @@
     var crt_source;
 
     onMount(() => {
+        // Scrolls top before reloading
+        window.onbeforeunload = () => window.scrollTo(0, 0);
+        window.onload = () => window.scrollTo(0, 0);
+
         if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
             crt_source = "crt-dark.jpg";
         else
