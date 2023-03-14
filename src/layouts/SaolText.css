@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "Saol Text";
+    src: url("/SaolText/Saol Text Thin");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Saol Text";
+    src: url("/SaolText/Saol Text Thin Italic");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Saol Text";
+    src: url("/SaolText/Saol Text Light");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Saol Text";
+    src: url("/SaolText/Saol Text Light Italic");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Saol Text";
+    src: url("/SaolText/Saol Text Regular");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Saol Text";
+    src: url("/SaolText/Saol Text Regular Italic");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Saol Text";
+    src: url("/SaolText/Saol Text Book");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Saol Text";
+    src: url("/SaolText/Saol Text Book Italic");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Saol Text";
+    src: url("/SaolText/Saol Text Medium");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Saol Text";
+    src: url("/SaolText/Saol Text Medium Italic");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Saol Text";
+    src: url("/SaolText/Saol Text Semibold");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Saol Text";
+    src: url("/SaolText/Saol Text Semibold Italic");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Saol Text";
+    src: url("/SaolText/Saol Text Bold");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Saol Text";
+    src: url("/SaolText/Saol Text Bold Italic");
+    font-weight: 800;
+    font-style: italic;
+}
