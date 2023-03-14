@@ -253,9 +253,7 @@
             ease: "power2.inOut",
             opacity: 1,
             onStart: () => {
-                document.querySelector("body").classList.add("default-body-colors");
                 document.querySelector(".display-none").classList.remove("display-none");
-                document.querySelector(".noise").classList.add("display-none");
             }
         });
     });

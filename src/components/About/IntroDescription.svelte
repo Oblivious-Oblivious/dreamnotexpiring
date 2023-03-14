@@ -29,6 +29,7 @@
                 // markers: true,
                 pin: true,
                 scrub: true,
+                // invalidateOnRefresh: true,
             },
         })
         .fromTo(".intro-word", {
