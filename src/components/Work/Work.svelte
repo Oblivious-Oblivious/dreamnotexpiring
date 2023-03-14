@@ -8,6 +8,6 @@
 
 <style lang="scss">
     h1 {
-        font-size: 6rem;
+        font-size: 5rem;
     }
 </style>
