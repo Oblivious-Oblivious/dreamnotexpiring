@@ -137,7 +137,7 @@
     .technical,
     .artistic,
     .interactive {
-        font-size: 2.5vw;
+        font-size: 2.6vw;
         font-weight: 800;
     }
 </style>
