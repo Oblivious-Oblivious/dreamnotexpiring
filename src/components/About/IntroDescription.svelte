@@ -130,14 +130,14 @@
     }
 
     .intro-word {
-        font-size: 2.5vw;
-        font-weight: 500;
+        font-size: 2.6vw;
+        font-weight: 400;
     }
 
     .technical,
     .artistic,
     .interactive {
         font-size: 2.5vw;
-        font-weight: 900;
+        font-weight: 800;
     }
 </style>

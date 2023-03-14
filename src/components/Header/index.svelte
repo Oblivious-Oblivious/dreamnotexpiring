@@ -35,6 +35,7 @@
         position: fixed;
         top: 2rem;
         width: 100vw;
+        font-family: var(--text-font);
 
         nav {
             display: flex;
@@ -52,6 +53,7 @@
                         position: relative;
                         width: fit-content;
                         opacity: 0.35;
+                        font-size: 1.1rem;
 
                         /* Opacity animation on:hover and :not:on:hover */
                         &:hover {
