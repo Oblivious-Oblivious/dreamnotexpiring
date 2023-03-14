@@ -9,13 +9,13 @@
             opacity: 0,
         }, {
             yPercent: 0,
-            visibility: "visible",
             opacity: 1,
+            autoAlpha: 1,
         });
     });
 </script>
 
-<div class="get-in-touch">
+<div class="get-in-touch" style="visibility: hidden;">
     <p>Get in touch</p>
     <h3><a href="mailto:thanos.papap42@gmail.com">Email</a></h3>
     <h3><a href="https://www.instagram.com/thanasis_papap/">Instagram</a></h3>
@@ -26,7 +26,6 @@
 <style lang="scss">
     .get-in-touch {
         padding-bottom: 27vh;
-        visibility: hidden;
 
         p {
             font-size: 2.5vw;

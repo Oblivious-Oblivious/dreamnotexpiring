@@ -9,13 +9,13 @@
             opacity: 0,
         }, {
             yPercent: 0,
-            visibility: "visible",
             opacity: 1,
+            autoAlpha: 1,
         });
     });
 </script>
 
-<div class="computer-related-topics-i-enjoy">
+<div class="computer-related-topics-i-enjoy" style="visibility: hidden;">
     <p>Computer related topics I enjoy.</p>
     <p>* Penetration Testing</p>
     <p>* Interpreters</p>
@@ -27,7 +27,6 @@
 <style lang="scss">
     .computer-related-topics-i-enjoy {
         padding-bottom: 27vh;
-        visibility: hidden;
 
         p {
             font-size: 2.5vw;

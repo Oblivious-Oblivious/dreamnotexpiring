@@ -9,13 +9,13 @@
             opacity: 0,
         }, {
             yPercent: 0,
-            visibility: "visible",
             opacity: 1,
+            autoAlpha: 1,
         });
     });
 </script>
 
-<div class="what-interests-me">
+<div class="what-interests-me" style="visibility: hidden;">
     <p>What interests me.</p>
     <p>Software Development (links)</p>
     <p>Music and DJing (parallax images links)</p>
@@ -25,7 +25,6 @@
 <style lang="scss">
     .what-interests-me {
         padding-bottom: 27vh;
-        visibility: hidden;
 
         p {
             font-size: 2.5vw;

@@ -9,13 +9,13 @@
             opacity: 0,
         }, {
             yPercent: 0,
-            visibility: "visible",
             opacity: 1,
+            autoAlpha: 1,
         });
     });
 </script>
 
-<div class="how-i-learn">
+<div class="how-i-learn" style="visibility: hidden;">
     <p>How I learn.</p>
     <p>Horizontal graph, animate line</p>
     <p>2012-2016 - (Ascent) - watch a video tutorial</p>
@@ -29,7 +29,6 @@
 <style lang="scss">
     .how-i-learn {
         padding-bottom: 27vh;
-        visibility: hidden;
 
         p {
             font-size: 2.5vw;
