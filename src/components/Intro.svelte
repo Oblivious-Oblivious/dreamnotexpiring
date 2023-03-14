@@ -246,15 +246,15 @@
             opacity: 0,
             ease: "power2.inOut",
         })
+        .set(".main-content", {
+            autoAlpha: 1,
+        })
         .fromTo("#swup", {
             opacity: 0,
         }, {
             duration: 0.8,
             ease: "power2.inOut",
             opacity: 1,
-            onStart: () => {
-                document.querySelector(".display-none").classList.remove("display-none");
-            }
         });
     });
 </script>

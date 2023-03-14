@@ -12,7 +12,7 @@ import Header from "@components/Header/index.svelte";
     <body>
         <Intro client:load/>
 
-        <div class="display-none">
+        <div class="main-content">
             <Header client:load/>
     
             <div class="smooth-wrapper">
@@ -52,6 +52,10 @@ import Header from "@components/Header/index.svelte";
         -ms-user-select: none;
         user-select: none;
         cursor: default;
+
+        /* Colors */
+        color: var(--fg-color);
+        background-color: var(--bg-color);
     }
 
     /* Hide scrollbar */
@@ -80,7 +84,7 @@ import Header from "@components/Header/index.svelte";
         font-family: "Fira Code", Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
     }
 
-    .display-none {
-        display: none;
+    .main-content {
+        visibility: hidden;
     }
 </style>
