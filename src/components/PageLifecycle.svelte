@@ -16,6 +16,8 @@
             smoothTouch: true,
         });
 
+        scroll_smoother.scrollTop(1);
+
         const to_about_in = next => {
             gsap.to("#swup", {
                 onComplete: next,

@@ -12,6 +12,10 @@
             autoAlpha: 1,
         });
 
+        gsap.set("body", {
+            overflow: "hidden",
+        });
+
         gsap.to(".noise", {
             duration: 0.1,
             repeat: 50,
@@ -249,13 +253,16 @@
         .set(".main-content", {
             autoAlpha: 1,
         })
+        .set("body", {
+            overflow: "auto",
+        })
         .fromTo("#swup", {
             opacity: 0,
         }, {
             duration: 0.8,
             ease: "power2.inOut",
             opacity: 1,
-        });
+        })
     });
 </script>
 
