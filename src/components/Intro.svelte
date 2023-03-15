@@ -7,6 +7,7 @@
         window.onbeforeunload = () => window.scrollTo(0, 0);
         window.onload = () => window.scrollTo(0, 0);
 
+        /* TODO 1 Add image content with css instead of javascript */
         if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
             crt_source = "crt-dark.jpg";
         else
@@ -271,6 +272,7 @@
 </script>
 
 <div class="intro-wrapper" style="visibility: hidden;">
+    <!-- TODO 1 Add image content with css instead of javascript -->
     <img class="crt" src={crt_source} alt="A 90s CRT tv">
     <div class="noise">
         <div id="txt">
