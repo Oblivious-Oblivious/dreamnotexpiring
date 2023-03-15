@@ -268,7 +268,7 @@
             ease: "power2.inOut",
             opacity: 1,
         })
-        console.log("AFTER PAGE LIFECYCLE");
+        console.log("AFTER INTRO");
     });
 
 </script>
