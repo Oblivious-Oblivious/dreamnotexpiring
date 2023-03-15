@@ -25,7 +25,7 @@
     <!-- GSAP -->
     <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-    <script is:inline src="/ScrollSmoother.min.js"></script>
+    <script is:inline src="/js/ScrollSmoother.min.js"></script>
 
     <!-- Swup -->
     <script is:inline src="https://unpkg.com/swup@3"></script>
