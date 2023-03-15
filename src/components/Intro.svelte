@@ -3,6 +3,7 @@
     var crt_source;
 
     onMount(() => {
+        console.log("BEFORE INTRO");
         // Scrolls top before reloading
         window.onbeforeunload = () => window.scrollTo(0, 0);
         window.onload = () => window.scrollTo(0, 0);
@@ -267,7 +268,9 @@
             ease: "power2.inOut",
             opacity: 1,
         })
+        console.log("AFTER PAGE LIFECYCLE");
     });
+
 </script>
 
 <div class="intro-wrapper" style="visibility: hidden;">
