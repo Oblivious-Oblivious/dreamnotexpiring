@@ -12,12 +12,9 @@
             y: "25vh",
         });
 
-        gsap.fromTo(".intro-line", {
+        gsap.from(".intro-line", {
             yPercent: 100,
             autoAlpha: 0,
-        }, {
-            yPercent: 0,
-            autoAlpha: 1,
             stagger: 0.05,
         });
 
@@ -31,14 +28,7 @@
                 scrub: true,
             },
         })
-        .fromTo(".intro-word", {
-            xPercent: 0,
-            yPercent: 0,
-            rotate: 0,
-            rotateX: 0,
-            scale: 1,
-            opacity: 1,
-        }, {
+        .to(".intro-word", {
             xPercent: -400,
             yPercent: -800,
             rotate: -25,

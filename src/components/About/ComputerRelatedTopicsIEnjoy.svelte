@@ -4,12 +4,12 @@
     onMount(() => {
         // gsap.registerPlugin(ScrollTrigger);
 
-        gsap.fromTo(".computer-related-topics-i-enjoy", {
+        gsap.from(".computer-related-topics-i-enjoy", {
             yPercent: 100,
             opacity: 0,
-        }, {
-            yPercent: 0,
-            opacity: 1,
+        });
+
+        gsap.to(".computer-related-topics-i-enjoy", {
             autoAlpha: 1,
         });
     });

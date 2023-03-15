@@ -48,12 +48,10 @@
                 onComplete: next,
             });
 
-            gsap.fromTo("#work-section", {
+            gsap.from("#work-section", {
                 duration: 0.5,
-                yPercent: 120,
-            }, {
                 ease: "power1.out",
-                yPercent: 0,
+                yPercent: 120,
                 stagger: 0.04,
             });
         }

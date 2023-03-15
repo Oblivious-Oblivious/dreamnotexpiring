@@ -4,12 +4,12 @@
     onMount(() => {
         // gsap.registerPlugin(ScrollTrigger);
 
-        gsap.fromTo(".what-interests-me", {
+        gsap.from(".what-interests-me", {
             yPercent: 100,
             opacity: 0,
-        }, {
-            yPercent: 0,
-            opacity: 1,
+        });
+
+        gsap.to(".what-interests-me", {
             autoAlpha: 1,
         });
     });
