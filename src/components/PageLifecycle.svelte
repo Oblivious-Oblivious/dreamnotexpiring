@@ -88,7 +88,6 @@
                         out: next => from_about_out(next),
                     },
                 ]),
-                new SwupPreloadPlugin(),
             ],
         }).on("pageView", start_from_page_top);
     });
