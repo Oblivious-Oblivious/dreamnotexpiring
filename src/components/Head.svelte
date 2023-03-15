@@ -20,6 +20,7 @@
 
     <!-- Page Icon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" href="/favicon.png">
 
     <!-- GSAP -->
     <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
