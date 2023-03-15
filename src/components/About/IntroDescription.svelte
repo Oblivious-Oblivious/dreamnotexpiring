@@ -4,7 +4,6 @@
     var years_of_experience = new Date().getUTCFullYear() - 2012;
 
     onMount(() => {
-        console.log("BEFORE INTRO DESCRIPTION");
         gsap.registerPlugin(ScrollTrigger);
 
         gsap.set(".intro-description", {
@@ -61,9 +60,7 @@
         .set(".technical", {
             opacity: 0,
         });
-        console.log("AFTER INTRO DESCRIPTION");
     });
-
 </script>
 
 <div class="intro-description" style="visibility: hidden;">

@@ -5,7 +5,6 @@
     import { underline_value } from "./Header/underline_value";
 
     onMount(() => {
-        console.log("BEFORE PAGE LIFECYCLE");
         $underline_value = current_page;
 
         gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
@@ -91,6 +90,5 @@
                 ]),
             ],
         }).on("pageView", start_from_page_top);
-        console.log("AFTER PAGE LIFECYCLE");
     });
 </script>
