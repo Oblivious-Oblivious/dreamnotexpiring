@@ -10,11 +10,9 @@ import Header from "@components/Header/index.svelte";
     <Head {title}/>
 
     <body>
-        <Intro client:load/>
-
         <div class="main-content">
             <Header client:load/>
-    
+
             <div class="smooth-wrapper">
                 <div id="smooth-content">
                     <div class="grain">
@@ -26,6 +24,9 @@ import Header from "@components/Header/index.svelte";
                 </div>
             </div>
         </div>
+
+        <!-- Starts animation after main content is fetched -->
+        <Intro client:load/>
     </body>
 </html>
 
