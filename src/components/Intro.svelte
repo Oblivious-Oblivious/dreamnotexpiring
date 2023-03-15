@@ -304,18 +304,13 @@
         }
     }
 
-    @font-face {
-        font-family: "Road Rage";
-        src: url("/RoadRage.otf");
-    }
-
     img {
         width: 100vw;
         height: 100vh;
     }
     
     .noise {
-        font-family: "Road Rage";
+        font-family: var(--road-rage-font);
         overflow: hidden;
 
         mix-blend-mode: multiply;
