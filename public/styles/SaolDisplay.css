@@ -1,83 +1,83 @@
 @font-face {
     font-family: "Saol Display";
-    src: url("/SaolDisplay/Saol Display Thin");
+    src: url("/fonts/SaolDisplay/Saol Display Thin");
     font-weight: 100;
     font-style: normal;
 }
- 
+
 @font-face {
     font-family: "Saol Display";
-    src: url("/SaolDisplay/Saol Display Thin Italic");
+    src: url("/fonts/SaolDisplay/Saol Display Thin Italic");
     font-weight: 100;
     font-style: italic;
 }
 
 @font-face {
     font-family: "Saol Display";
-    src: url("/SaolDisplay/Saol Display Light");
+    src: url("/fonts/SaolDisplay/Saol Display Light");
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Saol Display";
-    src: url("/SaolDisplay/Saol Display Light Italic");
+    src: url("/fonts/SaolDisplay/Saol Display Light Italic");
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
     font-family: "Saol Display";
-    src: url("/SaolDisplay/Saol Display Regular");
+    src: url("/fonts/SaolDisplay/Saol Display Regular");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Saol Display";
-    src: url("/SaolDisplay/Saol Display Regular Italic");
+    src: url("/fonts/SaolDisplay/Saol Display Regular Italic");
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: "Saol Display";
-    src: url("/SaolDisplay/Saol Display Medium");
+    src: url("/fonts/SaolDisplay/Saol Display Medium");
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Saol Display";
-    src: url("/SaolDisplay/Saol Display Medium Italic");
+    src: url("/fonts/SaolDisplay/Saol Display Medium Italic");
     font-weight: 500;
     font-style: italic;
 }
 
 @font-face {
     font-family: "Saol Display";
-    src: url("/SaolDisplay/Saol Display Semibold");
+    src: url("/fonts/SaolDisplay/Saol Display Semibold");
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Saol Display";
-    src: url("/SaolDisplay/Saol Display Semibold Italic");
+    src: url("/fonts/SaolDisplay/Saol Display Semibold Italic");
     font-weight: 600;
     font-style: italic;
 }
 
 @font-face {
     font-family: "Saol Display";
-    src: url("/SaolDisplay/Saol Display Bold");
+    src: url("/fonts/SaolDisplay/Saol Display Bold");
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Saol Display";
-    src: url("/SaolDisplay/Saol Display Bold Italic");
+    src: url("/fonts/SaolDisplay/Saol Display Bold Italic");
     font-weight: 700;
     font-style: italic;
 }
