@@ -4,7 +4,10 @@
     onMount(() => {
         // gsap.registerPlugin(ScrollTrigger);
 
-        gsap.to(".what-interests-me", {
+        gsap.fromTo(".what-interests-me", {
+            opacity: 0,
+        }, {
+            opacity: 1,
             autoAlpha: 1,
         });
     });

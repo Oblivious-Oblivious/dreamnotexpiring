@@ -4,7 +4,10 @@
     onMount(() => {
         // gsap.registerPlugin(ScrollTrigger);
 
-        gsap.to(".computer-related-topics-i-enjoy", {
+        gsap.fromTo(".computer-related-topics-i-enjoy", {
+            opacity: 0,
+        }, {
+            opacity: 1,
             autoAlpha: 1,
         });
     });

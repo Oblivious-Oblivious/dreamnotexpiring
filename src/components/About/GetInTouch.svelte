@@ -4,7 +4,10 @@
     onMount(() => {
         // gsap.registerPlugin(ScrollTrigger);
 
-        gsap.to(".get-in-touch", {
+        gsap.fromTo(".get-in-touch", {
+            opacity: 0,
+        }, {
+            opacity: 1,
             autoAlpha: 1,
         });
     });

@@ -4,7 +4,10 @@
     onMount(() => {
         // gsap.registerPlugin(ScrollTrigger);
 
-        gsap.to(".how-i-learn", {
+        gsap.fromTo(".how-i-learn", {
+            opacity: 0,
+        }, {
+            opacity: 1,
             autoAlpha: 1,
         });
     });
