@@ -24,14 +24,20 @@
 
     <!-- GSAP -->
     <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <!-- <script is:inline src="/js/gsap.min.js"></script> -->
     <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <!-- <script is:inline src="/js/ScrollTrigger.min.js"></script> -->
     <script is:inline src="/js/ScrollSmoother.min.js"></script>
 
     <!-- Swup -->
-    <script is:inline src="https://unpkg.com/swup@3"></script>
-    <script is:inline src="https://cdn.jsdelivr.net/npm/@swup/js-plugin@1.0.5/dist/SwupJsPlugin.min.js"></script>
-    <script is:inline src="https://cdn.jsdelivr.net/npm/@swup/head-plugin@1.3.0/dist/SwupHeadPlugin.min.js"></script>
-    <script is:inline src="https://unpkg.com/@swup/preload-plugin@2"></script>
+    <script is:inline src="/js/Swup.min.js"></script>
+    <!-- <script is:inline src="https://unpkg.com/swup@3"></script> -->
+    <script is:inline src="/js/SwupHeadPlugin.min.js"></script>
+    <!-- <script is:inline src="https://cdn.jsdelivr.net/npm/@swup/js-plugin@1.0.5/dist/SwupJsPlugin.min.js"></script> -->
+    <script is:inline src="/js/SwupJsPlugin.min.js"></script>
+    <!-- <script is:inline src="https://cdn.jsdelivr.net/npm/@swup/head-plugin@1.3.0/dist/SwupHeadPlugin.min.js"></script> -->
+    <script is:inline src="/js/SwupPreloadPlugin.min.js"></script>
+    <!-- <script is:inline src="https://unpkg.com/@swup/preload-plugin@2"></script> -->
 
     <!-- Sitemap -->
     <!-- <link rel="sitemap" href="/sitemap.xml"> -->
