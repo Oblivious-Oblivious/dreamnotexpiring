@@ -7,9 +7,12 @@
         gsap.registerPlugin(ScrollTrigger);
 
         gsap.set(".intro-description", {
-            autoAlpha: 1,
             x: "42vw",
             y: "25vh",
+        });
+
+        gsap.to(".intro-description", {
+            autoAlpha: 1,
         });
 
         gsap.from(".intro-line", {
