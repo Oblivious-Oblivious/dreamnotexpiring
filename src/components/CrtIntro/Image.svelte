@@ -5,8 +5,8 @@
 
     onMount(() => {
         crt = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
-            ? "/crt-dark.jpg"
-            : "/crt-light.jpg";
+            ? "/img/crt-dark.jpg"
+            : "/img/crt-light.jpg";
     });
 </script>
 

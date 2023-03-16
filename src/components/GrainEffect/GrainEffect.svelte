@@ -14,6 +14,6 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        background-image: url("/grain.gif");
+        background-image: url("/img/grain.gif");
     }
 </style>

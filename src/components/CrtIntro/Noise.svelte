@@ -33,7 +33,7 @@
         overflow: hidden;
 
         mix-blend-mode: multiply;
-        background-image: url("/noise.jpg");
+        background-image: url("/img/noise.jpg");
         height: 86vh;
         width: 86vw;
         transform: translateY(7vh) translateX(7vw);
