@@ -4,11 +4,6 @@
     onMount(() => {
         // gsap.registerPlugin(ScrollTrigger);
 
-        gsap.from(".how-i-learn", {
-            yPercent: 100,
-            opacity: 0,
-        });
-
         gsap.to(".how-i-learn", {
             autoAlpha: 1,
         });
