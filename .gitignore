@@ -37,3 +37,6 @@ lerna-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+# experiments
+elements/
