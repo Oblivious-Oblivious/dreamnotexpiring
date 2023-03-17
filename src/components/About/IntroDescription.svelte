@@ -116,10 +116,6 @@
         will-change: transform;
     }
 
-    .intro-description {
-        padding-bottom: 30%;
-    }
-
     .intro-line {
         display: flex;
         gap: 0.7vw;

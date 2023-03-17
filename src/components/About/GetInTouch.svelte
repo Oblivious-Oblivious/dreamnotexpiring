@@ -23,11 +23,9 @@
 
 <style lang="scss">
     .get-in-touch {
-        padding-bottom: 27vh;
-
         p {
             font-size: 2.5vw;
-            font-weight: 500;
+            font-weight: 400;
         }
 
         h3 {
