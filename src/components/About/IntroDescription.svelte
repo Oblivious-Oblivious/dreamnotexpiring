@@ -24,6 +24,7 @@
         gsap.timeline({
             scrollTrigger: {
                 trigger: ".intro-description",
+                endTrigger: ".what-interests-me",
                 start: "top 25%",
                 end: "+=2500",
                 // markers: true,
@@ -42,12 +43,12 @@
         })
         .add("at-bold-word-repositioning")
         .to(".technical", {
-            xPercent: -80,
-            yPercent: 150,
+            xPercent: -73,
+            yPercent: -250,
         }, "at-bold-word-repositioning")
         .to([".artistic", ".interactive"], {
-            xPercent: -80,
-            yPercent: 150,
+            xPercent: -73,
+            yPercent: -250,
             opacity: 0,
         }, "at-bold-word-repositioning")
         .set(".technical", {
