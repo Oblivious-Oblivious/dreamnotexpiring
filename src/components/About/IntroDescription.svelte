@@ -41,17 +41,8 @@
             scale: 1.4,
             stagger: 0.05,
         })
-        .add("at-bold-word-repositioning")
-        .to(".technical", {
-            xPercent: -73,
-            yPercent: -250,
-        }, "at-bold-word-repositioning")
-        .to([".artistic", ".interactive"], {
-            xPercent: -73,
-            yPercent: -250,
-            opacity: 0,
-        }, "at-bold-word-repositioning")
-        .set(".technical", {
+        .to([".technical", ".artistic", ".interactive"], {
+            xPercent: -750,
             opacity: 0,
         });
     });
