@@ -197,6 +197,7 @@
     }
 
     .software-link a:hover {
+        /* TODO Fix blur not applying rounded corners */
         filter: blur(15px);
         transition: all 400ms ease;
     }
