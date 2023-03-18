@@ -139,6 +139,7 @@
     .software-link {
         position: relative;
         color: #111111;
+        width: 100%;
     }
 
     .software-text {
