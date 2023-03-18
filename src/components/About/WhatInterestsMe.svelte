@@ -1,5 +1,6 @@
 <script>
     import { onMount } from "svelte";
+    import SoftwareLinks from "./WhatInterestsMe/SoftwareLinks.svelte";
 
     onMount(() => {
         gsap.registerPlugin(ScrollTrigger);
@@ -8,8 +9,8 @@
             y: "-25vh",
         });
 
-        gsap.set([".interest-technical", ".interest-artistic", ".interest-interactive"], {
-            xPercent: 43.7,
+        gsap.set(".interest-bold-word", {
+            xPercent: 359,
         });
 
         gsap.fromTo(".what-interests-me", {
@@ -21,7 +22,7 @@
 
         gsap.timeline({
             scrollTrigger: {
-                trigger: ".what-interests-me",
+                trigger: ".interest-bold-word",
                 endTrigger: ".how-i-learn",
                 start: "top 18%",
                 end: "+=2500",
@@ -75,73 +76,84 @@
 </script>
 
 <div class="what-interests-me" style="visibility: hidden;">
-    <div class="interest-bold-word interest-technical">
-        <div class="interest-letter">&nbsp;</div>
-        <div class="interest-letter">&nbsp;</div>
-        <div class="interest-letter">t</div>
-        <div class="interest-letter">e</div>
-        <div class="interest-letter">c</div>
-        <div class="interest-letter">h</div>
-        <div class="interest-letter">n</div>
-        <div class="interest-letter">i</div>
-        <div class="interest-letter">c</div>
-        <div class="interest-letter">a</div>
-        <div class="interest-letter">l</div>
-    </div>
-    <div class="interest-bold-word interest-interactive">
-        <div class="interest-letter">i</div>
-        <div class="interest-letter">n</div>
-        <div class="interest-letter">t</div>
-        <div class="interest-letter">e</div>
-        <div class="interest-letter">r</div>
-        <div class="interest-letter">a</div>
-        <div class="interest-letter">c</div>
-        <div class="interest-letter">t</div>
-        <div class="interest-letter">i</div>
-        <div class="interest-letter">v</div>
-        <div class="interest-letter">e</div>
-    </div>
-    <div class="interest-bold-word interest-artistic">
-        <div class="interest-letter">&nbsp;</div>
-        <div class="interest-letter">&nbsp;</div>
-        <div class="interest-letter">&nbsp;</div>
-        <div class="interest-letter">&nbsp;</div>
-        <div class="interest-letter">a</div>
-        <div class="interest-letter">r</div>
-        <div class="interest-letter">t</div>
-        <div class="interest-letter">i</div>
-        <div class="interest-letter">s</div>
-        <div class="interest-letter">t</div>
-        <div class="interest-letter">i</div>
-        <div class="interest-letter">c</div>
+    <div class="interest-bold-word">
+        <div class="interest-technical">
+            <div class="interest-letter">&nbsp;</div>
+            <div class="interest-letter">&nbsp;</div>
+            <div class="interest-letter">t</div>
+            <div class="interest-letter">e</div>
+            <div class="interest-letter">c</div>
+            <div class="interest-letter">h</div>
+            <div class="interest-letter">n</div>
+            <div class="interest-letter">i</div>
+            <div class="interest-letter">c</div>
+            <div class="interest-letter">a</div>
+            <div class="interest-letter">l</div>
+        </div>
+        <div class="interest-interactive">
+            <div class="interest-letter">i</div>
+            <div class="interest-letter">n</div>
+            <div class="interest-letter">t</div>
+            <div class="interest-letter">e</div>
+            <div class="interest-letter">r</div>
+            <div class="interest-letter">a</div>
+            <div class="interest-letter">c</div>
+            <div class="interest-letter">t</div>
+            <div class="interest-letter">i</div>
+            <div class="interest-letter">v</div>
+            <div class="interest-letter">e</div>
+        </div>
+        <div class="interest-artistic">
+            <div class="interest-letter">&nbsp;</div>
+            <div class="interest-letter">&nbsp;</div>
+            <div class="interest-letter">&nbsp;</div>
+            <div class="interest-letter">&nbsp;</div>
+            <div class="interest-letter">a</div>
+            <div class="interest-letter">r</div>
+            <div class="interest-letter">t</div>
+            <div class="interest-letter">i</div>
+            <div class="interest-letter">s</div>
+            <div class="interest-letter">t</div>
+            <div class="interest-letter">i</div>
+            <div class="interest-letter">c</div>
+        </div>
     </div>
 
     <div class="spacer"></div>
 
-    <p>What interests me.</p>
-    <p>Software Development (links)</p>
-    <p>Music and DJing (parallax images links)</p>
-    <p>Mixology (horizontal photo cards)</p>
+    <SoftwareLinks client:load/>
+
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+
 </div>
 
 <style lang="scss">
-    .what-interests-me {
-        p {
-            font-size: 2.5vw;
-            font-weight: 400;
-        }
-    }
-
     .spacer {
-        padding-bottom: 4rem;
+        padding-bottom: 8rem;
     }
 
     .interest-bold-word {
-        font-size: 2.6vw;
-        font-weight: 800;
-        margin: 0;
-        line-height: 0;
+        position: absolute;
+        z-index: 9999;
+
+        .interest-technical,
+        .interest-interactive,
+        .interest-artistic {
+            font-family: "Saol Display";
+            font-size: 2.6vw;
+            font-weight: 800;
+            font-style: italic;
+            margin: 0;
+            line-height: 0;
+            display: flex;
+            gap: 0;
+        }
+    }
+
+    .mixology-horizontal-cards {
         display: flex;
-        gap: 0;
     }
 </style>
