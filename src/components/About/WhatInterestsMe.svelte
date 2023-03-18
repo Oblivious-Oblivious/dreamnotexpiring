@@ -128,6 +128,15 @@
     <div class="spacer"></div>
     <div class="spacer"></div>
 
+    <div class="djing-parallax-cards">
+        <a href="https://www.mixcloud.com/itsoblivious/genre-river/">Genre River</a>
+        <a href="https://www.mixcloud.com/itsoblivious/charmer/">Charmer</a>
+        <a href="https://www.mixcloud.com/itsoblivious/future-house-sessions-1/">Future House Sessions</a>
+        <a href="https://www.mixcloud.com/itsoblivious/waiting-for-summer-mix/">Waiting for Summer</a>
+    </div>
+    <div class="mixology-horizontal-cards">
+        <!-- TODO Add mouse hover tilt -->
+    </div>
 </div>
 
 <style lang="scss">
