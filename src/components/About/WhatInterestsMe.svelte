@@ -26,7 +26,7 @@
                 trigger: ".interest-bold-word",
                 endTrigger: ".how-i-learn",
                 start: "top 18%",
-                end: "+=2500",
+                end: "+=3900",
                 // markers: true,
                 pin: true,
                 scrub: true,
@@ -39,8 +39,8 @@
             stagger: 0.015,
         }, "<")
         .to(".interest-technical .interest-letter", {
-            delay: 0.8,
             opacity: 0,
+            delay: 0.1,
             y: -80,
             rotateX: 90,
             stagger: 0.015,
@@ -52,6 +52,7 @@
             stagger: 0.015,
         }, "<")
         .to(".interest-interactive .interest-letter", {
+            delay: 0.2,
             opacity: 0,
             y: -80,
             rotateX: 90,
@@ -135,8 +136,9 @@
     <div class="spacer"></div>
     <div class="spacer"></div>
     <div class="spacer"></div>
+
+    <!-- TODO Add mouse hover tilt -->
     <div class="mixology-horizontal-cards">
-        <!-- TODO Add mouse hover tilt -->
     </div>
 </div>
 
