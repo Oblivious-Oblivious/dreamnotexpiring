@@ -31,47 +31,43 @@
                 scrub: true,
             },
         })
-        .add("at-interest-technical")
         .from(".interest-technical .interest-letter", {
             opacity: 0,
             y: 80,
             rotateX: -90,
             stagger: 0.015,
-        }, "at-interest-techincal<")
+        }, "<")
         .to(".interest-technical .interest-letter", {
+            delay: 0.8,
             opacity: 0,
             y: -80,
             rotateX: 90,
             stagger: 0.015,
-        }, "at-interest-techincal<1")
-
-        .add("at-interest-interactive")
+        }, "<1")
         .from(".interest-interactive .interest-letter", {
             opacity: 0,
             y: 80,
             rotateX: -90,
             stagger: 0.015,
-        }, "at-interest-interactive<")
+        }, "<")
         .to(".interest-interactive .interest-letter", {
             opacity: 0,
             y: -80,
             rotateX: 90,
             stagger: 0.015,
-        }, "at-interest-interactive<1")
-
-        .add("at-interest-artistic")
+        }, "<1")
         .from(".interest-artistic .interest-letter", {
             opacity: 0,
             y: 80,
             rotateX: -90,
             stagger: 0.015,
-        }, "at-interest-artistic<")
+        }, "<")
         .to(".interest-artistic .interest-letter", {
             opacity: 0,
             y: -80,
             rotateX: 90,
             stagger: 0.015,
-        }, "at-interest-artistic<1");
+        }, "<1");
     });
 </script>
 
