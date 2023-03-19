@@ -11,7 +11,7 @@
         });
 
         gsap.set(".interest-bold-word", {
-            xPercent: 359,
+            xPercent: 320,
         });
 
         gsap.fromTo(".what-interests-me", {
