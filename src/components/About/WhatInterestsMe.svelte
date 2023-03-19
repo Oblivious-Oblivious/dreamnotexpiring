@@ -27,15 +27,9 @@
 
     <div class="spacer"></div>
     <div class="spacer"></div>
-    <div class="spacer"></div>
-    <div class="spacer"></div>
 
     <ParallaxMixcloudLinks client:load/>
 
-    <div class="spacer"></div>
-    <div class="spacer"></div>
-    <div class="spacer"></div>
-    <div class="spacer"></div>
     <div class="spacer"></div>
     <div class="spacer"></div>
     <div class="spacer"></div>
@@ -48,9 +42,7 @@
 
 <style lang="scss">
     .spacer {
-        padding-bottom: 8rem;
-    }
-
+        padding: 8rem 0;
     }
 
     .mixology-horizontal-cards {
