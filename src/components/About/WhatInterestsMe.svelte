@@ -3,6 +3,7 @@
     import InterestBoldWord from "./WhatInterestsMe/InterestBoldWord.svelte";
     import SoftwareLinks from "./WhatInterestsMe/SoftwareLinks.svelte";
     import ParallaxMixcloudLinks from "./WhatInterestsMe/ParallaxMixcloudLinks.svelte";
+    import HorizontalMixologyCards from "./WhatInterestsMe/HorizontalMixologyCards.svelte";
 
     onMount(() => {
         gsap.set(".what-interests-me", {
@@ -35,17 +36,11 @@
     <div class="spacer"></div>
     <div class="spacer"></div>
 
-    <!-- TODO Add mouse hover tilt -->
-    <div class="mixology-horizontal-cards">
-    </div>
+    <HorizontalMixologyCards client:load/>
 </div>
 
-<style lang="scss">
+<style>
     .spacer {
         padding: 8rem 0;
-    }
-
-    .mixology-horizontal-cards {
-        display: flex;
     }
 </style>
