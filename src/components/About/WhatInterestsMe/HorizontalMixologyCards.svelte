@@ -12,7 +12,7 @@
         });
 
         gsap.to(cocktails, {
-            xPercent: -100 * (cocktails.length + 2),
+            xPercent: -100 * (cocktails.length + 2.2),
             ease: "none",
             scrollTrigger: {
                 trigger: ".horizontal-container",
