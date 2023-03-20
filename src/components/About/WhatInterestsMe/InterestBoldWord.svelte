@@ -64,42 +64,43 @@
     <div class="interest-technical">
         <div class="interest-letter">&nbsp;</div>
         <div class="interest-letter">&nbsp;</div>
+        <div class="interest-letter">&nbsp;</div>
+        <div class="interest-letter">&nbsp;</div>
+        <div class="interest-letter">s</div>
+        <div class="interest-letter">o</div>
+        <div class="interest-letter">f</div>
         <div class="interest-letter">t</div>
-        <div class="interest-letter">e</div>
-        <div class="interest-letter">c</div>
-        <div class="interest-letter">h</div>
-        <div class="interest-letter">n</div>
-        <div class="interest-letter">i</div>
-        <div class="interest-letter">c</div>
+        <div class="interest-letter">w</div>
         <div class="interest-letter">a</div>
-        <div class="interest-letter">l</div>
+        <div class="interest-letter">r</div>
+        <div class="interest-letter">e</div>
     </div>
     <div class="interest-interactive">
+        <div class="interest-letter">&nbsp;</div>
+        <div class="interest-letter">&nbsp;</div>
+        <div class="interest-letter">&nbsp;</div>
+        <div class="interest-letter">&nbsp;</div>
+        <div class="interest-letter">&nbsp;</div>
+        <div class="interest-letter">&nbsp;</div>
+        <div class="interest-letter">d</div>
+        <div class="interest-letter">j</div>
         <div class="interest-letter">i</div>
         <div class="interest-letter">n</div>
-        <div class="interest-letter">t</div>
-        <div class="interest-letter">e</div>
-        <div class="interest-letter">r</div>
-        <div class="interest-letter">a</div>
-        <div class="interest-letter">c</div>
-        <div class="interest-letter">t</div>
-        <div class="interest-letter">i</div>
-        <div class="interest-letter">v</div>
-        <div class="interest-letter">e</div>
+        <div class="interest-letter">g</div>
     </div>
     <div class="interest-artistic">
         <div class="interest-letter">&nbsp;</div>
         <div class="interest-letter">&nbsp;</div>
         <div class="interest-letter">&nbsp;</div>
         <div class="interest-letter">&nbsp;</div>
-        <div class="interest-letter">a</div>
-        <div class="interest-letter">r</div>
-        <div class="interest-letter">t</div>
+        <div class="interest-letter">m</div>
         <div class="interest-letter">i</div>
-        <div class="interest-letter">s</div>
-        <div class="interest-letter">t</div>
-        <div class="interest-letter">i</div>
-        <div class="interest-letter">c</div>
+        <div class="interest-letter">x</div>
+        <div class="interest-letter">o</div>
+        <div class="interest-letter">l</div>
+        <div class="interest-letter">o</div>
+        <div class="interest-letter">g</div>
+        <div class="interest-letter">y</div>
     </div>
 </div>
 
