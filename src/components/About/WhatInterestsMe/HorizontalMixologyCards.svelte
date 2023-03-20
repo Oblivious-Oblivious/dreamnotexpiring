@@ -264,7 +264,7 @@
     }
 
     .cocktail:hover .cocktail-recipe {
-        max-height: 35vh;
+        max-height: 50vh;
         opacity: 1;
     }
 
