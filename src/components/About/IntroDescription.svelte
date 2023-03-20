@@ -18,7 +18,8 @@
         gsap.from(".intro-line", {
             yPercent: 100,
             autoAlpha: 0,
-            stagger: 0.05,
+            stagger: 0.075,
+            ease: "power2.out",
         });
 
         gsap.timeline({
