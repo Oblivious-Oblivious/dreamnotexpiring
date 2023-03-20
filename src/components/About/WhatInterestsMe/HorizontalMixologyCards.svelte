@@ -4,135 +4,131 @@
     onMount(() => {
         const cocktails = gsap.utils.toArray(".cocktail");
 
-        gsap.registerPlugin(ScrollTrigger);
-
         gsap.set(".cocktail", {
-            xPercent: 30,
-            yPercent: 45,
+            left: "7vw",
+            top: "20vh",
         });
 
         gsap.to(cocktails, {
-            xPercent: -100 * (cocktails.length + 2.2),
-            ease: "none",
+            xPercent: -100 * (cocktails.length - 1),
+            ease: "power1.inOut",
             scrollTrigger: {
-                trigger: ".horizontal-container",
+                trigger: ".mixology-wrapper",
                 pin: true,
                 scrub: true,
-                end: "+=2500",
+                end: "+=2000",
             }
         });
     });
 </script>
 
 <div class="mixology-wrapper">
-    <div class="horizontal-container">
-        <div class="cocktail cocktail-amaretto-sour">
-            <img class="cocktail-image" src="/img/Amaretto Sour.jpg" alt="Amaretto Sour" draggable="false">
-            <div class="cocktail-text-wrapper">
-                <div class="cocktail-title">Amaretto Sour</div>
-                <div class="cocktail-recipe">
-                    2 oz. amaretto<br>
-                    1 oz. lemon juice<br>
-                    1 oz. simple syrup<br>
-                    0.5 oz. egg white<br>
-                    1 dash of angostura bitters<br>
-                    <br>
-                    Dry shake, then normal shake<br>
-                    Add ice<br>
-                    Serve into an old fashioned<br>
-                    Garnish with orange peel<br>
-                </div>
+    <div class="cocktail cocktail-amaretto-sour">
+        <img class="cocktail-image" src="/img/Amaretto Sour.jpg" alt="Amaretto Sour" draggable="false">
+        <div class="cocktail-text-wrapper">
+            <div class="cocktail-title">Amaretto Sour</div>
+            <div class="cocktail-recipe">
+                2 oz. amaretto<br>
+                1 oz. lemon juice<br>
+                1 oz. simple syrup<br>
+                0.5 oz. egg white<br>
+                1 dash of angostura bitters<br>
+                <br>
+                Dry shake, then normal shake<br>
+                Add ice<br>
+                Serve into an old fashioned<br>
+                Garnish with orange peel<br>
             </div>
         </div>
+    </div>
 
-        <div class="cocktail cocktail-appletini">
-            <img class="cocktail-image" src="/img/Appletini.jpg" alt="Appletini" draggable="false">
-            <div class="cocktail-text-wrapper">
-                <div class="cocktail-title">Appletini</div>
-                <div class="cocktail-recipe">
-                    1.5 oz. vodka<br>
-                    1.5 oz. apple juice<br>
-                    0.25 oz. lemon juice<br>
-                    0.25 oz. maple syrup<br>
-                    <br>
-                    Quick shake<br>
-                    Pour into a coupe glass<br>
-                    3-piece apple garnish<br>
-                </div>
+    <div class="cocktail cocktail-appletini">
+        <img class="cocktail-image" src="/img/Appletini.jpg" alt="Appletini" draggable="false">
+        <div class="cocktail-text-wrapper">
+            <div class="cocktail-title">Appletini</div>
+            <div class="cocktail-recipe">
+                1.5 oz. vodka<br>
+                1.5 oz. apple juice<br>
+                0.25 oz. lemon juice<br>
+                0.25 oz. maple syrup<br>
+                <br>
+                Quick shake<br>
+                Pour into a coupe glass<br>
+                3-piece apple garnish<br>
             </div>
         </div>
+    </div>
 
-        <div class="cocktail cocktail-blue-feelings">
-            <img class="cocktail-image" src="/img/Blue Feelings.jpg" alt="Blue Feelings" draggable="false">
-            <div class="cocktail-text-wrapper">
-                <div class="cocktail-title">Blue Feelings</div>
-                <div class="cocktail-recipe">
-                    0.75 oz. vodka<br>
-                    0.75 oz. malibu<br>
-                    0.75 oz. blue curaçao<br>
-                    0.75 oz. coconut cream<br>
-                    0.75 oz. lemon juice<br>
-                    2 oz. pineapple juice<br>
-                    <br>
-                    Good shake<br>
-                    Add crushed ice<br>
-                    Double strain into highball<br>
-                    Garnish with pineapple wedge<br>
-                </div>
+    <div class="cocktail cocktail-blue-feelings">
+        <img class="cocktail-image" src="/img/Blue Feelings.jpg" alt="Blue Feelings" draggable="false">
+        <div class="cocktail-text-wrapper">
+            <div class="cocktail-title">Blue Feelings</div>
+            <div class="cocktail-recipe">
+                0.75 oz. vodka<br>
+                0.75 oz. malibu<br>
+                0.75 oz. blue curaçao<br>
+                0.75 oz. coconut cream<br>
+                0.75 oz. lemon juice<br>
+                2 oz. pineapple juice<br>
+                <br>
+                Good shake<br>
+                Add crushed ice<br>
+                Double strain into highball<br>
+                Garnish with pineapple wedge<br>
             </div>
         </div>
+    </div>
 
-        <div class="cocktail cocktail-kahlua-sour">
-            <img class="cocktail-image" src="/img/Kahlua Sour.jpg" alt="Kahlua Sour" draggable="false">
-            <div class="cocktail-text-wrapper">
-                <div class="cocktail-title">Kahlua Sour</div>
-                <div class="cocktail-recipe">
-                    2 oz. kahlua<br>
-                    0.75 oz. lemon juice<br>
-                    0.5 oz. simple syrup<br>
-                    0.5 oz. egg white<br>
-                    <br>
-                    Dry shake, then good shake<br>
-                    Add ice<br>
-                    Strain into an old fashioned<br>
-                    Garnish with lemon slice<br>
-                </div>
+    <div class="cocktail cocktail-kahlua-sour">
+        <img class="cocktail-image" src="/img/Kahlua Sour.jpg" alt="Kahlua Sour" draggable="false">
+        <div class="cocktail-text-wrapper">
+            <div class="cocktail-title">Kahlua Sour</div>
+            <div class="cocktail-recipe">
+                2 oz. kahlua<br>
+                0.75 oz. lemon juice<br>
+                0.5 oz. simple syrup<br>
+                0.5 oz. egg white<br>
+                <br>
+                Dry shake, then good shake<br>
+                Add ice<br>
+                Strain into an old fashioned<br>
+                Garnish with lemon slice<br>
             </div>
         </div>
+    </div>
 
-        <div class="cocktail cocktail-daquiri">
-            <img class="cocktail-image" src="/img/Daquiri.jpg" alt="Daquiri" draggable="false">
-            <div class="cocktail-text-wrapper">
-                <div class="cocktail-title">Daquiri</div>
-                <div class="cocktail-recipe">
-                    2 oz. white rum<br>
-                    1 oz. lime juice<br>
-                    1 oz. simple syrup<br>
-                    <br>
-                    Good shake<br>
-                    Strain into chilled coupe glass<br>
-                    Garnish with lime wheel<br>
-                </div>
+    <div class="cocktail cocktail-daquiri">
+        <img class="cocktail-image" src="/img/Daquiri.jpg" alt="Daquiri" draggable="false">
+        <div class="cocktail-text-wrapper">
+            <div class="cocktail-title">Daquiri</div>
+            <div class="cocktail-recipe">
+                2 oz. white rum<br>
+                1 oz. lime juice<br>
+                1 oz. simple syrup<br>
+                <br>
+                Good shake<br>
+                Strain into chilled coupe glass<br>
+                Garnish with lime wheel<br>
             </div>
         </div>
+    </div>
 
-        <div class="cocktail cocktail-mr-bali-hai">
-            <img class="cocktail-image" src="/img/Mr Bali Hai.jpg" alt="Mr Bali Hai" draggable="false">
-            <div class="cocktail-text-wrapper">
-                <div class="cocktail-title">Mr Bali Hai</div>
-                <div class="cocktail-recipe">
-                    1 oz. white rum<br>
-                    0.5 oz. dark rum<br>
-                    1 oz. malibu<br>
-                    1.5 oz. pineapple juice<br>
-                    1 oz. lemon juice<br>
-                    1 oz. simple syrup<br>
-                    <br>
-                    Shake<br>
-                    Add crushed ice<br>
-                    Fill in highball<br>
-                    Garnish with pineapple wedge<br>
-                </div>
+    <div class="cocktail cocktail-mr-bali-hai">
+        <img class="cocktail-image" src="/img/Mr Bali Hai.jpg" alt="Mr Bali Hai" draggable="false">
+        <div class="cocktail-text-wrapper">
+            <div class="cocktail-title">Mr Bali Hai</div>
+            <div class="cocktail-recipe">
+                1 oz. white rum<br>
+                0.5 oz. dark rum<br>
+                1 oz. malibu<br>
+                1.5 oz. pineapple juice<br>
+                1 oz. lemon juice<br>
+                1 oz. simple syrup<br>
+                <br>
+                Shake<br>
+                Add crushed ice<br>
+                Fill in highball<br>
+                Garnish with pineapple wedge<br>
             </div>
         </div>
     </div>
@@ -140,23 +136,17 @@
 
 <style>
     .mixology-wrapper {
-        overflow: hidden;
-        position: relative;
-    }
-
-    .horizontal-container {
         display: flex;
-        justify-content: space-between;
-        gap: 7.6vw;
+        gap: 7vw;
+        padding: 4vh 0;
+        width: 180vw;
     }
 
     .cocktail {
         position: relative;
-        width: 40vh;
-        height: 53.16vh;
         overflow: hidden;
         border-radius: 0.5rem;
-        min-width: 340px;
+        width: 100%;
     }
 
     .cocktail::before {
