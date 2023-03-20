@@ -2,6 +2,7 @@
 const { title } = Astro.props;
 import CrtIntro from "@components/CrtIntro/CrtIntro.svelte";
 import Head from "@components/Head/Head.svelte";
+import Scrollbar from "@components/Scrollbar/Scrollbar.svelte";
 import Header from "@components/Header/Header.svelte";
 import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
 ---
@@ -13,6 +14,7 @@ import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
     <body>
         <div class="main-content">
             <Header client:load/>
+            <Scrollbar client:load/>
 
             <div class="smooth-wrapper">
                 <div id="smooth-content">
