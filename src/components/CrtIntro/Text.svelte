@@ -241,31 +241,24 @@
 </script>
 
 <div id="txt">
-    <div class="glitch top red-shadow">OBLIVIOUS</div>
-    <div class="glitch bottom red-shadow">OBLIVIOUS</div>
+    <div class="glitch top back-shadow">OBLIVIOUS</div>
+    <div class="glitch bottom back-shadow">OBLIVIOUS</div>
 </div>
 
 <style>
     @media (prefers-color-scheme: light) {
-        .red-shadow {
-            text-shadow: -7px 0 var(--bone);
+        .back-shadow {
+            text-shadow: -7px 0 rgba(227, 218, 201, 0.29);
         }
     }
     @media (prefers-color-scheme: dark) {
-        .red-shadow {
-            text-shadow: -7px 0 rgba(255, 0, 106, 0.5);
+        .back-shadow {
+            text-shadow: -7px 0 rgba(255, 0, 106, 0.29);
         }
     }
 
-    .bottom {
+    .top, .bottom {
         font-size: 7vw;
-        -webkit-clip-path: inset(58% 0 0 0);
-        clip-path: inset(58% 0 0 0);
-    }
-
-    .top {
-        -webkit-clip-path: inset(0 0 41% 0);
-        clip-path: inset(0 0 41%);
     }
 
     .glitch {
