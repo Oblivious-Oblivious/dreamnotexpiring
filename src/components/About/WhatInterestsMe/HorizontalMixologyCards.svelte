@@ -24,7 +24,6 @@
     });
 </script>
 
-<!-- TODO Add mouse hover tilt -->
 <div class="mixology-wrapper">
     <div class="horizontal-container">
         <div class="cocktail cocktail-amaretto-sour">
@@ -167,7 +166,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 80%);;
+        background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 80%);
         z-index: 0;
     }
 
