@@ -8,12 +8,6 @@
     onMount(() => {
         gsap.set(".what-interests-me", {
             y: "-25vh",
-        });
-
-        gsap.fromTo(".what-interests-me", {
-            opacity: 0,
-        }, {
-            opacity: 1,
             autoAlpha: 1,
         });
     });
