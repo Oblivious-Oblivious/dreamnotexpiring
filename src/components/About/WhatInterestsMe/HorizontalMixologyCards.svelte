@@ -187,7 +187,7 @@
         width: 100%;
         bottom: 0;
         padding: 1rem;
-        color: var(fg-color);
+        color: var(--snow);
         transition: background-color 1s ease;
     }
 
