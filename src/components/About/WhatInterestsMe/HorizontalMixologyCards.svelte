@@ -12,13 +12,13 @@
         });
 
         gsap.to(cocktails, {
-            xPercent: -100 * cocktails.length,
+            xPercent: -100 * (cocktails.length + 2),
             ease: "none",
             scrollTrigger: {
                 trigger: ".horizontal-container",
                 pin: true,
                 scrub: true,
-                end: "+=1800",
+                end: "+=2500",
             }
         });
     });
