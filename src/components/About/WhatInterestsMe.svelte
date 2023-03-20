@@ -14,23 +14,23 @@
 </script>
 
 <div class="what-interests-me" style="visibility: hidden;">
-    <InterestBoldWord client:load/>
+    <InterestBoldWord/>
 
     <div class="spacer"></div>
 
-    <SoftwareLinks client:load/>
+    <SoftwareLinks/>
 
     <div class="spacer"></div>
     <div class="spacer"></div>
 
-    <ParallaxMixcloudLinks client:load/>
+    <ParallaxMixcloudLinks/>
 
     <div class="spacer"></div>
     <div class="spacer"></div>
     <div class="spacer"></div>
     <div class="spacer"></div>
 
-    <HorizontalMixologyCards client:load/>
+    <HorizontalMixologyCards/>
 </div>
 
 <style>
