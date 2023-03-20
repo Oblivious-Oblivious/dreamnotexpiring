@@ -39,7 +39,8 @@
                     1 dash of angostura bitters<br>
                     <br>
                     Dry shake, then normal shake<br>
-                    Serve into an iced old fashioned<br>
+                    Add ice<br>
+                    Serve into an old fashioned<br>
                     Garnish with orange peel<br>
                 </div>
             </div>
@@ -92,8 +93,9 @@
                     0.5 oz. simple syrup<br>
                     0.5 oz. egg white<br>
                     <br>
-                    Dry shake, then good shake with ice<br>
-                    Fine strain into iced old fashioned<br>
+                    Dry shake, then good shake<br>
+                    Add ice<br>
+                    Strain into an old fashioned<br>
                     Garnish with lemon slice<br>
                 </div>
             </div>
@@ -128,7 +130,8 @@
                     1 oz. simple syrup<br>
                     <br>
                     Shake<br>
-                    Fill in highball with crushed ice<br>
+                    Add crushed ice<br>
+                    Fill in highball<br>
                     Garnish with pineapple wedge<br>
                 </div>
             </div>
