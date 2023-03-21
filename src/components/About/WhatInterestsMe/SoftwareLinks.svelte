@@ -29,19 +29,17 @@
                 opacity: 1,
             });
 
-            var fromx;
-            if(`${link.classList[1].toString()}` === "software-margaret")
-                fromx = { xPercent: 10 };
-            else
-                fromx = { xPercent: -10 };
-
-            const reveal_text = gsap.fromTo(`.${link.classList[1].toString()} .software-overlay .software-text`, fromx, {
-                paused: true,
-                duration: 0.4,
-                autoAlpha: 1,
-                xPercent: 0,
-                stagger: 0.1,
-            });
+            const reveal_text = gsap.fromTo(
+                `.${link.classList[1].toString()} .software-text`,
+                `${link.classList[1].toString()}` === "software-margaret" ? { xPercent: 10 } : { xPercent: -10 },
+                {
+                    paused: true,
+                    duration: 0.4,
+                    autoAlpha: 1,
+                    xPercent: 0,
+                    stagger: 0.1,
+                }
+            );
 
             link.addEventListener("mouseenter", () => {
                 scale_image.play();
@@ -61,22 +59,20 @@
             <img src="/img/salsa.png" alt="Salsa Pomodoro" draggable="false">
         </a>
 
-        <div class="software-overlay">
-            <div class="software-text software-name">Salsa: Pomodoro Timer</div>
-            <div class="software-text software-description-intro">
-                Salsa is a minimalistic app for pomodoro timers.
-                Stay focused without distractions.
-                Work, study, get things done.
-                <br><br>
-            </div>
-            <div class="software-text software-description-details">
-                With Salsa you can set different combinations
-                of timers, decide if you want long breaks and
-                choose the number of sets you are aiming to complete.
-            </div>
-            <div class="software-text software-copyright">
-                © Oblivious
-            </div>
+        <div class="software-text software-name">Salsa: Pomodoro Timer</div>
+        <div class="software-text software-description-intro">
+            Salsa is a minimalistic app for pomodoro timers.
+            Stay focused without distractions.
+            Work, study, get things done.
+            <br><br>
+        </div>
+        <div class="software-text software-description-details">
+            With Salsa you can set different combinations
+            of timers, decide if you want long breaks and
+            choose the number of sets you are aiming to complete.
+        </div>
+        <div class="software-text software-copyright">
+            © Oblivious
         </div>
     </div>
 
@@ -85,22 +81,20 @@
             <img src="/img/aerocss.png" alt="Salsa Pomodoro" draggable="false">
         </a>
 
-        <div class="software-overlay">
-            <div class="software-text software-name">Aero CSS</div>
-            <div class="software-text software-description-intro">
-                CSS framework inspired by the
-                utility classes of tailwind.
-                <br><br>
-            </div>
-            <div class="software-text software-description-details">
-                Aero CSS is a css framework written in sass,
-                inheritic from the utility-first design of
-                tailwind. It offers utility classes for all
-                basic css allowing for in-line html styling.
-            </div>
-            <div class="software-text software-copyright">
-                © Oblivious
-            </div>
+        <div class="software-text software-name">Aero CSS</div>
+        <div class="software-text software-description-intro">
+            CSS framework inspired by the
+            utility classes of tailwind.
+            <br><br>
+        </div>
+        <div class="software-text software-description-details">
+            Aero CSS is a css framework written in sass,
+            inheritic from the utility-first design of
+            tailwind. It offers utility classes for all
+            basic css allowing for in-line html styling.
+        </div>
+        <div class="software-text software-copyright">
+            © Oblivious
         </div>
     </div>
 
@@ -109,21 +103,19 @@
             <img src="/img/margaret.png" alt="Salsa Pomodoro" draggable="false">
         </a>
 
-        <div class="software-overlay">
-            <div class="software-text software-name">Margaret</div>
-            <div class="software-text software-description-intro">
-                An object oriented language system
-                based on ruby and smalltalk.
-                <br><br>
-            </div>
-            <div class="software-text software-description-details">
-                Margaret is a modern programming language focused around
-                objects and messages. It offers powerful literals, easy
-                to use objects and smalltalk-like message structures.
-            </div>
-            <div class="software-text software-copyright">
-                © Oblivious
-            </div>
+        <div class="software-text software-name">Margaret</div>
+        <div class="software-text software-description-intro">
+            An object oriented language system
+            based on ruby and smalltalk.
+            <br><br>
+        </div>
+        <div class="software-text software-description-details">
+            Margaret is a modern programming language focused around
+            objects and messages. It offers powerful literals, easy
+            to use objects and smalltalk-like message structures.
+        </div>
+        <div class="software-text software-copyright">
+            © Oblivious
         </div>
     </div>
 </div>
