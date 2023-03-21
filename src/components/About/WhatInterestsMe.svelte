@@ -1,9 +1,9 @@
 <script>
     import { onMount } from "svelte";
     import InterestBoldWord from "./WhatInterestsMe/InterestBoldWord.svelte";
-    import SoftwareLinks from "./WhatInterestsMe/SoftwareLinks.svelte";
-    import ParallaxMixcloudLinks from "./WhatInterestsMe/ParallaxMixcloudLinks.svelte";
-    import HorizontalMixologyCards from "./WhatInterestsMe/HorizontalMixologyCards.svelte";
+    import Software from "./WhatInterestsMe/Software.svelte";
+    import Djing from "./WhatInterestsMe/Djing.svelte";
+    import Mixology from "./WhatInterestsMe/Mixology.svelte";
 
     onMount(() => {
         gsap.set(".what-interests-me", {
@@ -18,19 +18,19 @@
 
     <div class="spacer"></div>
 
-    <SoftwareLinks/>
+    <Software/>
 
     <div class="spacer"></div>
     <div class="spacer"></div>
 
-    <ParallaxMixcloudLinks/>
+    <Djing/>
 
     <div class="spacer"></div>
     <div class="spacer"></div>
     <div class="spacer"></div>
     <div class="spacer"></div>
 
-    <HorizontalMixologyCards/>
+    <Mixology/>
 </div>
 
 <style>
