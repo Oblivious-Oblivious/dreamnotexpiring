@@ -23,7 +23,6 @@
                 pin: true,
                 scrub: true,
                 end: "+=2000",
-                invalidateOnRefresh: true,
             }
         });
     });

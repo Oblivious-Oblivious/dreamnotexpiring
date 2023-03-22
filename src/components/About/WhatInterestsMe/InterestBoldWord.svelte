@@ -17,7 +17,6 @@
                 // markers: true,
                 pin: true,
                 scrub: true,
-                invalidateOnRefresh: true,
             },
         })
         .from(".interest-technical .interest-letter", {

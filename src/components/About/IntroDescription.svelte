@@ -31,7 +31,6 @@
                 // markers: true,
                 pin: true,
                 scrub: true,
-                invalidateOnRefresh: true,
             },
         })
         .to(".intro-word", {
