@@ -23,7 +23,6 @@
 <style>
     @media (prefers-color-scheme: light) {
         .noise {
-            -webkit-filter: invert(100%);
             filter: invert(100%);
         }
     }
