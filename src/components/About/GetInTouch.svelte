@@ -2,9 +2,7 @@
     import { onMount } from "svelte";
 
     onMount(() => {
-        // gsap.registerPlugin(ScrollTrigger);
-
-        gsap.set(".get-in-touch", {
+        gsap.set(".contact-me-wrapper", {
             autoAlpha: 1,
         });
     });

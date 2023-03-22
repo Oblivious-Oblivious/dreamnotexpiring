@@ -4,6 +4,10 @@
     onMount(() => {
         gsap.registerPlugin(ScrollTrigger);
 
+        gsap.set(".mixology-wrapper", {
+            autoAlpha: 1,
+        });
+
         const cocktails = gsap.utils.toArray(".cocktail");
 
         gsap.set(".cocktail", {
@@ -24,7 +28,7 @@
     });
 </script>
 
-<div class="mixology-wrapper">
+<div class="mixology-wrapper" style="visibility: hidden;">
     <div class="cocktail cocktail-amaretto-sour">
         <img class="cocktail-image" src="/img/Amaretto Sour.jpg" alt="Amaretto Sour" draggable="false">
         <div class="cocktail-text-wrapper">

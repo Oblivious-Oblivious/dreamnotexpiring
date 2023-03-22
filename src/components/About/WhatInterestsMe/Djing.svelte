@@ -4,6 +4,10 @@
     onMount(() => {
         gsap.registerPlugin(ScrollTrigger);
 
+        gsap.set(".djing-parallax-wrapper", {
+            autoAlpha: 1,
+        });
+
         gsap.set(".parallax-genre-river", {
             xPercent: 35,
             yPercent: 61.25,
@@ -106,7 +110,7 @@
     });
 </script>
 
-<div class="djing-parallax-wrapper">
+<div class="djing-parallax-wrapper" style="visibility: hidden;">
     <div class="parallax-card parallax-genre-river">
         <a href="https://www.mixcloud.com/itsoblivious/genre-river/" draggable="false">
             <img src="/img/genre-river.jpg" alt="Genre River" draggable="false">
@@ -182,6 +186,7 @@
         position: absolute;
         color: white;
         font-size: 1.95vw;
+        font-weight: 500;
         text-shadow: pink 0 0 20px;
         padding: 0 0.1vw;
         background-color: black;
