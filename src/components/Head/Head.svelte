@@ -36,8 +36,6 @@
     <!-- <script is:inline src="https://cdn.jsdelivr.net/npm/@swup/js-plugin@1.0.5/dist/SwupJsPlugin.min.js"></script> -->
     <script is:inline src="/js/SwupJsPlugin.min.js"></script>
     <!-- <script is:inline src="https://cdn.jsdelivr.net/npm/@swup/head-plugin@1.3.0/dist/SwupHeadPlugin.min.js"></script> -->
-    <script is:inline src="/js/SwupPreloadPlugin.min.js"></script>
-    <!-- <script is:inline src="https://unpkg.com/@swup/preload-plugin@2"></script> -->
 
     <!-- Sitemap -->
     <!-- <link rel="sitemap" href="/sitemap.xml"> -->
