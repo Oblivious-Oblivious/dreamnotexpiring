@@ -204,7 +204,7 @@
     }
 
     .cocktail-title {
-        font-family: "Saol Display";
+        font-family: var(--display-font);
         font-size: 2vw;
         transition: color 1s ease;
         margin-bottom: .5rem;
@@ -253,7 +253,6 @@
     }
 
     .cocktail-recipe {
-        font-family: "Saol Text";
         font-size: 1.2vw;
         font-weight: 500;
         max-height: 0;

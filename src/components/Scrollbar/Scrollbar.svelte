@@ -48,7 +48,7 @@
         position: fixed;
         top: 1vh;
         left: 1vw;
-        font-family: "Saol Display";
+        font-family: var(--display-font);
         font-size: 2.5vw;
         font-weight: 500;
         z-index: 9999;

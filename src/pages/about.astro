@@ -10,19 +10,11 @@ import PageLifecycle from "./PageLifecycle.svelte";
 ---
 
 <MainLayout title="Thanasis Papapostolou - oblivious to the dream">
-    <main>
-        <IntroDescription client:load/>
-        <WhatInterestsMe client:load/>
-        <HowILearn client:load/>
-        <ComputerRelatedTopicsIEnjoy client:load/>
-        <GetInTouch client:load/>
-    </main>
+    <IntroDescription client:load/>
+    <WhatInterestsMe client:load/>
+    <HowILearn client:load/>
+    <ComputerRelatedTopicsIEnjoy client:load/>
+    <GetInTouch client:load/>
 </MainLayout>
 
 <PageLifecycle current_page="about" client:load/>
-
-<style>
-    main {
-        font-family: var(--text-font);
-    }
-</style>

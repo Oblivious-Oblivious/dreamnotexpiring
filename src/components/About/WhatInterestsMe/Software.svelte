@@ -135,7 +135,6 @@
     }
 
     .software-text {
-        font-family: "Saol Text";
         visibility: hidden;
     }
 
@@ -146,6 +145,7 @@
         pointer-events: none;
         text-shadow: 1px 1px #848482;
         font-size: 2vw;
+        font-family: var(--display-font);
         font-weight: 500;
     }
 
