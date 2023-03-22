@@ -2,6 +2,8 @@
     import { onMount } from "svelte";
 
     onMount(() => {
+        gsap.registerPlugin(ScrollTrigger);
+
         gsap.set(".parallax-genre-river", {
             xPercent: 35,
             yPercent: 61.25,

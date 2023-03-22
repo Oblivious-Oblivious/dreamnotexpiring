@@ -2,6 +2,8 @@
     import { onMount } from "svelte";
 
     onMount(() => {
+        gsap.registerPlugin(ScrollTrigger);
+
         const cocktails = gsap.utils.toArray(".cocktail");
 
         gsap.set(".cocktail", {
