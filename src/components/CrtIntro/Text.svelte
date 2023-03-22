@@ -230,7 +230,7 @@
         .set("body", {
             overflow: "auto",
         })
-        .fromTo("#swup", {
+        .fromTo(".smooth-wrapper", {
             opacity: 0,
         }, {
             duration: 0.8,
