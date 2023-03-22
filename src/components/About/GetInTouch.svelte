@@ -13,7 +13,7 @@
             const move_image_up = gsap.to(contact_image, {
                 paused: true,
                 duration: 0.25,
-                yPercent: -25,
+                yPercent: -50,
                 opacity: 0.75,
             });
 
