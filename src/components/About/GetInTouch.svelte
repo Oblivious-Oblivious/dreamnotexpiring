@@ -24,21 +24,13 @@
                 autoAlpha: 1,
             });
 
-            // const dim_section = gsap.to(contact, {
-            //     paused: true,
-            //     duration: 0.25,
-            //     backgroundColor: "#e3dac9",
-            // });
-
             contact.addEventListener("mouseenter", () => {
                 move_image_up.play();
                 move_text_down.play();
-                // dim_section.play();
             });
             contact.addEventListener("mouseleave", () => {
                 move_image_up.reverse();
                 move_text_down.reverse();
-                // dim_section.reverse();
             });
         });
 
@@ -135,5 +127,11 @@
         top: 50%;
         transform: translate(-50%, -50%);
         width: 12vw;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .contact img {
+            filter: invert(100%);
+        }
     }
 </style>
