@@ -146,6 +146,7 @@
         pointer-events: none;
         text-shadow: 1px 1px #848482;
         font-size: 2vw;
+        font-weight: 500;
     }
 
     .software-description-intro {

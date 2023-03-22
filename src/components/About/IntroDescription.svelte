@@ -116,7 +116,6 @@
 
     .intro-word {
         font-size: 2.6vw;
-        font-weight: 400;
     }
 
     .technical,

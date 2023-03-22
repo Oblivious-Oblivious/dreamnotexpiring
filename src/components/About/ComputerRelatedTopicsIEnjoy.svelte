@@ -23,7 +23,6 @@
     .computer-related-topics-i-enjoy {
         p {
             font-size: 2.5vw;
-            font-weight: 400;
         }
     }
 </style>

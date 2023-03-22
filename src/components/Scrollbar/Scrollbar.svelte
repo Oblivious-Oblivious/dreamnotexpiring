@@ -50,6 +50,7 @@
         left: 1vw;
         font-family: "Saol Display";
         font-size: 2.5vw;
+        font-weight: 500;
         z-index: 9999;
     }
 </style>

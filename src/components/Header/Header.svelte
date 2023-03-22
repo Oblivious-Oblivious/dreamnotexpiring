@@ -32,6 +32,7 @@
         top: 2rem;
         width: 100vw;
         font-family: var(--text-font);
+        font-weight: 500;
 
         nav {
             display: flex;

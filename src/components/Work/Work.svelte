@@ -9,5 +9,6 @@
 <style lang="scss">
     h1 {
         font-size: 5rem;
+        font-weight: 500;
     }
 </style>

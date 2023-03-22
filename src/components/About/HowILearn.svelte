@@ -25,7 +25,6 @@
     .how-i-learn {
         p {
             font-size: 2.5vw;
-            font-weight: 400;
         }
     }
 </style>
