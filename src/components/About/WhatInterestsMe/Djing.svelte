@@ -105,6 +105,7 @@
                 start: "top top",
                 end: "+=1500",
                 scrub: true,
+                invalidateOnRefresh: true,
             }
         });
     });
