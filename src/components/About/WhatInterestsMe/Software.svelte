@@ -143,7 +143,7 @@
         top: 3%;
         left: 5%;
         pointer-events: none;
-        text-shadow: 1px 1px #848482;
+        text-shadow: 1px 1px var(--gray);
         font-size: 2vw;
         font-family: var(--display-font);
         font-weight: 500;
@@ -154,7 +154,7 @@
         top: 40%;
         left: 10%;
         pointer-events: none;
-        text-shadow: 1px 1px #848482;
+        text-shadow: 1px 1px var(--gray);
         font-size: 1.36vw;
         transform: translate(-5%, -50%);
     }
@@ -164,7 +164,7 @@
         top: 70%;
         left: 10%;
         pointer-events: none;
-        text-shadow: 1px 1px #848482;
+        text-shadow: 1px 1px var(--gray);
         font-size: 1.12vw;
         transform: translate(-5%, -50%);
     }
@@ -174,7 +174,7 @@
         bottom: 2%;
         right: 4%;
         pointer-events: none;
-        text-shadow: 1px 1px #848482;
+        text-shadow: 1px 1px var(--gray);
         font-size: 0.96vw;
     }
 
