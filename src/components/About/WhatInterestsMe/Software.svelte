@@ -193,7 +193,12 @@
     .software-link a:hover {
         /* TODO Fix blur not applying rounded corners */
         filter: blur(15px);
-        transition: all 400ms ease;
+        transition: filter 400ms ease;
+    }
+
+    .software-link a:not(:hover) {
+        filter: 0;
+        transition: filter 800ms ease;
     }
 
     img {
