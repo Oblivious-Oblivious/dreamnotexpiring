@@ -102,7 +102,7 @@
     </div>
 </div>
 
-<style lang="scss">
+<style>
     .intro-description,
     .intro-line,
     .intro-word {

@@ -19,10 +19,8 @@
     <p>* Obfuscated Quines</p>
 </div>
 
-<style lang="scss">
-    .computer-related-topics-i-enjoy {
-        p {
-            font-size: 2.5vw;
-        }
+<style>
+    .computer-related-topics-i-enjoy p {
+        font-size: 2.5vw;
     }
 </style>

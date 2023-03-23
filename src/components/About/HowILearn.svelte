@@ -21,10 +21,8 @@
     <p>Show full diagram in the end</p>
 </div>
 
-<style lang="scss">
-    .how-i-learn {
-        p {
-            font-size: 2.5vw;
-        }
+<style>
+    .how-i-learn p {
+        font-size: 2.5vw;
     }
 </style>

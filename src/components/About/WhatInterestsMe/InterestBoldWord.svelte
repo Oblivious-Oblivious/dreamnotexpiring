@@ -104,22 +104,22 @@
     </div>
 </div>
 
-<style lang="scss">
+<style>
     .interest-bold-word {
         position: absolute;
         z-index: 9999;
-    
-        .interest-technical,
-        .interest-interactive,
-        .interest-artistic {
-            font-family: "Saol Display";
-            font-size: 2.6vw;
-            font-weight: 800;
-            font-style: italic;
-            margin: 0;
-            line-height: 0;
-            display: flex;
-            gap: 0;
-        }
+    }
+
+    .interest-technical,
+    .interest-interactive,
+    .interest-artistic {
+        font-family: "Saol Display";
+        font-size: 2.6vw;
+        font-weight: 800;
+        font-style: italic;
+        margin: 0;
+        line-height: 0;
+        display: flex;
+        gap: 0;
     }
 </style>

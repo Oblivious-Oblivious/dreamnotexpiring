@@ -6,7 +6,7 @@
     <h1>WORK {number}</h1>
 </div>
 
-<style lang="scss">
+<style>
     h1 {
         font-size: 5rem;
         font-family: var(--display-font);
