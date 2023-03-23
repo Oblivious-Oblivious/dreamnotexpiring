@@ -151,7 +151,7 @@
     .cocktail {
         position: relative;
         overflow: hidden;
-        border-radius: 0.5rem;
+        border-radius: 0.55vw;
         width: 100%;
     }
 
@@ -181,7 +181,7 @@
         position: absolute;
         width: 100%;
         bottom: 0;
-        padding: 1rem;
+        padding: 1.1vw;
         color: var(--snow);
         transition: background-color 1s ease;
     }
@@ -207,46 +207,46 @@
         font-family: var(--display-font);
         font-size: 2vw;
         transition: color 1s ease;
-        margin-bottom: .5rem;
+        margin-bottom: 0.55vw;
     }
 
     .cocktail-amaretto-sour {
-        box-shadow: 0 0 1rem var(--orange);
+        border: 1px var(--orange) solid;
     }
     .cocktail-amaretto-sour:hover .cocktail-title {
         color: var(--orange);
     }
 
     .cocktail-appletini {
-        box-shadow: 0 0 1rem var(--yellow);
+        border: 1px var(--yellow) solid;
     }
     .cocktail-appletini:hover .cocktail-title {
         color: var(--yellow);
     }
 
     .cocktail-blue-feelings {
-        box-shadow: 0 0 1rem var(--teal);
+        border: 1px var(--teal) solid;
     }
     .cocktail-blue-feelings:hover .cocktail-title {
         color: var(--teal);
     }
 
     .cocktail-kahlua-sour {
-        box-shadow: 0 0 1rem var(--coffee);
+        border: 1px var(--coffee) solid;
     }
     .cocktail-kahlua-sour:hover .cocktail-title {
         color: var(--brown);
     }
 
     .cocktail-daquiri {
-        box-shadow: 0 0 1rem var(--coral);
+        border: 1px var(--coral) solid;
     }
     .cocktail-daquiri:hover .cocktail-title {
         color: var(--coral);
     }
 
     .cocktail-mr-bali-hai {
-        box-shadow: 0 0 1rem var(--olive);
+        border: 1px var(--olive) solid;
     }
     .cocktail-mr-bali-hai:hover .cocktail-title {
         color: var(--olive);
