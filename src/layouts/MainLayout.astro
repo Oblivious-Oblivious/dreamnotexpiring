@@ -1,8 +1,9 @@
 ---
-const { title } = Astro.props;
+const { title, current_page } = Astro.props;
 import CrtIntro from "@components/CrtIntro/CrtIntro.svelte";
 import Head from "@components/Head/Head.svelte";
 import Scrollbar from "@components/Scrollbar/Scrollbar.svelte";
+import ThemeToggle from "@components/ThemeToggle/ThemeToggle.svelte";
 import Header from "@components/Header/Header.svelte";
 import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
 ---
@@ -96,13 +97,14 @@ import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
 </script>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark-theme || light-theme">
     <Head {title}/>
 
     <body onload="">
         <div class="main-content">
             <Header client:load/>
             <Scrollbar client:load/>
+            <ThemeToggle client:load/>
 
             <div class="smooth-wrapper">
                 <div id="smooth-content">
@@ -145,10 +147,6 @@ import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
         -ms-user-select: none;
         user-select: none;
         cursor: default;
-
-        /* Colors */
-        color: var(--fg-color);
-        background-color: var(--bg-color);
     }
 
     /* Hide scrollbar */
@@ -158,19 +156,6 @@ import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
     }
     body::-webkit-scrollbar {
         display: none;
-    }
-
-    @media (prefers-color-scheme: light) {
-        :root {
-            --fg-color: var(--night);
-            --bg-color: var(--bone);
-        }
-    }
-    @media (prefers-color-scheme: dark) {
-        :root {
-            --fg-color: var(--smoke);
-            --bg-color: var(--night);
-        }
     }
 
     code {

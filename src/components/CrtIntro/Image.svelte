@@ -1,16 +1,4 @@
-<script>
-    import { onMount } from "svelte";
-
-    var crt;
-
-    onMount(() => {
-        crt = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
-            ? "/img/crt-dark.jpg"
-            : "/img/crt-light.jpg";
-    });
-</script>
-
-<img class="crt" src={crt} alt="A 90s CRT tv">
+<img class="crt" src="/img/crt-dark.jpg" alt="A 90s CRT tv">
 
 <style>
     img {

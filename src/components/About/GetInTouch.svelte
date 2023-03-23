@@ -42,29 +42,29 @@
 
     <div class="contact-wrapper" style="visibility: hidden;">
         <div class="contact contact-email">
-            <a href="mailto:thanos.papap42@gmail.com">
-                <img src="/img/at-sign.png" alt="Email">
+            <a href="mailto:thanos.papap42@gmail.com" draggable="false">
+                <img src="/img/at-sign.png" alt="Email" draggable="false">
             </a>
             <div class="contact-text">Email</div>
         </div>
     
         <div class="contact contact-instagram">
-            <a href="https://www.instagram.com/thanasis_papap/">
-                <img src="/img/instagram.png" alt="Instagram">
+            <a href="https://www.instagram.com/thanasis_papap/" draggable="false">
+                <img src="/img/instagram.png" alt="Instagram" draggable="false">
             </a>
             <div class="contact-text">Instagram</div>
         </div>
     
         <div class="contact contact-linkedin">
-            <a href="https://www.linkedin.com/in/thanasis-papapostolou/">
-                <img src="/img/linkedin.png" alt="LinkedIn">
+            <a href="https://www.linkedin.com/in/thanasis-papapostolou/" draggable="false">
+                <img src="/img/linkedin.png" alt="LinkedIn" draggable="false">
             </a>
             <div class="contact-text">LinkedIn</div>
         </div>
     
         <div class="contact contact-twitter">
-            <a href="https://twitter.com/itsoblivious99">
-                <img src="/img/twitter.png" alt="Twitter">
+            <a href="https://twitter.com/itsoblivious99" draggable="false">
+                <img src="/img/twitter.png" alt="Twitter" draggable="false">
             </a>
             <div class="contact-text">Twitter</div>
         </div>
@@ -127,11 +127,6 @@
         top: 50%;
         transform: translate(-50%, -50%);
         width: 12vw;
-    }
-
-    @media (prefers-color-scheme: dark) {
-        .contact img {
-            filter: invert(100%);
-        }
+        filter: invert(var(--invert-value));
     }
 </style>

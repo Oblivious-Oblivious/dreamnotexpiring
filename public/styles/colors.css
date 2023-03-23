@@ -12,4 +12,30 @@
     --snow: #fffafa;        --white: #f7f7f7;   --smoke: #f5f5f5;       --bone: #e3dac9;
     --silver: #c0c0c0;      --gray: #848482;    --dim: #555555;         --metal: #2a3439;
     --onyx: #353839;        --black: #1b1b1b;   --raisin: #242124;      --night: #111111;
+
+    /* Colors */
+    color: var(--fg-color);
+    background-color: var(--bg-color);
+}
+
+.light-theme {
+    --fg-color: var(--night);
+    --bg-color: var(--bone);
+    --accent-color: var(--rose);
+    --neuromorphic-shadow: 5px 5px 6.5px 0 rgba(0, 0, 0, 0.25),
+                           -3px -3px 4.5px 0 rgba(255, 255, 255, 0.3);
+    --neuromorphic-shadow-pressed: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.3),
+                                   inset -6px -6px 10px 0 rgba(255, 255, 255, 0.25);
+    --invert-value: 0;
+}
+
+.dark-theme {
+    --fg-color: var(--smoke);
+    --bg-color: var(--night);
+    --accent-color: var(--rose);
+    --neuromorphic-shadow: 5px 5px 6.5px 0 rgba(0, 0, 0, 1),
+                           -3px -3px 4.5px 0 rgba(255, 255, 255, 0.05);
+    --neuromorphic-shadow-pressed: inset 6px 6px 10px 0 rgba(0, 0, 0, 1),
+                                       inset -6px -6px 10px 0 rgba(255, 255, 255, 0.05);
+    --invert-value: 1;
 }

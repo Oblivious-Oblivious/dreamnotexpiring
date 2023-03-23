@@ -21,12 +21,6 @@
 </div>
 
 <style>
-    @media (prefers-color-scheme: light) {
-        .noise {
-            filter: invert(100%);
-        }
-    }
-
     .noise {
         font-family: var(--road-rage-font);
         overflow: hidden;

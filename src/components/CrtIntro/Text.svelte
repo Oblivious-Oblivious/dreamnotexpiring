@@ -246,15 +246,8 @@
 </div>
 
 <style>
-    @media (prefers-color-scheme: light) {
-        .back-shadow {
-            text-shadow: -7px 0 rgba(227, 218, 201, 0.29);
-        }
-    }
-    @media (prefers-color-scheme: dark) {
-        .back-shadow {
-            text-shadow: -7px 0 rgba(255, 0, 106, 0.29);
-        }
+    .back-shadow {
+        text-shadow: -7px 0 rgba(255, 0, 106, 0.29);
     }
 
     .top, .bottom {
