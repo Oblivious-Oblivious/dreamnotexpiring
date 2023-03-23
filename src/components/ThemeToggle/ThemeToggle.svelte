@@ -3,9 +3,8 @@
     import { theme } from "@persistence/theme_toggle";
 
     var image = "/img/moon.png";
-
     onMount(() => {
-        document.querySelector(".theme-button").addEventListener("click", () => {
+        const toggle_theme = () => {
             if($theme === "dark") {
                 image = "/img/sun.png";
                 $theme = "light";
@@ -16,7 +15,14 @@
                 image = "/img/moon.png";
                 document.querySelector("html").classList.add("dark-theme");
             }
+        }
+
+        document.querySelector(".theme-button").addEventListener("click", () => {
+            toggle_theme();
         });
+
+        if(window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches)
+            toggle_theme();
     });
 </script>
 
@@ -45,7 +51,6 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        /* border: 1px green solid; */
     }
 
     .theme-button:hover {
