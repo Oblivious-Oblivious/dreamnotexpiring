@@ -1,4 +1,4 @@
-TODO Add a custom mouse pointer (circle indicator of actions with possible motion delay)
+TODO Add action indicators on custom mouse pointer
 TODO Add an on:hover playback of mp3s of current mix on djing sections
 
 AFTER IMPLEMENTING ALL COMPONENT ELEMENTS

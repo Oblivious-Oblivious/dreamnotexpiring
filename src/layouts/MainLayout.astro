@@ -2,9 +2,10 @@
 const { title, current_page } = Astro.props;
 import CrtIntro from "@components/CrtIntro/CrtIntro.svelte";
 import Head from "@components/Head/Head.svelte";
+import Header from "@components/Header/Header.svelte";
+import Cursor from "@components/Cursor/Cursor.svelte";
 import Scrollbar from "@components/Scrollbar/Scrollbar.svelte";
 import ThemeToggle from "@components/ThemeToggle/ThemeToggle.svelte";
-import Header from "@components/Header/Header.svelte";
 import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
 ---
 
@@ -103,6 +104,7 @@ import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
     <body onload="">
         <div class="main-content">
             <Header client:load/>
+            <Cursor client:load/>
             <Scrollbar client:load/>
             <ThemeToggle client:load/>
 
