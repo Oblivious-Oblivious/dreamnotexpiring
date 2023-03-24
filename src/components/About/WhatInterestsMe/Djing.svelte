@@ -81,12 +81,28 @@
                 scaleX: -1,
             });
 
+            const audio = new Audio(
+                `/sound/${card.classList[1]
+                    .toString()
+                    .split("-")
+                    .slice(1)
+                    .join("-")
+                }.mp3`
+            );
+            audio.loop = true;
+            audio.currentTime = 1;
+            audio.volume = 0.2;
+
+            const play_audio = () => audio.play();
+            const stop_audio = () => audio.pause();
+
             card.addEventListener("mouseenter", () => {
                 active_noise.play();
                 noise_reveal.play();
                 image_flip.play();
                 card_rotate.play();
                 text_reveal.play();
+                play_audio();
             });
 
             card.addEventListener("mouseleave", () => {
@@ -95,6 +111,7 @@
                 image_flip.reverse();
                 card_rotate.reverse();
                 text_reveal.reverse();
+                stop_audio();
             });
         });
 
