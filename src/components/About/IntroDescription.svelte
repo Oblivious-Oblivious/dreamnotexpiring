@@ -16,8 +16,9 @@
         });
 
         gsap.from(".intro-line", {
-            yPercent: 100,
-            autoAlpha: 0,
+            duration: 0.65,
+            yPercent: 75,
+            clipPath: "inset(0 0 100% 0)",
             stagger: 0.075,
             ease: "power2.out",
         });
