@@ -212,6 +212,7 @@
 
     .cocktail-amaretto-sour {
         border: 1px var(--orange) solid;
+        box-shadow: var(--neuromorphic-shadow2);
     }
     .cocktail-amaretto-sour:hover .cocktail-title {
         color: var(--orange);
@@ -219,6 +220,7 @@
 
     .cocktail-appletini {
         border: 1px var(--yellow) solid;
+        box-shadow: var(--neuromorphic-shadow2);
     }
     .cocktail-appletini:hover .cocktail-title {
         color: var(--yellow);
@@ -226,6 +228,7 @@
 
     .cocktail-blue-feelings {
         border: 1px var(--teal) solid;
+        box-shadow: var(--neuromorphic-shadow2);
     }
     .cocktail-blue-feelings:hover .cocktail-title {
         color: var(--teal);
@@ -233,6 +236,7 @@
 
     .cocktail-kahlua-sour {
         border: 1px var(--coffee) solid;
+        box-shadow: var(--neuromorphic-shadow2);
     }
     .cocktail-kahlua-sour:hover .cocktail-title {
         color: var(--brown);
@@ -240,6 +244,7 @@
 
     .cocktail-daquiri {
         border: 1px var(--coral) solid;
+        box-shadow: var(--neuromorphic-shadow2);
     }
     .cocktail-daquiri:hover .cocktail-title {
         color: var(--coral);
@@ -247,6 +252,7 @@
 
     .cocktail-mr-bali-hai {
         border: 1px var(--olive) solid;
+        box-shadow: var(--neuromorphic-shadow2);
     }
     .cocktail-mr-bali-hai:hover .cocktail-title {
         color: var(--olive);

@@ -183,8 +183,10 @@
         display: block;
         text-align: center;
         border-radius: 5px;
-        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25), 0 0 0.5em 0 var(--fg-color);
-        background-color: rgba(255, 255, 255, 0.075);
+        /* box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25), 0 0 0.5em 0 var(--fg-color); */
+        box-shadow: var(--neuromorphic-shadow2);
+        /* background-color: rgba(255, 255, 255, 0.075); */
+        background-color: var(--bg-color);
         cursor: pointer;
         outline: 0;
         overflow: hidden;

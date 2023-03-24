@@ -160,16 +160,16 @@
     }
 
     .parallax-genre-river img {
-        box-shadow: 0 0 50px 1.1vw var(--lapis);
+        box-shadow: 0 0 50px 1.1vw var(--lapis), var(--neuromorphic-shadow2);
     }
     .parallax-charmer img {
-        box-shadow: 0 0 50px 1.1vw var(--gold);
+        box-shadow: 0 0 50px 1.1vw var(--gold), var(--neuromorphic-shadow2);
     }
     .parallax-future-house-sessions img {
-        box-shadow: 0 0 50px 1.1vw var(--teal);
+        box-shadow: 0 0 50px 1.1vw var(--teal), var(--neuromorphic-shadow2);
     }
     .parallax-waiting-for-summer img {
-        box-shadow: 0 0 50px 1.1vw var(--orange);
+        box-shadow: 0 0 50px 1.1vw var(--orange), var(--neuromorphic-shadow2);
     }
 
     .parallax-genre-river .parallax-title,
