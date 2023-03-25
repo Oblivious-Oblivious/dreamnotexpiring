@@ -26,10 +26,14 @@
                            -3px -3px 4.5px 0 rgba(255, 255, 255, 0.3);
     --neuromorphic-shadow2: 10px 10px 13px 0 rgba(0, 0, 0, 0.25),
                            -6px -6px 9px 0 rgba(255, 255, 255, 0.3);
+    --neuromorphic-shadow3: 29px 29px 40px rgba(0, 0, 0, 0.25),
+                           -8px -8px 40px rgba(255, 255, 255, 0.3);
     --neuromorphic-shadow-pressed: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.3),
                                    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.25);
     --neuromorphic-shadow-pressed2: inset 12px 12px 20px 0 rgba(0, 0, 0, 0.3),
-                                   inset -12px -12px 20px 0 rgba(255, 255, 255, 0.25);
+                                    inset -12px -12px 20px 0 rgba(255, 255, 255, 0.25);
+    --neuromorphic-shadow-pressed3: inset 29px 29px 40px rgba(0, 0, 0, 0.25),
+                                    inset -8px -8px 40px rgba(255, 255, 255, 0.3);
     --invert-value: 0;
 }
 
@@ -41,9 +45,13 @@
                            -3px -3px 4.5px 0 rgba(255, 255, 255, 0.05);
     --neuromorphic-shadow2: 10px 10px 13px 0 rgba(0, 0, 0, 1),
                            -6px -6px 9px 0 rgba(255, 255, 255, 0.05);
+    --neuromorphic-shadow3: 29px 29px 40px rgba(0, 0, 0, 1),
+                           -8px -8px 40px rgba(255, 255, 255, 0.05);
     --neuromorphic-shadow-pressed: inset 6px 6px 10px 0 rgba(0, 0, 0, 1),
-                                       inset -6px -6px 10px 0 rgba(255, 255, 255, 0.05);
+                                   inset -6px -6px 10px 0 rgba(255, 255, 255, 0.05);
     --neuromorphic-shadow-pressed2: inset 12px 12px 20px 0 rgba(0, 0, 0, 1),
-                                       inset -12px -12px 20px 0 rgba(255, 255, 255, 0.05);
+                                    inset -12px -12px 20px 0 rgba(255, 255, 255, 0.05);
+    --neuromorphic-shadow-pressed3: inset 29px 29px 40px rgba(0, 0, 0, 1),
+                                    inset -8px -8px 40px rgba(255, 255, 255, 0.05);
     --invert-value: 1;
 }
