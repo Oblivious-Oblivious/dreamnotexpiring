@@ -32,6 +32,6 @@
         border: 0.01vw var(--fg-color) solid;
         pointer-events: none;
         transition: transform 100ms;
-        z-index: 9999;
+        z-index: 999999;
     }
 </style>
