@@ -187,15 +187,13 @@
     }
 
     .cocktail-amaretto-sour .cocktail-text-wrapper,
-    .cocktail-appletini .cocktail-text-wrapper {
+    .cocktail-appletini .cocktail-text-wrapper,
+    .cocktail-blue-feelings .cocktail-text-wrapper {
         text-align: left;
     }
-    .cocktail-blue-feelings .cocktail-text-wrapper,
-    .cocktail-kahlua-sour .cocktail-text-wrapper {
-        text-align: center;
-    }
     .cocktail-daquiri .cocktail-text-wrapper,
-    .cocktail-mr-bali-hai .cocktail-text-wrapper {
+    .cocktail-mr-bali-hai .cocktail-text-wrapper,
+    .cocktail-kahlua-sour .cocktail-text-wrapper {
         text-align: right;
     }
 
