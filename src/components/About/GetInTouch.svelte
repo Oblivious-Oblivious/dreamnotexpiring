@@ -6,6 +6,11 @@
             autoAlpha: 1,
         });
 
+        gsap.set(".contact img", {
+            yPercent: 75,
+            xPercent: 55,
+        });
+
         gsap.utils.toArray(".contact").forEach(contact => {
             const contact_image = `.${contact.classList[1].toString()} img`;
             const contact_text = `.${contact.classList[1].toString()} .contact-text`;
@@ -13,7 +18,7 @@
             const move_image_up = gsap.to(contact_image, {
                 paused: true,
                 duration: 0.25,
-                yPercent: -50,
+                yPercent: 50,
                 opacity: 0.75,
             });
 
@@ -123,9 +128,6 @@
 
     .contact img {
         position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
         width: 12vw;
         filter: invert(var(--invert-value));
     }
