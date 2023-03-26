@@ -21,7 +21,7 @@ import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
     const scroll_smoother = ScrollSmoother.create({
         smooth: 1.25,
         effects: true,
-        smoothTouch: true,
+        smoothTouch: 0.1,
     });
 
     const to_about_in = next => {
