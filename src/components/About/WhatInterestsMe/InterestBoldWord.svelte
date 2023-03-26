@@ -14,7 +14,6 @@
                 endTrigger: ".how-i-learn",
                 start: "top 18%",
                 end: "+=3900",
-                // markers: true,
                 pin: true,
                 scrub: true,
             },

@@ -29,7 +29,6 @@
                 endTrigger: ".what-interests-me",
                 start: "top 25%",
                 end: "+=2500",
-                // markers: true,
                 pin: true,
                 scrub: true,
             },
