@@ -11,8 +11,8 @@
         const cocktails = gsap.utils.toArray(".cocktail");
 
         gsap.set(".cocktail", {
-            left: "7vw",
-            top: "20vh",
+            x: "7vw",
+            y: "20vh",
         });
 
         gsap.to(cocktails, {
