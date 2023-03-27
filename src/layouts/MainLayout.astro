@@ -29,50 +29,43 @@ import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
             onComplete: () => {
                 ScrollTrigger.refresh();
                 next();
-            }
+            },
         });
     }
 
     const from_work_out = next => {
         gsap.to("#swup", {
-            duration: 0.8,
+            duration: 0.65,
             onComplete: next,
         });
 
         gsap.to(".work", {
             duration: 0.65,
-            opacity: 0,
-            yPercent: -300,
-            stagger: 0.015,
+            yPercent: -250,
+            stagger: 0.01,
             ease: "power2.in",
         });
     }
 
     const to_work_in = next => {
-        gsap.fromTo("#swup", {
-            duration: 0.5,
-            autoAlpha: 0,
-        }, {
-            ease: "power1.out",
-            autoAlpha: 1,
-            yPercent: 0,
+        gsap.to("#swup", {
             onComplete: () => {
                 ScrollTrigger.refresh();
                 next();
-            }
+            },
         });
 
         gsap.from(".work", {
             duration: 0.4,
             ease: "power1.out",
-            yPercent: 120,
+            yPercent: 50,
             stagger: 0.04,
         });
     }
 
     const from_about_out = next => {
         gsap.to("#swup", {
-            duration: 0.65,
+            duration: 0.6,
             ease: "power4.out",
             autoAlpha: 0,
             onComplete: next,
