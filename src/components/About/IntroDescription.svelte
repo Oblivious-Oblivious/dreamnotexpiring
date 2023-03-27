@@ -103,10 +103,9 @@
 </div>
 
 <style>
-    .intro-description,
-    .intro-line,
-    .intro-word {
+    .intro-description {
         will-change: transform;
+        transform: translateZ(0);
     }
 
     .intro-line {
