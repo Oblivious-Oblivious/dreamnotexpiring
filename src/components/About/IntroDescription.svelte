@@ -104,7 +104,7 @@
 
 <style>
     .intro-description {
-        will-change: transform;
+        will-change: transform, opacity;
         transform: translateZ(0);
     }
 
