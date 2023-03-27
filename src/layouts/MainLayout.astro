@@ -39,7 +39,7 @@ import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
             onComplete: next,
         });
 
-        gsap.to("#work-section", {
+        gsap.to(".work", {
             duration: 0.65,
             opacity: 0,
             yPercent: -300,
@@ -62,8 +62,8 @@ import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
             }
         });
 
-        gsap.from("#work-section", {
-            duration: 0.5,
+        gsap.from(".work", {
+            duration: 0.4,
             ease: "power1.out",
             yPercent: 120,
             stagger: 0.04,

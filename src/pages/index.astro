@@ -1,33 +1,12 @@
 ---
-import Work from "@components/Work/Work.svelte";
+import WorkSection from "@components/Work/WorkSection.svelte";
 
 import MainLayout from "@layouts/MainLayout.astro";
 import PageLifecycle from "./PageLifecycle.svelte";
 ---
 
 <MainLayout title="Thanasis Papapostolou - oblivious to the dream">
-    <main>
-        <Work number="1"/>
-        <Work number="2"/>
-        <Work number="3"/>
-        <Work number="4"/>
-        <Work number="5"/>
-        <Work number="6"/>
-        <Work number="7"/>
-        <Work number="8"/>
-        <Work number="9"/>
-        <Work number="10"/>
-        <Work number="11"/>
-        <Work number="12"/>
-        <Work number="13"/>
-    </main>
+    <WorkSection client:load/>
 </MainLayout>
 
 <PageLifecycle current_page="work" client:load/>
-
-<style>
-    main {
-        text-align: center;
-        padding-top: 6rem;
-    }
-</style>
