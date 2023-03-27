@@ -48,6 +48,8 @@ import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
     }
 
     const to_work_in = next => {
+        gsap.getById("scrollbar-tween").progress(0);
+
         gsap.to("#swup", {
             onComplete: () => {
                 ScrollTrigger.refresh();

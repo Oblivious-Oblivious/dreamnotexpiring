@@ -5,6 +5,7 @@
 
     onMount(() => {
         const scroll_tween = gsap.to(".scrollbar", {
+            id: "scrollbar-tween",
             paused: true,
             width: "100%",
             ease: "none",
