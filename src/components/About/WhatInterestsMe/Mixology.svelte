@@ -12,7 +12,6 @@
 
         gsap.set(".cocktail", {
             x: "7vw",
-            y: "20vh",
         });
 
         gsap.to(cocktails, {
@@ -146,6 +145,9 @@
         gap: 7vw;
         padding: 4vh 0;
         width: 180vw;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
     }
 
     .cocktail {
