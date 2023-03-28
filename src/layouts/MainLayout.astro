@@ -41,7 +41,6 @@ import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
         gsap.to("body", {
             delay: 0.5,
             overflow: "auto",
-            onStart: () => scroll_smoother.scrollTop(0),
             onComplete: () => gsap.getById("scrollbar-tween").progress(0),
         });
     }
