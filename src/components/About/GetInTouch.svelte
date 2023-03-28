@@ -152,14 +152,14 @@
         width: 100%;
     }
 
-    .contact a {
+    a {
         display: flex;
         width: 100%;
         align-items: center;
         justify-content: center;
     }
 
-    .contact img {
+    img {
         width: 10vw;
         filter: invert(var(--invert-value));
     }
