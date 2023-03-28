@@ -6,11 +6,6 @@
             autoAlpha: 1,
         });
 
-        gsap.set(".contact img", {
-            yPercent: 75,
-            xPercent: 55,
-        });
-
         gsap.utils.toArray(".contact").forEach(contact => {
             const contact_image = `.${contact.classList[1].toString()} img`;
             const contact_text = `.${contact.classList[1].toString()} .contact-text`;
@@ -18,14 +13,14 @@
             const move_image_up = gsap.to(contact_image, {
                 paused: true,
                 duration: 0.25,
-                yPercent: 50,
+                yPercent: -25,
                 opacity: 0.75,
             });
 
-            const move_text_down = gsap.to(contact_text, {
+            const move_text_up = gsap.to(contact_text, {
                 paused: true,
                 duration: 0.25,
-                yPercent: -200,
+                yPercent: -25,
                 autoAlpha: 1,
             });
 
@@ -65,12 +60,12 @@
 
             contact.addEventListener("mouseenter", () => {
                 move_image_up.play();
-                move_text_down.play();
+                move_text_up.play();
                 glitch_text.play();
             });
             contact.addEventListener("mouseleave", () => {
                 move_image_up.reverse();
-                move_text_down.reverse();
+                move_text_up.reverse();
                 glitch_text.pause(0);
             });
         });
@@ -131,6 +126,9 @@
     .contact-wrapper {
         display: flex;
         width: 100vw;
+        height: 50vh;
+        align-items: center;
+        justify-content: center;
     }
 
     .get-in-touch-copyright {
@@ -152,19 +150,17 @@
     .contact {
         position: relative;
         width: 100%;
-        height: 50vh;
-        display: table-cell;
-        vertical-align: middle;
     }
 
     .contact a {
-        display: block;
-        height: 50vh;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
     }
 
     .contact img {
-        position: absolute;
-        width: 12vw;
+        width: 10vw;
         filter: invert(var(--invert-value));
     }
 </style>
