@@ -9,6 +9,7 @@ TODO Use Observer instead of document event handlers
 TODO Cleanup animations with context
 
 AFTER IMPLEMENTING ALL COMPONENT ELEMENTS
+TODO Possibly convert imports to requires for Pale Moon browser
 TODO Possibly use get-in-touch icons with thinner strokes
 TODO Fix audio interaction perimissions for ..safari
 TODO Extract common design language for all elements
