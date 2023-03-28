@@ -1,6 +1,6 @@
 export const SoundPlayer = ({ sound }) => {
     const audio_player = new Audio();
-    audio_player.src = [`/sound/${sound}`];
+    audio_player.src = [`${sound}`];
     audio_player.loop = true;
     audio_player.volume = 0.2;
     audio_player.currentTime = 1;

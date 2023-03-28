@@ -121,7 +121,7 @@
             <ReactAdapter
                 el={SoundPlayer}
                 class="sound-player"
-                sound="genre-river.mp3"
+                sound="/sound/genre-river.mp3"
             />
         </a>
     </div>
@@ -134,7 +134,7 @@
             <ReactAdapter
                 el={SoundPlayer}
                 class="sound-player"
-                sound="charmer.mp3"
+                sound="/sound/charmer.mp3"
             />
         </a>
     </div>
@@ -147,7 +147,7 @@
             <ReactAdapter
                 el={SoundPlayer}
                 class="sound-player"
-                sound="future-house-sessions.mp3"
+                sound="/sound/future-house-sessions.mp3"
             />
         </a>
     </div>
@@ -160,7 +160,7 @@
             <ReactAdapter
                 el={SoundPlayer}
                 class="sound-player"
-                sound="waiting-for-summer.mp3"
+                sound="/sound/waiting-for-summer.mp3"
             />
         </a>
     </div>
