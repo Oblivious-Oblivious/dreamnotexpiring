@@ -25,11 +25,23 @@ import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
     });
 
     const to_about_in = next => {
+        gsap.to("body", {
+            duration: 0.65,
+            overflow: "hidden",
+            onStart: () => ScrollTrigger.getById("work-scrolltrigger").disable(),
+        });
+
         gsap.to("#swup", {
             onComplete: () => {
                 ScrollTrigger.refresh();
                 next();
             },
+        });
+
+        gsap.to("body", {
+            delay: 0.5,
+            overflow: "auto",
+            onComplete: () => gsap.getById("scrollbar-tween").progress(0),
         });
     }
 
@@ -57,12 +69,28 @@ import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
             },
         });
 
+        gsap.to(".work", {
+            duration: 1.6,
+            onStart: () => {
+                gsap.getById("scrollbar-tween").progress(0);
+                ScrollTrigger.getById("work-scrolltrigger").disable();
+            }
+        });
+
         gsap.from(".work", {
             delay: 1.6,
             duration: 0.4,
             ease: "power1.out",
             yPercent: 50,
             stagger: 0.04,
+        });
+
+        gsap.to(".work", {
+            delay: 1.25,
+            onComplete: () => {
+                ScrollTrigger.getById("work-scrolltrigger").enable();
+                gsap.getById("scrollbar-tween").progress(0);
+            }
         });
     }
 
