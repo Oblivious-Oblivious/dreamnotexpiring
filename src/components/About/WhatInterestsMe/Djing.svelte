@@ -176,7 +176,7 @@
         width: 100%;
     }
 
-    .djing-parallax-wrapper img {
+    img {
         width: 100%;
         border-radius: 2.8vw;
     }
@@ -214,7 +214,7 @@
         background-color: black;
     }
 
-    .parallax-card .noise {
+    .noise {
         visibility: hidden;
 
         mix-blend-mode: exclusion;
