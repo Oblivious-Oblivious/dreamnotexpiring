@@ -29,13 +29,49 @@
                 autoAlpha: 1,
             });
 
+            const glitch_text = gsap.timeline({
+                paused: true,
+                repeat: -1,
+            })
+            .to(contact_text, {
+                duration: 0.5,
+            })
+            .to(contact_text, {
+                duration: 0.1,
+                skewX: 70,
+                ease: "power4.inOut",
+            })
+            .to(contact_text, {
+                duration: 0.04,
+                skewX: 0,
+                ease: "power4.inOut",
+            })
+            .to(contact_text, {
+                duration: 0.04,
+                opacity: 0,
+            })
+            .to(contact_text, {
+                duration: 0.04,
+                opacity: 1,
+            })
+            .to(contact_text, {
+                duration: 0.04,
+                x: -20,
+            })
+            .to(contact_text, {
+                duration: 0.04,
+                x: 0,
+            });
+
             contact.addEventListener("mouseenter", () => {
                 move_image_up.play();
                 move_text_down.play();
+                glitch_text.play();
             });
             contact.addEventListener("mouseleave", () => {
                 move_image_up.reverse();
                 move_text_down.reverse();
+                glitch_text.pause(0);
             });
         });
 
