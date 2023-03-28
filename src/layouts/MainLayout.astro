@@ -32,14 +32,13 @@ import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
         });
 
         gsap.to("#swup", {
-            onComplete: () => {
-                ScrollTrigger.refresh();
-                next();
-            },
+            duration: 0.65,
+            onStart: ScrollTrigger.refresh,
+            onComplete: next(),
         });
 
         gsap.to("body", {
-            delay: 0.5,
+            delay: 0.65,
             overflow: "auto",
             onComplete: () => gsap.getById("scrollbar-tween").progress(0),
         });
@@ -60,25 +59,19 @@ import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
     }
 
     const to_work_in = next => {
-        gsap.getById("scrollbar-tween").progress(0);
-
-        gsap.to("#swup", {
-            onComplete: () => {
-                ScrollTrigger.refresh();
-                next();
-            },
+        gsap.to("body", {
+            duration: 0.3,
+            overflow: "hidden",
+            onStart: () => ScrollTrigger.getById("work-scrolltrigger").disable(),
         });
 
-        gsap.to(".work", {
-            duration: 1.6,
-            onStart: () => {
-                gsap.getById("scrollbar-tween").progress(0);
-                ScrollTrigger.getById("work-scrolltrigger").disable();
-            }
+        gsap.to("#swup", {
+            duration: 0.4,
+            onStart: ScrollTrigger.refresh,
+            onComplete: next(),
         });
 
         gsap.from(".work", {
-            delay: 1.6,
             duration: 0.4,
             ease: "power1.out",
             yPercent: 50,
@@ -86,11 +79,18 @@ import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
         });
 
         gsap.to(".work", {
-            delay: 1.25,
+            delay: 0.3,
+            duration: 0.01,
             onComplete: () => {
                 ScrollTrigger.getById("work-scrolltrigger").enable();
                 gsap.getById("scrollbar-tween").progress(0);
             }
+        });
+
+        gsap.to("body", {
+            delay: 0.3,
+            duration: 0.01,
+            overflow: "auto",
         });
     }
 

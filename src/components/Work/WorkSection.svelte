@@ -5,7 +5,6 @@
         gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
         gsap.to(".work-section", {
-            delay: 1.6,
             autoAlpha: 1,
         });
 
