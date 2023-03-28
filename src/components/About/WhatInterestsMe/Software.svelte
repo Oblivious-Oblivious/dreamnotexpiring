@@ -178,27 +178,24 @@
         font-size: 0.96vw;
     }
 
-    .software-link a {
+    a {
         border-bottom: none;
         display: block;
         text-align: center;
         border-radius: 5px;
-        /* box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25), 0 0 0.5em 0 var(--fg-color); */
         box-shadow: var(--neuromorphic-shadow2);
-        /* background-color: rgba(255, 255, 255, 0.075); */
         background-color: var(--bg-color);
         cursor: pointer;
         outline: 0;
         overflow: hidden;
     }
 
-    .software-link a:hover {
-        /* TODO Fix blur not applying rounded corners */
+    a:hover {
         filter: blur(15px);
         transition: filter 400ms ease;
     }
 
-    .software-link a:not(:hover) {
+    a:not(:hover) {
         filter: 0;
         transition: filter 800ms ease;
     }
