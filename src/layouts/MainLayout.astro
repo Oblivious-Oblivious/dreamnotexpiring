@@ -9,6 +9,14 @@ import ThemeToggle from "@components/ThemeToggle/ThemeToggle.svelte";
 import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
 ---
 
+<script is:inline>
+    document.addEventListener("unload", () => {
+        e.preventDefault();
+        location.reload();
+        return false;
+    });
+</script>
+
 <script>
     // Swup
     import Swup from "swup";
