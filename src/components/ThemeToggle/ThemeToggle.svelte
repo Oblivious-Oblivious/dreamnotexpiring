@@ -8,6 +8,13 @@
             document.querySelector("html").classList.add("dark-theme");
         else
             document.querySelector("html").classList.remove("dark-theme");
+
+        window.dispatchEvent(new CustomEvent("theme-toggle", {
+            detail: {},
+            bubbles: true,
+            cancelable: true,
+            composed: false,
+        }));
     }
 
     $: is_theme_dark, toggle_theme();

@@ -37,13 +37,12 @@ import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
         gsap.to("body", {
             duration: 0.65,
             overflow: "hidden",
-            onStart: () => ScrollTrigger.getById("work-scrolltrigger").disable(),
         });
 
         gsap.to("#swup", {
             duration: 0.65,
             onStart: ScrollTrigger.refresh,
-            onComplete: next(),
+            onComplete: next,
         });
 
         gsap.to("body", {
@@ -61,9 +60,15 @@ import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
 
         gsap.to(".work", {
             duration: 0.65,
-            yPercent: -250,
+            xPercent: 250,
             stagger: 0.01,
             ease: "power2.in",
+        });
+
+        gsap.to(".work-line", {
+            duration: 0.35,
+            width: "0%",
+            stagger: 0.025,
         });
     }
 
@@ -71,29 +76,18 @@ import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
         gsap.to("body", {
             duration: 0.3,
             overflow: "hidden",
-            onStart: () => ScrollTrigger.getById("work-scrolltrigger").disable(),
         });
 
         gsap.to("#swup", {
             duration: 0.4,
             onStart: ScrollTrigger.refresh,
-            onComplete: next(),
+            onComplete: next,
         });
 
-        gsap.from(".work", {
-            duration: 0.4,
-            ease: "power1.out",
-            yPercent: 50,
-            stagger: 0.04,
-        });
-
-        gsap.to(".work", {
+        gsap.to("body", {
             delay: 0.3,
             duration: 0.01,
-            onComplete: () => {
-                ScrollTrigger.getById("work-scrolltrigger").enable();
-                gsap.getById("scrollbar-tween").progress(0);
-            }
+            onComplete: () => gsap.getById("scrollbar-tween").progress(0),
         });
 
         gsap.to("body", {
@@ -131,6 +125,18 @@ import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
                     in: next => to_work_in(next),
                     out: next => from_about_out(next),
                 },
+    //             {
+    //                 from: "/work/(.*)",
+    //                 to: "(.*)",
+    //                 in: next => next(),
+    //                 out: next => next(),
+    //             },
+    //             {
+    //                 from: "/",
+    //                 to: "/work/(.*)",
+    //                 in: next => next(),
+    //                 out: next => next(),
+    //             },
             ]),
         ],
     }).on("pageView", start_from_page_top);
