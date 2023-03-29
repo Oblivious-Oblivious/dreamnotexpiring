@@ -10,7 +10,8 @@
 
         const works = gsap.utils.toArray(".work");
 
-        gsap.timeline({
+        gsap.to(".work", {
+            xPercent: (-100 * works.length) - 28,
             scrollTrigger: {
                 id: "work-scrolltrigger",
                 trigger: ".work-section",
@@ -18,9 +19,6 @@
                 scrub: true,
                 end: "+=5000",
             },
-        })
-        .to(".work", {
-            xPercent: (-100 * works.length) - 28,
         });
     });
 </script>
