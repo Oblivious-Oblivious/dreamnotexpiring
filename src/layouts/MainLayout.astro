@@ -15,6 +15,12 @@ import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
         location.reload();
         return false;
     });
+
+    window.addEventListener("unload", () => {
+        e.preventDefault();
+        location.reload();
+        return false;
+    });
 </script>
 
 <script>
