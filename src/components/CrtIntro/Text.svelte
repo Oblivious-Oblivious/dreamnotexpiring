@@ -236,6 +236,9 @@
             duration: 0.8,
             ease: "power2.inOut",
             opacity: 1,
+            onComplete: () => {
+                document.querySelector(".intro-wrapper").style.display = "none";
+            }
         });
     })
 </script>
