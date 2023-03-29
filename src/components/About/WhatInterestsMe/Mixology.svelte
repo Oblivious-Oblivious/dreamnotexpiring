@@ -14,15 +14,17 @@
             x: "7vw",
         });
 
-        gsap.to(cocktails, {
-            xPercent: -100 * (cocktails.length - 1),
-            ease: "power1.inOut",
+        gsap.timeline({
             scrollTrigger: {
                 trigger: ".mixology-wrapper",
                 pin: true,
                 scrub: true,
                 end: "+=2000",
-            }
+            },
+        })
+        .to(cocktails, {
+            xPercent: -100 * (cocktails.length - 1),
+            ease: "power1.inOut",
         });
     });
 </script>

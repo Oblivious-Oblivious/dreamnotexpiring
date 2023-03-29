@@ -100,14 +100,16 @@
             });
         });
 
-        gsap.to(".parallax-card", {
-            yPercent: 100,
+        gsap.timeline({
             scrollTrigger: {
                 trigger: ".djing-parallax-wrapper",
                 start: "top top",
                 end: "+=1500",
                 scrub: true,
-            }
+            },
+        })
+        .to(".parallax-card", {
+            yPercent: 100,
         });
     });
 </script>
