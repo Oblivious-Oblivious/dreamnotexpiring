@@ -19,8 +19,9 @@ import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
     gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
     const scroll_smoother = ScrollSmoother.create({
+        wrapper: "#smooth-wrapper",
+        content: "#smooth-content",
         smooth: 1.25,
-        effects: true,
         smoothTouch: 0.1,
     });
 
@@ -138,7 +139,7 @@ import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
             <Scrollbar client:load/>
             <ThemeToggle client:only="svelte"/>
 
-            <div class="smooth-wrapper">
+            <div id="smooth-wrapper">
                 <div id="smooth-content">
                     <GrainEffect/>
                     <main id="swup">
