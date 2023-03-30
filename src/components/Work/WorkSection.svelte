@@ -32,9 +32,9 @@
 
             material.uniforms.uSineDistortSpread.value = 0;
             material.uniforms.uSineDistortCycleCount.value = 2;
-            material.uniforms.uSineDistortAmplitude.value = 0.03;
+            material.uniforms.uSineDistortAmplitude.value = 0;
             material.uniforms.uNoiseDistortVolatility.value = 0;
-            material.uniforms.uNoiseDistortAmplitude.value = 0.01;
+            material.uniforms.uNoiseDistortAmplitude.value = 0;
             material.uniforms.uRotation.value = 170;
             material.uniforms.uSpeed.value = 0.25;
 
@@ -76,7 +76,14 @@
             ".work-multicore",
         ].forEach(work => {
             let inner_text = document.querySelector(work);
-
+            const title = `${inner_text
+                .classList[1]
+                .toString()
+                .split("-")
+                .slice(1)
+                .join(" ")
+                .toUpperCase()
+            }`;
             let material = rolling_distort_material();
 
             let blotter_text = create_blotter_text(inner_text);
@@ -85,31 +92,35 @@
             });
 
             let scope = blotter.forText(blotter_text);
-            inner_text.innerHTML = "";
-            scope.appendTo(inner_text);
 
             inner_text.addEventListener("mouseleave", () => {
                 material.uniforms.uSineDistortSpread.value = 0;
                 material.uniforms.uNoiseDistortVolatility.value = 0;
+                material.uniforms.uSineDistortAmplitude.value = 0;
+                material.uniforms.uNoiseDistortAmplitude.value = 0;
+                inner_text.innerHTML = title;
+                blotter.removeTexts(inner_text);
+                blotter.stop();
             });
 
             inner_text.addEventListener("mouseenter", () => {
                 material.uniforms.uSineDistortSpread.value = 0.035;
                 material.uniforms.uNoiseDistortVolatility.value = 15;
+                material.uniforms.uSineDistortAmplitude.value = 0.03;
+                material.uniforms.uNoiseDistortAmplitude.value = 0.01;
+                inner_text.innerHTML = "";
+                scope.appendTo(inner_text);
+                blotter.start();
             });
 
             const redraw_text = () => {
                 blotter.stop();
-                blotter.removeTexts(inner_text);
                 blotter_text = create_blotter_text(inner_text);
                 blotter = new Blotter(material, {
                     texts: blotter_text,
                 });
-
                 scope = blotter.forText(blotter_text);
-                inner_text.innerHTML = "";
-                scope.appendTo(inner_text);
-                blotter.start();
+                blotter.stop();
             }
 
             window.addEventListener("resize", redraw_text);
@@ -148,7 +159,7 @@
 
     <div class="work work-4">
         <a href="/work/salsa" draggable="false">
-            <div class="work-title work-salsa-pomodoro-timer">Salsa: Pomodoro Timer</div>
+            <div class="work-title work-salsa-pomodoro-timer">Salsa Pomodoro Timer</div>
         </a>
         <div class="work-date">2023</div>
     </div>
