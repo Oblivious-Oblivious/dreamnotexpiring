@@ -125,6 +125,7 @@
 
             window.addEventListener("resize", redraw_text);
             window.addEventListener("theme-toggle", redraw_text);
+            window.addEventListener("on-work-page", redraw_text);
         });
     });
 </script>

@@ -104,6 +104,13 @@ import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
     }
 
     const from_about_out = next => {
+        window.dispatchEvent(new CustomEvent("on-work-page", {
+            detail: {},
+            bubbles: true,
+            cancelable: true,
+            composed: false,
+        }));
+
         gsap.to("#swup", {
             duration: 0.6,
             ease: "power4.out",
