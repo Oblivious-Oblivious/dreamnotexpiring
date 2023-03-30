@@ -16,6 +16,7 @@
         });
 
         gsap.from(".intro-line", {
+            delay: 0.3,
             duration: 0.65,
             yPercent: 75,
             clipPath: "inset(0 0 100% 0)",
