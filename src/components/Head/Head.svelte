@@ -29,10 +29,6 @@
     <!-- <script is:inline src="/js/ScrollTrigger.min.js"></script> -->
     <script is:inline src="/js/ScrollSmoother.min.js"></script>
 
-    <!-- Blotter -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Blotter/0.1.0/blotter.js" integrity="sha512-xPlQVbjVIwT87dKt/F1NbPQfx/LNSbKa/2nBBEGYncA4r2cd9hpFh/7+4FiQS6pWWvfz8pR19H+iCWFaHOPNQg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Blotter/0.1.0/materials/rollingDistortMaterial.min.js" integrity="sha512-oZlRi+2/UqweL66OV5K871iUNEZm7mYhFtbiUp0Oxs6gK96nPIJUGQAMFXcx0Ax0LdGMNuqeBf90kShN6GAmrg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
     <!-- Sitemap -->
     <!-- <link rel="sitemap" href="/sitemap.xml"> -->
 
