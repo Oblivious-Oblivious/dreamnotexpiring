@@ -59,13 +59,6 @@ import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
     }
 
     const from_work_out = next => {
-        window.dispatchEvent(new CustomEvent("on-work-page", {
-            detail: {},
-            bubbles: true,
-            cancelable: true,
-            composed: false,
-        }));
-
         gsap.to("#swup", {
             duration: 0.65,
             onComplete: next,
@@ -111,13 +104,6 @@ import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
     }
 
     const from_about_out = next => {
-        window.dispatchEvent(new CustomEvent("on-work-page", {
-            detail: {},
-            bubbles: true,
-            cancelable: true,
-            composed: false,
-        }));
-
         gsap.to("#swup", {
             duration: 0.6,
             ease: "power4.out",
@@ -134,6 +120,12 @@ import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
             new SwupHeadPlugin(),
             new SwupJsPlugin([
                 {
+                    from: "(.*)", // matches any route
+                    to: "(.*)", // matches any route
+                    out: next => next(), // immediately continues
+                    in: next => next() // immediately continues
+                },
+                {
                     from: "/",
                     to: "/about",
                     in: next => to_about_in(next),
@@ -145,18 +137,6 @@ import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
                     in: next => to_work_in(next),
                     out: next => from_about_out(next),
                 },
-    //             {
-    //                 from: "/work/(.*)",
-    //                 to: "(.*)",
-    //                 in: next => next(),
-    //                 out: next => next(),
-    //             },
-    //             {
-    //                 from: "/",
-    //                 to: "/work/(.*)",
-    //                 in: next => next(),
-    //                 out: next => next(),
-    //             },
             ]),
         ],
     }).on("pageView", start_from_page_top);

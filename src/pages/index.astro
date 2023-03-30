@@ -5,6 +5,95 @@ import MainLayout from "@layouts/MainLayout.astro";
 import PageLifecycle from "./PageLifecycle.svelte";
 ---
 
+<script>
+    const rolling_distort_material = () => {
+        const material = new Blotter.RollingDistortMaterial();
+
+        material.uniforms.uSineDistortSpread.value = 0;
+        material.uniforms.uSineDistortCycleCount.value = 2;
+        material.uniforms.uSineDistortAmplitude.value = 0;
+        material.uniforms.uNoiseDistortVolatility.value = 0;
+        material.uniforms.uNoiseDistortAmplitude.value = 0;
+        material.uniforms.uRotation.value = 170;
+        material.uniforms.uSpeed.value = 0.25;
+
+        return material;
+    }
+
+    const create_blotter_text = inner_text => {
+        const font_size = window.getComputedStyle(inner_text, null).getPropertyValue("font-size");
+        const fg_color = window.getComputedStyle(inner_text, null).getPropertyValue("color");
+        return new Blotter.Text(`${inner_text
+            .classList[1]
+            .toString()
+            .split("-")
+            .slice(1)
+            .join(" ")
+            .toUpperCase()
+        }`, {
+            family: "Saol Display",
+            size: font_size.split("px")[0],
+            fill: fg_color,
+            needsUpdate: true,
+        });
+    }
+
+    const redraw_text = () => {
+        [
+            ".work-margaret",
+            ".work-cspec",
+            ".work-dreamnotexpiring",
+            ".work-salsa-pomodoro-timer",
+            ".work-aerocss",
+            ".work-zircon",
+            ".work-emeralds",
+            ".work-dynadesign",
+            ".work-skeleton",
+            ".work-clitterbin",
+            ".work-cdatalib",
+            ".work-artsxedio",
+            ".work-pop-on-scratch",
+            ".work-multicore",
+        ].forEach(work => {
+            const inner_text = document.querySelector(work);
+            const title = inner_text.innerHTML;
+            const material = rolling_distort_material();
+
+            const blotter_text = create_blotter_text(inner_text);
+            const blotter = new Blotter(material, {
+                texts: blotter_text,
+            });
+
+            const scope = blotter.forText(blotter_text);
+            blotter.stop();
+
+            inner_text.addEventListener("mouseleave", () => {
+                material.uniforms.uSineDistortSpread.value = 0;
+                material.uniforms.uNoiseDistortVolatility.value = 0;
+                material.uniforms.uSineDistortAmplitude.value = 0;
+                material.uniforms.uNoiseDistortAmplitude.value = 0;
+                inner_text.innerHTML = title;
+                blotter.removeTexts(inner_text);
+                blotter.stop();
+            });
+
+            inner_text.addEventListener("mouseenter", () => {
+                material.uniforms.uSineDistortSpread.value = 0.035;
+                material.uniforms.uNoiseDistortVolatility.value = 15;
+                material.uniforms.uSineDistortAmplitude.value = 0.03;
+                material.uniforms.uNoiseDistortAmplitude.value = 0.01;
+                inner_text.innerHTML = "";
+                scope.appendTo(inner_text);
+                blotter.start();
+            });
+        });
+    }
+
+    window.addEventListener("resize", redraw_text);
+    window.addEventListener("theme-toggle", redraw_text);
+    window.addEventListener("on-work-page", redraw_text);
+</script>
+
 <MainLayout title="Thanasis Papapostolou - oblivious to the dream">
     <WorkSection client:load/>
 </MainLayout>

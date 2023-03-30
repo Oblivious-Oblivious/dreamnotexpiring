@@ -8,124 +8,31 @@
             autoAlpha: 1,
         });
 
-        gsap.timeline()
-            .from(".work-line", {
-                duration: 1,
-                opacity: 0,
-                width: "0%",
-                stagger: {
-                    amount: 2,
-                },
-            })
-            gsap.from(".work-title, .work-date", {
-                duration: 0.65,
-                xPercent: 20,
-                clipPath: "inset(0 0 0 100%)",
-                stagger: {
-                    amount: 2.5,
-                },
-                ease: "power2.out",
-            });
+        window.dispatchEvent(new CustomEvent("on-work-page", {
+            detail: {},
+            bubbles: true,
+            cancelable: true,
+            composed: false,
+        }));
 
-        const rolling_distort_material = () => {
-            let material = new Blotter.RollingDistortMaterial();
-
-            material.uniforms.uSineDistortSpread.value = 0;
-            material.uniforms.uSineDistortCycleCount.value = 2;
-            material.uniforms.uSineDistortAmplitude.value = 0;
-            material.uniforms.uNoiseDistortVolatility.value = 0;
-            material.uniforms.uNoiseDistortAmplitude.value = 0;
-            material.uniforms.uRotation.value = 170;
-            material.uniforms.uSpeed.value = 0.25;
-
-            return material;
-        }
-
-        const create_blotter_text = inner_text => {
-            const font_size = window.getComputedStyle(inner_text, null).getPropertyValue("font-size");
-            const fg_color = window.getComputedStyle(inner_text, null).getPropertyValue("color");
-            return new Blotter.Text(`${inner_text
-                .classList[1]
-                .toString()
-                .split("-")
-                .slice(1)
-                .join(" ")
-                .toUpperCase()
-            }`, {
-                family: "Saol Display",
-                size: font_size.split("px")[0],
-                fill: fg_color,
-                needsUpdate: true,
-            });
-        }
-
-        [
-            ".work-margaret",
-            ".work-cspec",
-            ".work-dreamnotexpiring",
-            ".work-salsa-pomodoro-timer",
-            ".work-aerocss",
-            ".work-zircon",
-            ".work-emeralds",
-            ".work-dynadesign",
-            ".work-skeleton",
-            ".work-clitterbin",
-            ".work-cdatalib",
-            ".work-artsxedio",
-            ".work-pop-on-scratch",
-            ".work-multicore",
-        ].forEach(work => {
-            let inner_text = document.querySelector(work);
-            const title = `${inner_text
-                .classList[1]
-                .toString()
-                .split("-")
-                .slice(1)
-                .join(" ")
-                .toUpperCase()
-            }`;
-            let material = rolling_distort_material();
-
-            let blotter_text = create_blotter_text(inner_text);
-            let blotter = new Blotter(material, {
-                texts: blotter_text,
-            });
-
-            let scope = blotter.forText(blotter_text);
-
-            inner_text.addEventListener("mouseleave", () => {
-                material.uniforms.uSineDistortSpread.value = 0;
-                material.uniforms.uNoiseDistortVolatility.value = 0;
-                material.uniforms.uSineDistortAmplitude.value = 0;
-                material.uniforms.uNoiseDistortAmplitude.value = 0;
-                inner_text.innerHTML = title;
-                blotter.removeTexts(inner_text);
-                blotter.stop();
-            });
-
-            inner_text.addEventListener("mouseenter", () => {
-                material.uniforms.uSineDistortSpread.value = 0.035;
-                material.uniforms.uNoiseDistortVolatility.value = 15;
-                material.uniforms.uSineDistortAmplitude.value = 0.03;
-                material.uniforms.uNoiseDistortAmplitude.value = 0.01;
-                inner_text.innerHTML = "";
-                scope.appendTo(inner_text);
-                blotter.start();
-            });
-
-            const redraw_text = () => {
-                blotter.stop();
-                blotter_text = create_blotter_text(inner_text);
-                blotter = new Blotter(material, {
-                    texts: blotter_text,
-                });
-                scope = blotter.forText(blotter_text);
-                blotter.stop();
-            }
-
-            window.addEventListener("resize", redraw_text);
-            window.addEventListener("theme-toggle", redraw_text);
-            window.addEventListener("on-work-page", redraw_text);
+        gsap.from(".work-line", {
+            delay: 0.2,
+            duration: 1,
+            opacity: 0,
+            width: "0%",
+            stagger: {
+                amount: 2,
+            },
+        });
+        gsap.from(".work-title, .work-date", {
+            delay: 0.2,
+            duration: 0.65,
+            xPercent: 20,
+            clipPath: "inset(0 0 0 100%)",
+            stagger: {
+                amount: 2.5,
+            },
+            ease: "power2.out",
         });
     });
 </script>
@@ -149,7 +56,7 @@
 
     <div class="work-line"></div>
 
-    <div class="work work-3"a>
+    <div class="work work-3">
         <a href="/work/dreamnotexpiring" draggable="false">
             <div class="work-title work-dreamnotexpiring">dreamnotexpiring</div>
         </a>
