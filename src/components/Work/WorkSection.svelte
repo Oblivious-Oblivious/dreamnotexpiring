@@ -27,8 +27,8 @@
                 ease: "power2.out",
             });
 
-        const material_for = blotter_material => {
-            let material = new blotter_material();
+        const rolling_distort_material = () => {
+            let material = new Blotter.RollingDistortMaterial();
 
             material.uniforms.uSineDistortSpread.value = 0;
             material.uniforms.uSineDistortCycleCount.value = 2;
@@ -47,7 +47,9 @@
             return new Blotter.Text(`${inner_text
                 .classList[1]
                 .toString()
-                .split("-")[1]
+                .split("-")
+                .slice(1)
+                .join(" ")
                 .toUpperCase()
             }`, {
                 family: "Saol Display",
@@ -60,10 +62,22 @@
         [
             ".work-margaret",
             ".work-cspec",
+            ".work-dreamnotexpiring",
+            ".work-salsa-pomodoro-timer",
+            ".work-aerocss",
+            ".work-zircon",
+            ".work-emeralds",
+            ".work-dynadesign",
+            ".work-skeleton",
+            ".work-clitterbin",
+            ".work-cdatalib",
+            ".work-artsxedio",
+            ".work-pop-on-scratch",
+            ".work-multicore",
         ].forEach(work => {
             let inner_text = document.querySelector(work);
 
-            let material = material_for(Blotter.RollingDistortMaterial);
+            let material = rolling_distort_material();
 
             let blotter_text = create_blotter_text(inner_text);
             let blotter = new Blotter(material, {
@@ -116,7 +130,7 @@
 
     <div class="work work-2">
         <a href="/work/cspec" draggable="false">
-            <div class="work-title work-cspec">cspec</div>
+            <div class="work-title work-cspec">cSpec</div>
         </a>
         <div class="work-date">2021 - Present</div>
     </div>
@@ -125,7 +139,7 @@
 
     <div class="work work-3"a>
         <a href="/work/dreamnotexpiring" draggable="false">
-            <div class="work-title">dreamnotexpiring</div>
+            <div class="work-title work-dreamnotexpiring">dreamnotexpiring</div>
         </a>
         <div class="work-date">2023</div>
     </div>
@@ -134,7 +148,7 @@
 
     <div class="work work-4">
         <a href="/work/salsa" draggable="false">
-            <div class="work-title">Salsa: Pomodoro Timer</div>
+            <div class="work-title work-salsa-pomodoro-timer">Salsa: Pomodoro Timer</div>
         </a>
         <div class="work-date">2023</div>
     </div>
@@ -143,7 +157,7 @@
 
     <div class="work work-5">
         <a href="/work/aerocss" draggable="false">
-            <div class="work-title">AeroCSS</div>
+            <div class="work-title work-aerocss">AeroCSS</div>
         </a>
         <div class="work-date">2023</div>
     </div>
@@ -152,7 +166,7 @@
 
     <div class="work work-6">
         <a href="/work/zircon" draggable="false">
-            <div class="work-title">Zircon</div>
+            <div class="work-title work-zircon">Zircon</div>
         </a>
         <div class="work-date">2020-2021</div>
     </div>
@@ -161,7 +175,7 @@
 
     <div class="work work-7">
         <a href="/work/emeralds" draggable="false">
-            <div class="work-title">Emeralds</div>
+            <div class="work-title work-emeralds">Emeralds</div>
         </a>
         <div class="work-date">2021</div>
     </div>
@@ -170,7 +184,7 @@
 
     <div class="work work-8">
         <a href="/work/dynadesign" draggable="false">
-            <div class="work-title">DynaDesign</div>
+            <div class="work-title work-dynadesign">DynaDesign</div>
         </a>
         <div class="work-date">2021 - ?</div>
     </div>
@@ -179,7 +193,7 @@
 
     <div class="work work-9">
         <a href="/work/skeleton" draggable="false">
-            <div class="work-title">Skeleton</div>
+            <div class="work-title work-skeleton">Skeleton</div>
         </a>
         <div class="work-date">2020 - 2021</div>
     </div>
@@ -188,7 +202,7 @@
 
     <div class="work work-10">
         <a href="/work/clitterbin" draggable="false">
-            <div class="work-title">cLitterbin</div>
+            <div class="work-title work-clitterbin">cLitterbin</div>
         </a>
         <div class="work-date">2020</div>
     </div>
@@ -197,7 +211,7 @@
 
     <div class="work work-11">
         <a href="/work/cdatalib" draggable="false">
-            <div class="work-title">cDataLib</div>
+            <div class="work-title work-cdatalib">cDataLib</div>
         </a>
         <div class="work-date">2019 - 2020</div>
     </div>
@@ -206,7 +220,7 @@
 
     <div class="work work-12">
         <a href="/work/artsxedio" draggable="false">
-            <div class="work-title">ArtSxedio</div>
+            <div class="work-title work-artsxedio">ArtSxedio</div>
         </a>
         <div class="work-date">2018</div>
     </div>
@@ -215,7 +229,7 @@
 
     <div class="work work-13">
         <a href="/work/princeofpersia" draggable="false">
-            <div class="work-title">POP on Scratch</div>
+            <div class="work-title work-pop-on-scratch">POP on Scratch</div>
         </a>
         <div class="work-date">2016</div>
     </div>
@@ -224,7 +238,7 @@
 
     <div class="work work-14">
         <a href="/work/multicore" draggable="false">
-            <div class="work-title">MultiCore</div>
+            <div class="work-title work-multicore">MultiCore</div>
         </a>
         <div class="work-date">2015 - 2016</div>
     </div>
