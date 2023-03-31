@@ -6,10 +6,13 @@
     import Mixology from "./WhatInterestsMe/Mixology.svelte";
 
     onMount(() => {
-        gsap.to(".what-interests-me", {
+        gsap.set(".what-interests-me", {
             y: "-25vh",
-            autoAlpha: 1,
         });
+
+        gsap.to(".what-interests-me", {
+            autoAlpha: 1,
+        })
     });
 </script>
 
