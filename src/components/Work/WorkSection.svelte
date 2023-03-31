@@ -1,5 +1,6 @@
 <script>
     import { onMount } from "svelte";
+    import { browser_engine } from "@persistence/browser_engine";
 
     onMount(() => {
         gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
@@ -99,7 +100,10 @@
                 if(work_data[windex].is_animating)
                     work_data[windex].single_letters.forEach(el => change_letter(el));
 
-                setTimeout(change_all_letters, 50);
+                if($browser_engine == "WebKit")
+                    setTimeout(change_all_letters, 800);
+                else
+                    setTimeout(change_all_letters, 50);
             }
 
             const reset_all_letters = () => {
