@@ -7,6 +7,7 @@ import Cursor from "@components/Cursor/Cursor.svelte";
 import Scrollbar from "@components/Scrollbar/Scrollbar.svelte";
 import ThemeToggle from "@components/ThemeToggle/ThemeToggle.svelte";
 import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
+import MainContent from "./MainContent.astro";
 ---
 
 <script is:inline>
@@ -148,19 +149,7 @@ import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
 
     <body onload="">
         <div class="main-content">
-            <Header client:load/>
-            <Cursor client:load/>
-            <Scrollbar client:load/>
-            <ThemeToggle client:only="svelte"/>
-
-            <div id="smooth-wrapper">
-                <div id="smooth-content">
-                    <GrainEffect/>
-                    <main id="swup">
-                        <slot/>
-                    </main>
-                </div>
-            </div>
+            <slot/>
         </div>
 
         <!-- Starts animation after main content is fetched -->

@@ -6,15 +6,18 @@ import ComputerRelatedTopicsIEnjoy from "@components/About/ComputerRelatedTopics
 import GetInTouch from "@components/About/GetInTouch.svelte";
 
 import MainLayout from "@layouts/MainLayout.astro";
+import MainContent from "@layouts/MainContent.astro";
 import PageLifecycle from "./PageLifecycle.svelte";
 ---
 
 <MainLayout title="Thanasis Papapostolou - oblivious to the dream">
-    <IntroDescription client:load/>
-    <WhatInterestsMe client:load/>
-    <HowILearn client:load/>
-    <ComputerRelatedTopicsIEnjoy client:load/>
-    <GetInTouch client:load/>
+    <MainContent>
+        <IntroDescription client:load/>
+        <WhatInterestsMe client:load/>
+        <HowILearn client:load/>
+        <ComputerRelatedTopicsIEnjoy client:load/>
+        <GetInTouch client:load/>
+    </MainContent>
 </MainLayout>
 
 <PageLifecycle current_page="about" client:load/>

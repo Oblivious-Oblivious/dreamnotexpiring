@@ -2,11 +2,14 @@
 import WorkSection from "@components/Work/WorkSection.svelte";
 
 import MainLayout from "@layouts/MainLayout.astro";
+import MainContent from "@layouts/MainContent.astro";
 import PageLifecycle from "./PageLifecycle.svelte";
 ---
 
 <MainLayout title="Thanasis Papapostolou - oblivious to the dream">
-    <WorkSection client:load/>
+    <MainContent>
+        <WorkSection client:load/>
+    </MainContent>
 </MainLayout>
 
 <PageLifecycle current_page="work" client:load/>

@@ -1,0 +1,17 @@
+---
+import Cursor from "@components/Cursor/Cursor.svelte";
+import Scrollbar from "@components/Scrollbar/Scrollbar.svelte";
+import ThemeToggle from "@components/ThemeToggle/ThemeToggle.svelte";
+---
+
+<Cursor client:load/>
+<Scrollbar client:load/>
+<ThemeToggle client:only="svelte"/>
+
+<div id="smooth-wrapper">
+    <div id="smooth-content">
+        <main id="swup">
+            <slot/>
+        </main>
+    </div>
+</div>
