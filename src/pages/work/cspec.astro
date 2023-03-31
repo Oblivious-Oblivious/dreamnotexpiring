@@ -2,8 +2,11 @@
 import CSpec from "@components/Work/CSpec.svelte";
 
 import MainLayout from "@layouts/MainLayout.astro";
+import PageLifecycle from "@pages/PageLifecycle.svelte";
 ---
 
 <MainLayout title="cSpec - Behaviour driven development for C">
     <CSpec client:load/>
 </MainLayout>
+
+<PageLifecycle current_page="" client:load/>

@@ -2,8 +2,11 @@
 import Skeleton from "@components/Work/Skeleton.svelte";
 
 import MainLayout from "@layouts/MainLayout.astro";
+import PageLifecycle from "@pages/PageLifecycle.svelte";
 ---
 
 <MainLayout title="Skeleton - An http server">
     <Skeleton client:load/>
 </MainLayout>
+
+<PageLifecycle current_page="" client:load/>

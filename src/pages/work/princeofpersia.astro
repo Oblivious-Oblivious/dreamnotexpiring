@@ -2,8 +2,11 @@
 import PrinceOfPersia from "@components/Work/PrinceOfPersia.svelte";
 
 import MainLayout from "@layouts/MainLayout.astro";
+import PageLifecycle from "@pages/PageLifecycle.svelte";
 ---
 
 <MainLayout title="Prince of Persia on Scratch">
     <PrinceOfPersia client:load/>
 </MainLayout>
+
+<PageLifecycle current_page="" client:load/>

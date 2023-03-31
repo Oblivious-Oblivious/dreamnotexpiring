@@ -2,8 +2,11 @@
 import Dreamnotexpiring from "@components/Work/Dreamnotexpiring.svelte";
 
 import MainLayout from "@layouts/MainLayout.astro";
+import PageLifecycle from "@pages/PageLifecycle.svelte";
 ---
 
 <MainLayout title="oblivious to the dream not expiring">
     <Dreamnotexpiring client:load/>
 </MainLayout>
+
+<PageLifecycle current_page="" client:load/>

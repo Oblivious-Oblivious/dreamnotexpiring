@@ -2,8 +2,11 @@
 import Salsa from "@components/Work/Salsa.svelte";
 
 import MainLayout from "@layouts/MainLayout.astro";
+import PageLifecycle from "@pages/PageLifecycle.svelte";
 ---
 
 <MainLayout title="Salsa: Pomodoro Timer - focus">
     <Salsa client:load/>
 </MainLayout>
+
+<PageLifecycle current_page="" client:load/>

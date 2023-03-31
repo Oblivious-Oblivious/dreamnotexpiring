@@ -2,8 +2,11 @@
 import ArtSxedio from "@components/Work/ArtSxedio.svelte";
 
 import MainLayout from "@layouts/MainLayout.astro";
+import PageLifecycle from "@pages/PageLifecycle.svelte";
 ---
 
 <MainLayout title="Art Sxedio">
     <ArtSxedio client:load/>
 </MainLayout>
+
+<PageLifecycle current_page="" client:load/>

@@ -2,8 +2,11 @@
 import Margaret from "@components/Work/Margaret.svelte";
 
 import MainLayout from "@layouts/MainLayout.astro";
+import PageLifecycle from "@pages/PageLifecycle.svelte";
 ---
 
 <MainLayout title="Margaret - A programming language">
     <Margaret client:load/>
 </MainLayout>
+
+<PageLifecycle current_page="" client:load/>

@@ -2,8 +2,11 @@
 import DynaDesign from "@components/Work/DynaDesign.svelte";
 
 import MainLayout from "@layouts/MainLayout.astro";
+import PageLifecycle from "@pages/PageLifecycle.svelte";
 ---
 
 <MainLayout title="Dynadesign - Hardware design of the future">
     <DynaDesign client:load/>
 </MainLayout>
+
+<PageLifecycle current_page="" client:load/>
