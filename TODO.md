@@ -1,6 +1,7 @@
-TODO Fix non-clickable span in (you guess it) -> safari
 TODO Design work project pages
 
+TODO Convert mixology section dimensions into view height based
+TODO Add a photo on the intro section of about
 TODO Add action indicators on custom mouse pointer
 TODO Add SplitText instead of hand typing intro words
 TODO Use Observer instead of document event handlers
