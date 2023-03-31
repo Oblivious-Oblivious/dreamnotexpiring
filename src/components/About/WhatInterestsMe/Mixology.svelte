@@ -4,7 +4,7 @@
     onMount(() => {
         gsap.registerPlugin(ScrollTrigger);
 
-        gsap.set(".mixology-wrapper", {
+        gsap.to(".mixology-wrapper", {
             autoAlpha: 1,
         });
 

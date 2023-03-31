@@ -2,7 +2,7 @@
     import { onMount } from "svelte";
 
     onMount(() => {
-        gsap.set(".computer-related-topics-i-enjoy", {
+        gsap.to(".computer-related-topics-i-enjoy", {
             autoAlpha: 1,
         });
 

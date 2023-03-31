@@ -2,7 +2,7 @@
     import { onMount } from "svelte";
 
     onMount(() => {
-        gsap.set(".contact-wrapper", {
+        gsap.to(".contact-wrapper", {
             autoAlpha: 1,
         });
 

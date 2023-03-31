@@ -6,7 +6,7 @@
     onMount(() => {
         gsap.registerPlugin(ScrollTrigger);
 
-        gsap.set(".djing-parallax-wrapper", {
+        gsap.to(".djing-parallax-wrapper", {
             autoAlpha: 1,
         });
 
