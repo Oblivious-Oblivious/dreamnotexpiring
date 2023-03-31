@@ -40,6 +40,22 @@ import MainContent from "./MainContent.astro";
         smoothTouch: 0.1,
     });
 
+    const to_any_page_in = next => {
+        gsap.to("#swup", {
+            duration: 0.5,
+            opacity: 1,
+            onComplete: next
+        });
+    }
+
+    const from_any_page_out = next => {
+        gsap.to("#swup", {
+            duration: 0.5,
+            opacity: 0,
+            onComplete: next
+        });
+    }
+
     const to_about_in = next => {
         gsap.to("body", {
             duration: 0.65,
@@ -121,10 +137,10 @@ import MainContent from "./MainContent.astro";
             new SwupHeadPlugin(),
             new SwupJsPlugin([
                 {
-                    from: "(.*)", // matches any route
-                    to: "(.*)", // matches any route
-                    out: next => next(), // immediately continues
-                    in: next => next() // immediately continues
+                    from: "(.*)",
+                    to: "(.*)",
+                    in: next => to_any_page_in(next),
+                    out: next => from_any_page_out(next),
                 },
                 {
                     from: "/",
