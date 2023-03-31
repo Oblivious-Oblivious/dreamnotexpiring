@@ -16,6 +16,7 @@ TODO Remove unnecessary `client:load` attributes
 TODO Extract common design language for all elements
 TODO Fix safari animation lags (will-change:)
 TODO Fix audio interaction perimissions for ..safari
+TODO Look at autovideo.js for audio
 TODO Possibly convert imports to requires for Pale Moon browser
 TODO Possibly use get-in-touch icons with thinner strokes
 TODO Add a noscript page
