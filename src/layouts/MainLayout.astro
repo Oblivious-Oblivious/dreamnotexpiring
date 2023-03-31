@@ -10,13 +10,13 @@ import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
 ---
 
 <script is:inline>
-    document.addEventListener("unload", () => {
+    document.addEventListener("unload", (e) => {
         e.preventDefault();
         location.reload();
         return false;
     });
 
-    window.addEventListener("unload", () => {
+    window.addEventListener("unload", (e) => {
         e.preventDefault();
         location.reload();
         return false;
