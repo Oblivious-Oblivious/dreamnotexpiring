@@ -2,11 +2,6 @@
     import { onMount } from "svelte";
 
     onMount(() => {
-        gsap.set(".cursor", {
-            xPercent: -50,
-            yPercent: -50,
-        });
-
         const cursor = document.querySelector(".cursor");
 
         window.addEventListener("mousemove", e => {
