@@ -1,17 +1,9 @@
 ---
+import CDataLib from "@components/Work/CDataLib.svelte";
+
 import MainLayout from "@layouts/MainLayout.astro";
-import WorkContent from "@layouts/WorkContent.astro";
 ---
 
 <MainLayout title="cDataLib - Efficiency oriented data structures">
-    <WorkContent>
-        <h1>CDATALIB</h1>
-    </WorkContent>
+    <CDataLib client:load/>
 </MainLayout>
-
-<style>
-    h1 {
-        padding: 5vw;
-        font-size: 5vw;
-    }
-</style>

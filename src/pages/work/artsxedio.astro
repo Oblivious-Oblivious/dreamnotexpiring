@@ -1,17 +1,9 @@
 ---
+import ArtSxedio from "@components/Work/ArtSxedio.svelte";
+
 import MainLayout from "@layouts/MainLayout.astro";
-import WorkContent from "@layouts/WorkContent.astro";
 ---
 
 <MainLayout title="Art Sxedio">
-    <WorkContent>
-        <h1>ARTSXEDIO</h1>
-    </WorkContent>
+    <ArtSxedio client:load/>
 </MainLayout>
-
-<style>
-    h1 {
-        padding: 5vw;
-        font-size: 5vw;
-    }
-</style>

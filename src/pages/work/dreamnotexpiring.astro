@@ -1,17 +1,9 @@
 ---
+import Dreamnotexpiring from "@components/Work/Dreamnotexpiring.svelte";
+
 import MainLayout from "@layouts/MainLayout.astro";
-import WorkContent from "@layouts/WorkContent.astro";
 ---
 
 <MainLayout title="oblivious to the dream not expiring">
-    <WorkContent>
-        <h1>DREAMNOTEXPIRING</h1>
-    </WorkContent>
+    <Dreamnotexpiring client:load/>
 </MainLayout>
-
-<style>
-    h1 {
-        padding: 5vw;
-        font-size: 5vw;
-    }
-</style>

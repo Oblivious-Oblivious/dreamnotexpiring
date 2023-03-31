@@ -1,17 +1,9 @@
 ---
+import Salsa from "@components/Work/Salsa.svelte";
+
 import MainLayout from "@layouts/MainLayout.astro";
-import WorkContent from "@layouts/WorkContent.astro";
 ---
 
 <MainLayout title="Salsa: Pomodoro Timer - focus">
-    <WorkContent>
-        <h1>SALSA: POMODORO TIMER</h1>
-    </WorkContent>
+    <Salsa client:load/>
 </MainLayout>
-
-<style>
-    h1 {
-        padding: 5vw;
-        font-size: 5vw;
-    }
-</style>

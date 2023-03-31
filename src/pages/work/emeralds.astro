@@ -1,17 +1,9 @@
 ---
+import Emeralds from "@components/Work/Emeralds.svelte";
+
 import MainLayout from "@layouts/MainLayout.astro";
-import WorkContent from "@layouts/WorkContent.astro";
 ---
 
 <MainLayout title="Emeralds - A package manager">
-    <WorkContent>
-        <h1>EMERALDS</h1>
-    </WorkContent>
+    <Emeralds client:load/>
 </MainLayout>
-
-<style>
-    h1 {
-        padding: 5vw;
-        font-size: 5vw;
-    }
-</style>

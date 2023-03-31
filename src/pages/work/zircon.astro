@@ -1,17 +1,9 @@
 ---
+import Zircon from "@components/Work/Zircon.svelte";
+
 import MainLayout from "@layouts/MainLayout.astro";
-import WorkContent from "@layouts/WorkContent.astro";
 ---
 
 <MainLayout title="Zircon - A programming language">
-    <WorkContent>
-        <h1>ZIRCON</h1>
-    </WorkContent>
+    <Zircon client:load/>
 </MainLayout>
-
-<style>
-    h1 {
-        padding: 5vw;
-        font-size: 5vw;
-    }
-</style>

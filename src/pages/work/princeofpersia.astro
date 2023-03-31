@@ -1,17 +1,9 @@
 ---
+import PrinceOfPersia from "@components/Work/PrinceOfPersia.svelte";
+
 import MainLayout from "@layouts/MainLayout.astro";
-import WorkContent from "@layouts/WorkContent.astro";
 ---
 
 <MainLayout title="Prince of Persia on Scratch">
-    <WorkContent>
-        <h1>PRINCE OF PERSIA ON SCRATCH</h1>
-    </WorkContent>
+    <PrinceOfPersia client:load/>
 </MainLayout>
-
-<style>
-    h1 {
-        padding: 5vw;
-        font-size: 5vw;
-    }
-</style>

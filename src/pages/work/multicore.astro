@@ -1,17 +1,9 @@
 ---
+import Multicore from "@components/Work/Multicore.svelte";
+
 import MainLayout from "@layouts/MainLayout.astro";
-import WorkContent from "@layouts/WorkContent.astro";
 ---
 
 <MainLayout title="Multicore - A penetration testing platform">
-    <WorkContent>
-        <h1>MULTICORE</h1>
-    </WorkContent>
+    <Multicore client:load/>
 </MainLayout>
-
-<style>
-    h1 {
-        padding: 5vw;
-        font-size: 5vw;
-    }
-</style>

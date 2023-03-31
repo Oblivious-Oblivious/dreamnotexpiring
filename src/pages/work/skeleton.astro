@@ -1,17 +1,9 @@
 ---
+import Skeleton from "@components/Work/Skeleton.svelte";
+
 import MainLayout from "@layouts/MainLayout.astro";
-import WorkContent from "@layouts/WorkContent.astro";
 ---
 
 <MainLayout title="Skeleton - An http server">
-    <WorkContent>
-        <h1>SKELETON</h1>
-    </WorkContent>
+    <Skeleton client:load/>
 </MainLayout>
-
-<style>
-    h1 {
-        padding: 5vw;
-        font-size: 5vw;
-    }
-</style>

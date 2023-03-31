@@ -1,17 +1,9 @@
 ---
+import CLitterbin from "@components/Work/CLitterbin.svelte";
+
 import MainLayout from "@layouts/MainLayout.astro";
-import WorkContent from "@layouts/WorkContent.astro";
 ---
 
 <MainLayout title="cLitterbin - A mark & sweep conservative garbage collector">
-    <WorkContent>
-        <h1>CLITTERBIN</h1>
-    </WorkContent>
+    <CLitterbin client:load/>
 </MainLayout>
-
-<style>
-    h1 {
-        padding: 5vw;
-        font-size: 5vw;
-    }
-</style>
