@@ -99,7 +99,7 @@
                 if(work_data[windex].is_animating)
                     work_data[windex].single_letters.forEach(el => change_letter(el));
 
-                setTimeout(change_all_letters, 10);
+                setTimeout(change_all_letters, 50);
             }
 
             const reset_all_letters = () => {
