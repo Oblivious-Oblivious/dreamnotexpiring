@@ -224,21 +224,9 @@
             opacity: 0,
             ease: "power2.inOut",
         })
-        .set(".main-content", {
-            autoAlpha: 1,
-        })
         .set("body", {
             overflow: "auto",
-        })
-        .fromTo("#smooth-wrapper", {
-            opacity: 0,
-        }, {
-            duration: 0.8,
-            ease: "power2.inOut",
-            opacity: 1,
             onComplete: () => {
-                document.querySelector(".intro-wrapper").style.display = "none";
-            }
         });
     })
 </script>
