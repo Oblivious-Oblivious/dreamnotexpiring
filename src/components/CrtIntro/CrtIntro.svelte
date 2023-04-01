@@ -29,4 +29,8 @@
         --noise: var(--silver);
         background-color: var(--bg-color);
     }
+
+    .intro-wrapper {
+        position: fixed;
+    }
 </style>
