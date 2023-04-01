@@ -150,8 +150,7 @@
     });
 </script>
 
-<!-- <div class="work-section" style="visibility: hidden;"> -->
-<div class="work-section">
+<div class="work-section" style="visibility: hidden;">
     <div class="work work-1">
         <a href="/work/margaret" draggable="false">
             <div class="work-title-container work-title-container-margaret">
