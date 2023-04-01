@@ -117,25 +117,30 @@
     }
 
     .get-in-touch-phrase {
-        transform: translate(37%, 50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 9vw;
         font-size: 5vw;
         font-family: var(--display-font);
-        height: 25vh;
+        height: 20vh;
     }
 
     .contact-wrapper {
         display: flex;
         width: 100vw;
-        height: 50vh;
+        height: 60vh;
         align-items: center;
         justify-content: center;
     }
 
     .get-in-touch-copyright {
-        transform: translate(43.5%, 50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-size: 2.5vw;
         font-family: var(--display-font);
-        height: 25vh;
+        height: 20vh;
     }
 
     .contact-text {

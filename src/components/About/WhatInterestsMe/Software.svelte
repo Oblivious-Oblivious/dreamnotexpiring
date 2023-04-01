@@ -124,7 +124,7 @@
     .software-wrapper {
         display: flex;
         gap: 1.5rem;
-        margin: 4.5rem auto;
+        margin: 0 auto;
         width: 80%;
     }
 

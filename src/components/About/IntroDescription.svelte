@@ -7,7 +7,6 @@
         gsap.registerPlugin(ScrollTrigger);
 
         gsap.set(".intro-description", {
-            x: "42vw",
             y: "25vh",
         });
 
@@ -107,6 +106,7 @@
     .intro-description {
         will-change: transform, opacity;
         transform: translateZ(0);
+        padding-left: 42vw;
     }
 
     .intro-line {
