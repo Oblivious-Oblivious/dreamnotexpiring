@@ -3,7 +3,7 @@
     import { browser_engine } from "@persistence/browser_engine";
 
     onMount(() => {
-        gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+        gsap.registerPlugin(ScrollTrigger);
 
         gsap.to(".work-section", {
             autoAlpha: 1,
@@ -157,7 +157,8 @@
     });
 </script>
 
-<div class="work-section" style="visibility: hidden;">
+<!-- <div class="work-section" style="visibility: hidden;"> -->
+<div class="work-section">
     <div class="work work-1">
         <a href="/work/margaret" draggable="false">
             <div class="work-title-container work-title-container-margaret">
