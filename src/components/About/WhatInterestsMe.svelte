@@ -33,6 +33,10 @@
 </div>
 
 <style>
+    .what-interests-me {
+        overflow: hidden;
+    }
+
     .spacer {
         padding: 8rem 0;
     }

@@ -148,6 +148,7 @@
         padding: 4vh 0;
         width: 180vw;
         height: 100vh;
+        overflow: hidden;
         align-items: center;
         justify-content: center;
     }
