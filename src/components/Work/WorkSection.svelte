@@ -35,6 +35,10 @@
             },
             ease: "power2.out",
         });
+        gsap.from("body", {
+            duration: 0.85,
+            onComplete: () => window.dispatchEvent(new CustomEvent("scrolling-start")),
+        });
 
         Array.prototype.shuffle = function() {
             const input = this;

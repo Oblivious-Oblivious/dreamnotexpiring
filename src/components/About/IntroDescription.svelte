@@ -21,6 +21,7 @@
             clipPath: "inset(0 0 100% 0)",
             stagger: 0.075,
             ease: "power2.out",
+            onComplete: () => window.dispatchEvent(new CustomEvent("scrolling-start")),
         });
 
         gsap.timeline({

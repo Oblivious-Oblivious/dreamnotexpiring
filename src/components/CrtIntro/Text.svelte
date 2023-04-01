@@ -2,6 +2,8 @@
     import { onMount } from "svelte";
 
     onMount(() => {
+        window.dispatchEvent(new CustomEvent("crt-intro-start"));
+
         gsap.timeline({
             delay: 0.5,
         })
@@ -227,6 +229,9 @@
         .set("body", {
             overflow: "auto",
             onComplete: () => {
+                window.scrollTo(0, 0);
+                window.dispatchEvent(new CustomEvent("crt-intro-end"));
+            },
         });
     })
 </script>
