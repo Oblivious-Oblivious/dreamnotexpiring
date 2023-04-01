@@ -143,9 +143,8 @@
 <style>
     .computer-related-topics-i-enjoy {
         display: flex;
-        /* TODO REMOVE */
-        padding-top: 16rem;
-        height: 210vh;
+        padding-top: 15vw;
+        height: 115vw;
     }
 
     .computer-related-topics-i-enjoy-phrase {
