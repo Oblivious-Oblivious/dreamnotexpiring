@@ -68,21 +68,13 @@ import AfterCrtIntro from "@components/CrtIntro/AfterCrtIntro.svelte";
     }
 
     const to_about_in = next => {
-        gsap.to("body", {
-            duration: 0.65,
-            overflow: "hidden",
-        });
-
         gsap.to("#swup", {
             duration: 0.65,
             onStart: ScrollTrigger.refresh,
-            onComplete: next,
-        });
-
-        gsap.to("body", {
-            delay: 0.65,
-            overflow: "auto",
-            onComplete: () => gsap.getById("scrollbar-tween").progress(0),
+            onComplete: () => {
+                gsap.getById("scrollbar-tween").progress(0);
+                next();
+            },
         });
     }
 
@@ -108,27 +100,13 @@ import AfterCrtIntro from "@components/CrtIntro/AfterCrtIntro.svelte";
     }
 
     const to_work_in = next => {
-        gsap.to("body", {
-            duration: 0.3,
-            overflow: "hidden",
-        });
-
         gsap.to("#swup", {
             duration: 0.4,
             onStart: ScrollTrigger.refresh,
-            onComplete: next,
-        });
-
-        gsap.to("body", {
-            delay: 0.3,
-            duration: 0.01,
-            onComplete: () => gsap.getById("scrollbar-tween").progress(0),
-        });
-
-        gsap.to("body", {
-            delay: 0.3,
-            duration: 0.01,
-            overflow: "auto",
+            onComplete: () => {
+                next();
+                gsap.getById("scrollbar-tween").progress(0);
+            },
         });
     }
 

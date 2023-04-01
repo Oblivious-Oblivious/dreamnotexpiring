@@ -225,15 +225,9 @@
             duration: 0.8,
             opacity: 0,
             ease: "power2.inOut",
-        })
-        .set("body", {
-            overflow: "auto",
-            onComplete: () => {
-                window.scrollTo(0, 0);
-                window.dispatchEvent(new CustomEvent("crt-intro-end"));
-            },
+            onComplete: () => window.dispatchEvent(new CustomEvent("crt-intro-end")),
         });
-    })
+    });
 </script>
 
 <div id="txt">
