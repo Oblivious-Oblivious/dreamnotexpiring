@@ -85,21 +85,21 @@
         </div>
     
         <div class="contact contact-instagram">
-            <a href="https://www.instagram.com/thanasis_papap/" draggable="false">
+            <a href="https://www.instagram.com/thanasis_papap/" target="_blank" rel="noopener noreferrer" draggable="false">
                 <img src="/img/instagram.png" alt="Instagram" draggable="false">
             </a>
             <div class="contact-text">Instagram</div>
         </div>
     
         <div class="contact contact-linkedin">
-            <a href="https://www.linkedin.com/in/thanasis-papapostolou/" draggable="false">
+            <a href="https://www.linkedin.com/in/thanasis-papapostolou/" target="_blank" rel="noopener noreferrer" draggable="false">
                 <img src="/img/linkedin.png" alt="LinkedIn" draggable="false">
             </a>
             <div class="contact-text">LinkedIn</div>
         </div>
     
         <div class="contact contact-twitter">
-            <a href="https://twitter.com/itsoblivious99" draggable="false">
+            <a href="https://twitter.com/itsoblivious99" target="_blank" rel="noopener noreferrer" draggable="false">
                 <img src="/img/twitter.png" alt="Twitter" draggable="false">
             </a>
             <div class="contact-text">Twitter</div>
