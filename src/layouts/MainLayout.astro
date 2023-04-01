@@ -7,6 +7,7 @@ import Cursor from "@components/Cursor/Cursor.svelte";
 import Scrollbar from "@components/Scrollbar/Scrollbar.svelte";
 import ThemeToggle from "@components/ThemeToggle/ThemeToggle.svelte";
 import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
+import TransitionOverlay from "@components/TransitionOverlay/TransitionOverlay.svelte";
 import AfterCrtIntro from "@components/CrtIntro/AfterCrtIntro.svelte";
 ---
 
@@ -52,18 +53,41 @@ import AfterCrtIntro from "@components/CrtIntro/AfterCrtIntro.svelte";
 
     const to_any_page_in = next => {
         gsap.to("#swup", {
-            duration: 0.5,
-            opacity: 1,
+            duration: 0.55,
             onComplete: next,
         });
+
+        gsap.timeline()
+            .to(".transition-overlay", {
+                duration: 0.55,
+                yPercent: 200,
+                ease: "power2.in",
+            })
+            .set(".transition-overlay", {
+                yPercent: -100,
+            });
     }
 
     const from_any_page_out = next => {
         window.dispatchEvent(new CustomEvent("scrolling-stop"));
         gsap.to("#swup", {
-            duration: 0.5,
+            duration: 0.75,
+            onComplete: next,
+        });
+
+        gsap.to(".transition-overlay", {
+            duration: 0.75,
+            yPercent: 100,
+            ease: "power2.out",
+        });
+    }
+
+    const from_work_project_out = next => {
+        window.dispatchEvent(new CustomEvent("scrolling-stop"));
+        gsap.to("#swup", {
+            duration: 0.65,
             opacity: 0,
-            onComplete: next
+            onComplete: next,
         });
     }
 
@@ -130,20 +154,32 @@ import AfterCrtIntro from "@components/CrtIntro/AfterCrtIntro.svelte";
                 {
                     from: "(.*)",
                     to: "(.*)",
-                    in: next => to_any_page_in(next),
                     out: next => from_any_page_out(next),
+                    in: next => to_any_page_in(next),
+                },
+                {
+                    from: "(.*)",
+                    to: "/",
+                    out: next => from_work_project_out(next),
+                    in: next => to_work_in(next),
+                },
+                {
+                    from: "(.*)",
+                    to: "/about",
+                    out: next => from_work_project_out(next),
+                    in: next => to_about_in(next),
                 },
                 {
                     from: "/",
                     to: "/about",
-                    in: next => to_about_in(next),
                     out: next => from_work_out(next),
+                    in: next => to_about_in(next),
                 },
                 {
                     from: "/about",
                     to: "/",
-                    in: next => to_work_in(next),
                     out: next => from_about_out(next),
+                    in: next => to_work_in(next),
                 },
             ]),
         ],
@@ -163,6 +199,7 @@ import AfterCrtIntro from "@components/CrtIntro/AfterCrtIntro.svelte";
             <Scrollbar client:load/>
             <ThemeToggle client:only="svelte"/>
             <GrainEffect/>
+            <TransitionOverlay/>
             
             <main id="swup">
                 <slot/>

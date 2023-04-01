@@ -22,6 +22,7 @@
     --fg-color: var(--night);
     --bg-color: var(--bone);
     --accent-color: var(--rose);
+    --overlay-color: #dbd0c0;
     --neuromorphic-shadow: 5px 5px 6.5px 0 rgba(0, 0, 0, 0.25),
                            -3px -3px 4.5px 0 rgba(255, 255, 255, 0.3);
     --neuromorphic-shadow2: 10px 10px 13px 0 rgba(0, 0, 0, 0.25),
@@ -41,6 +42,7 @@
     --fg-color: var(--smoke);
     --bg-color: var(--night);
     --accent-color: var(--rose);
+    --overlay-color: #141414;
     --neuromorphic-shadow: 5px 5px 6.5px 0 rgba(0, 0, 0, 1),
                            -3px -3px 4.5px 0 rgba(255, 255, 255, 0.05);
     --neuromorphic-shadow2: 10px 10px 13px 0 rgba(0, 0, 0, 1),
