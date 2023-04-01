@@ -9,13 +9,6 @@
             autoAlpha: 1,
         });
 
-        window.dispatchEvent(new CustomEvent("on-work-page", {
-            detail: {},
-            bubbles: true,
-            cancelable: true,
-            composed: false,
-        }));
-
         gsap.from(".work-line", {
             delay: 0.2,
             duration: 1,
