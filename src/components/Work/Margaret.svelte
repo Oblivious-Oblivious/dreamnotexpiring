@@ -12,12 +12,12 @@
             duration: 0.5,
             clipPath: "inset(0 100% 0 100%)",
         })
-        .set(".margaret-headline-text-word", {
+        .set(".margaret-intro-word", {
             duration: 1.5,
             autoAlpha: 1,
             stagger: 0.14,
         })
-        .from([".line", ".margaret-description", ".margaret-image"], {
+        .from([".line", ".margaret-description", ".margaret-image", ".margaret-headline"], {
             delay: 0.65,
             duration: 1.75,
             opacity: 0,
@@ -45,36 +45,36 @@
 
         <div class="line"></div>
 
-        <div class="margaret-headline">
-            <div class="margaret-headline-text">
-                <span class="margaret-headline-text-word">
+        <div class="margaret-intro">
+            <div>
+                <span class="margaret-intro-word">
                     An
                 </span>
-                <span class="margaret-headline-text-word">
+                <span class="margaret-intro-word">
                     object
                 </span>
-                <span class="margaret-headline-text-word">
+                <span class="margaret-intro-word">
                     oriented
                 </span>
-                <span class="margaret-headline-text-word">
+                <span class="margaret-intro-word">
                     language
                 </span>
-                <span class="margaret-headline-text-word">
+                <span class="margaret-intro-word">
                     system
                 </span>
-                <span class="margaret-headline-text-word">
+                <span class="margaret-intro-word">
                     based
                 </span>
-                <span class="margaret-headline-text-word">
+                <span class="margaret-intro-word">
                     on
                 </span>
-                <span class="margaret-headline-text-word">
+                <span class="margaret-intro-word">
                     ruby
                 </span>
-                <span class="margaret-headline-text-word">
+                <span class="margaret-intro-word">
                     and
                 </span>
-                <span class="margaret-headline-text-word">
+                <span class="margaret-intro-word">
                     smalltalk.
                 </span>
             </div>
@@ -316,17 +316,15 @@
         }
     }
 
+    .margaret-intro,
     .margaret-headline {
         display: flex;
         font-family: var(--display-font);
         font-size: 3vw;
-    }
-
-    .margaret-headline-text {
         text-align: center;
     }
 
-    .margaret-headline-text-word {
+    .margaret-intro-word {
         visibility: hidden;
     }
 
