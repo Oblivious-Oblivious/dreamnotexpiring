@@ -29,7 +29,7 @@
     header {
         z-index: 99999;
         position: fixed;
-        top: 2rem;
+        top: 2.22vw;
         width: 100vw;
         font-weight: 500;
     }
