@@ -19,10 +19,8 @@
         })
         .from([".line", ".margaret-description", ".margaret-image"], {
             delay: 0.65,
-            duration: 2,
+            duration: 1.75,
             opacity: 0,
-        })
-        .set("body", {
             onComplete: () => window.dispatchEvent(new CustomEvent("scrolling-start")),
         });
     });
