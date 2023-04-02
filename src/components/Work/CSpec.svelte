@@ -17,7 +17,7 @@
             autoAlpha: 1,
             stagger: 0.1,
         })
-        .from([".line", ".cspec-description", ".margaret-image", ".cspec-headline"], {
+        .from([".line", ".cspec-description", ".cspec-headline"], {
             delay: 0.65,
             duration: 1.75,
             opacity: 0,
