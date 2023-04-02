@@ -1,10 +1,10 @@
-TODO Design work project pages
 
 TODO Convert mixology section dimensions into view height based
 TODO Add a photo on the intro section of about
 TODO Add action indicators on custom mouse pointer
 TODO Add SplitText instead of hand typing intro words
 TODO Use Observer instead of document event handlers
+TODO Remove view height repositioning on intro-description
 
 AFTER IMPLEMENTING ALL COMPONENT ELEMENTS
 TODO Detect safari and display mixology cocktails in a 2x3 grid
