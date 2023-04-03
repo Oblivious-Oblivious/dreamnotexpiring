@@ -28,6 +28,8 @@
 
 <div class="cspec">
     <div class="cspec-content">
+        <div class="article-top-border"></div>
+
         <div class="cspec-title">
             <div class="cspec-name">
                 CSPEC
@@ -139,12 +141,13 @@
         </div>
         <div class="line"></div>
         <div class="cspec-description">
-            <br>
-            &bull; C language...........................................................................................................................................................................<br>
-            <br>
+            <a href="https://openlibrary.org/books/OL4558528M/The_C_programming_language" target="_blank" rel="noopener noreferrer" draggable="false">C language</a>
+            ................................................................................................................................. MAIN LANGUAGE<br>
         </div>
 
         <br><br><br><br>
+
+        <div class="article-bottom-border"></div>
     </div>
 
 </div>
@@ -155,7 +158,22 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100vw;
+        width: 80vw;
+        transform: translate(10vw, 7vw);
+    }
+
+    .cspec:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        background: url("/img/vertical-border.png") repeat-y top left,
+                    url("/img/vertical-border.png") repeat-y top right;
+        background-size: 1.8vw;
+        transform: translateY(-1vw);
+        z-index: -1;
+        filter: invert(var(--invert-value));
     }
 
     .cspec-content {
@@ -164,15 +182,17 @@
         align-items: center;
         justify-content: center;
         width: 62vw;
-        padding-top: 5vw;
     }
 
     .line {
         width: 100%;
-        height: 1px;
+        height: 1vw;
         background-color: var(--fg-color);
         transform-origin: left top;
+        background: url("/img/horizontal-border.png") repeat-x bottom left;
+        background-size: 60vw;
         margin: 1vw 0;
+        filter: invert(var(--invert-value));
     }
 
     .cspec-title {
@@ -188,7 +208,6 @@
 
     .cspec-link {
         font-size: 1.5vw;
-        z-index: 9999;
         animation: under_line 1s infinite;
     }
 
@@ -221,11 +240,30 @@
         text-align: justify;
     }
 
+    a:hover {
+        color: var(--accent-color);
+    }
+
+    .article-top-border,
+    .article-bottom-border {
+        display: flex;
+        width: 79vw;
+        padding-top: 2vw;
+        background: url("/img/horizontal-border.png") repeat-x bottom left;
+        background-size: 100vw;
+        transform: translateY(-0.9vw);
+        filter: invert(var(--invert-value));
+    }
+
+    .article-top-border {
+        transform: translateY(-1.55vw);
+    }
+
     .copyright {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-bottom: 2vw;
+        padding-bottom: 6vw;
         font-size: 2vw;
     }
 </style>

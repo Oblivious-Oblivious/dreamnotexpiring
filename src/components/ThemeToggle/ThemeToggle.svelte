@@ -4,17 +4,16 @@
     let is_theme_dark = false;
 
     const toggle_theme = () => {
-        if(is_theme_dark)
+        if(is_theme_dark) {
             document.querySelector("html").classList.add("dark-theme");
-        else
+            window.dispatchEvent(new CustomEvent("dark-theme"));
+        }
+        else {
             document.querySelector("html").classList.remove("dark-theme");
+            window.dispatchEvent(new CustomEvent("light-theme"));
+        }
 
-        window.dispatchEvent(new CustomEvent("theme-toggle", {
-            detail: {},
-            bubbles: true,
-            cancelable: true,
-            composed: false,
-        }));
+        window.dispatchEvent(new CustomEvent("theme-toggle"));
     }
 
     $: is_theme_dark, toggle_theme();

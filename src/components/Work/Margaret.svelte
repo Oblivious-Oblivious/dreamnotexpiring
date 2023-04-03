@@ -249,10 +249,14 @@
         </div>
         <div class="line"></div>
         <div class="margaret-description">
-            &bull; C language<br>
-            &bull; cSpec<br>
-            &bull; Boehm Garbage Collector<br>
-            &bull; Readline library<br>
+            <a href="https://openlibrary.org/books/OL4558528M/The_C_programming_language" target="_blank" rel="noopener noreferrer" draggable="false">C language</a>
+            .......................................................................................................................... MAIN LANGUAGE<br>
+            <a href="https://github.com/Oblivious-Oblivious/cSpec" target="_blank" rel="noopener noreferrer" draggable="false">cSpec</a>
+            .................................................................................................................................................... TESTING<br>
+            <a href="https://github.com/ivmai/bdwgc" target="_blank" rel="noopener noreferrer" draggable="false">Boehm Garbage Collector</a>
+            ................................................................................ MEMORY MANAGEMENT<br>
+            <a href="https://tiswww.case.edu/php/chet/readline/rltop.html" target="_blank" rel="noopener noreferrer" draggable="false">Readline library</a>
+            .....................................................................................................TERMINAL EMULATION<br>
         </div>
 
         <br><br><br><br>
@@ -281,10 +285,13 @@
 
     .line {
         width: 100%;
-        height: 1px;
+        height: 1vw;
         background-color: var(--fg-color);
         transform-origin: left top;
+        background: url("/img/horizontal-border.png") repeat-x bottom left;
+        background-size: 60vw;
         margin: 1vw 0;
+        filter: invert(var(--invert-value));
     }
 
     .margaret-title {
@@ -300,7 +307,6 @@
 
     .margaret-link {
         font-size: 1.5vw;
-        z-index: 9999;
         animation: under_line 1s infinite;
     }
 
@@ -339,6 +345,10 @@
     .margaret-description {
         font-size: 1.4vw;
         text-align: justify;
+    }
+
+    a:hover {
+        color: var(--accent-color);
     }
 
     .margaret-code {
