@@ -15,6 +15,8 @@
             scrollbar_progress = scrollY / (document.body.scrollHeight - innerHeight);
             if(scrollbar_progress > 0.9985)
                 scrollbar_progress = 1;
+            else if(scrollbar_progress < 0)
+                scrollbar_progress = 0;
             scroll_tween.progress(scrollbar_progress);
         }
 

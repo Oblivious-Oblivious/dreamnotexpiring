@@ -12,10 +12,6 @@
         gsap.set(".intro-wrapper", {
             autoAlpha: 1,
         });
-
-        gsap.set("body", {
-            overflow: "hidden",
-        });
     });
 </script>
 
