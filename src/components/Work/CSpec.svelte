@@ -184,6 +184,26 @@
         width: 62vw;
     }
 
+    .cspec-content:before,
+    .cspec-content:after {
+        font-size: 1.4vw;
+        font-style: italic;
+    }
+
+    .cspec-content:before {
+        content: "no. 2";
+        position: absolute;
+        top: 1.4vw;
+        left: 3.2vw;
+    }
+
+    .cspec-content:after {
+        content: "2021 - PRESENT";
+        position: absolute;
+        top: 1.4vw;
+        right: 3.2vw;
+    }
+
     .line {
         width: 100%;
         height: 1vw;
@@ -265,5 +285,20 @@
         justify-content: center;
         padding-bottom: 6vw;
         font-size: 2vw;
+    }
+
+    .copyright:before {
+        content: "";
+        position: absolute;
+        /* top: 98.36vw; */
+        left: 11.66vw;
+        width: 0;
+        height: 0;
+        opacity: 0.92;
+        z-index: -1;
+        border-left: 7vw solid var(--bg-color);
+        border-top: 7vw solid transparent;
+        background: var(--fg-color) url("/img/halftone.png") repeat;
+        transform: rotate(180deg);
     }
 </style>
