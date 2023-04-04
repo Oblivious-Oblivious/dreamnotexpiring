@@ -3,6 +3,8 @@
     export let date;
     
     import { onMount } from "svelte";
+    import TopBorder from "./TopBorder.svelte";
+    import BottomBorder from "./BottomBorder.svelte";
 
     onMount(() => {
         gsap.to(".article", {
@@ -17,7 +19,12 @@
     visibility: hidden;"
 >
     <div class="article-content">
+        <TopBorder/>
+
         <slot/>
+
+        <br><br><br><br>
+        <BottomBorder/>
     </div>
 </div>
 
