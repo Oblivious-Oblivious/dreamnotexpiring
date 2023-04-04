@@ -3,7 +3,6 @@ TODO Fix dots on pages (technologies used)
 TODO Convert mixology section dimensions into view height based
 TODO Add a photo on the intro section of about
 TODO Add action indicators on custom mouse pointer
-TODO Add SplitText instead of hand typing intro words
 TODO Use Observer instead of document event handlers
 TODO Remove view height repositioning on intro-description
 
