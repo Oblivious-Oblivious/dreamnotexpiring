@@ -336,7 +336,7 @@
 
     .margaret-image {
         position: absolute;
-        opacity: 0.5;
+        opacity: 0.9;
         transform: translate(-32vw, -20vw);
         width: 30vw;
         z-index: -1;
