@@ -10,13 +10,11 @@
 
     onMount(() => {
         gsap.from([headline_element, description_element], {
-            // delay: 0.65,
-            // delay: 2.45,
             delay: 3.1,
             duration: 0.8,
             opacity: 0,
         });
-    })
+    });
 </script>
 
 <br><br>

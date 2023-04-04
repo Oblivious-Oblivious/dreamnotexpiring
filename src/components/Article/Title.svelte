@@ -13,7 +13,7 @@
             duration: 0.65,
             clipPath: "inset(0 100% 0 100%)",
         });
-    })
+    });
 </script>
 
 <div class="title">
