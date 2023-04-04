@@ -1,17 +1,24 @@
 <script>
     import { onMount } from "svelte";
     import { underline_value } from "@persistence/underline_value";
+    import Article from "@components/Article/Article.svelte";
+    import Title from "@components/Article/Title.svelte";
+    import Copyright from "@components/Article/Copyright.svelte";
 
     onMount(() => {
         $underline_value = "";
     });
 </script>
 
-<h1>EMERALDS</h1>
+<Article number="no. 7" date="2021">
+    <Title
+        name="EMERALDS"
+        link="https://github.com/Oblivious-Oblivious/Emeralds"
+        link_type="GitHub"
+    />
+</Article>
+
+<Copyright/>
 
 <style>
-    h1 {
-        padding: 5vw;
-        font-size: 5vw;
-    }
 </style>

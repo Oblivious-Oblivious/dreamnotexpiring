@@ -1,13 +1,11 @@
 <script>
     import { onMount } from "svelte";
     import { underline_value } from "@persistence/underline_value";
-    import TopBorder from "@components/Article/TopBorder.svelte";
-    import BottomBorder from "@components/Article/BottomBorder.svelte";
-    import Line from "@components/Article/Line.svelte";
+    import Article from "@components/Article/Article.svelte";
     import Title from "@components/Article/Title.svelte";
+    import Line from "@components/Article/Line.svelte";
     import Content from "@components/Article/Content.svelte";
     import Copyright from "@components/Article/Copyright.svelte";
-    import Article from "@components/Article/Article.svelte";
 
     onMount(() => {
         $underline_value = "";
@@ -25,8 +23,6 @@
 </script>
 
 <Article number="no. 2" date="2021 - PRESENT">
-    <TopBorder/>
-
     <Title
         name="CSPEC"
         link="https://github.com/Oblivious-Oblivious/cSpec"
@@ -34,7 +30,6 @@
     />
 
     <Line/>
-
     <div class="cspec-intro">
         <div>
             <span class="cspec-intro-word">
@@ -87,7 +82,6 @@
             </span>
         </div>
     </div>
-
     <Line/>
 
     <Content
@@ -130,10 +124,6 @@
         <a href="https://openlibrary.org/books/OL4558528M/The_C_programming_language" target="_blank" rel="noopener noreferrer" draggable="false">C language</a>
         ................................................................................................................................. MAIN LANGUAGE<br>
     </Content>
-
-    <br><br><br><br>
-
-    <BottomBorder/>
 </Article>
 
 <Copyright/>
