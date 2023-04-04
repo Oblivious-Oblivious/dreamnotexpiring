@@ -4,6 +4,10 @@
     onMount(() => {
         const cursor = document.querySelector(".cursor");
 
+        gsap.set(cursor, {
+            xPercent: -15,
+        });
+
         window.addEventListener("mousemove", e => {
             gsap.to(cursor, {
                 duration: 0.1,
