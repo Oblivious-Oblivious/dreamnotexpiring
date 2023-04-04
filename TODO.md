@@ -1,3 +1,4 @@
+TODO Fix dots on pages (technologies used)
 
 TODO Convert mixology section dimensions into view height based
 TODO Add a photo on the intro section of about
@@ -7,6 +8,8 @@ TODO Use Observer instead of document event handlers
 TODO Remove view height repositioning on intro-description
 
 AFTER IMPLEMENTING ALL COMPONENT ELEMENTS
+TODO Move all intro animations into the MainLayout swup functions
+TODO Make get-in-touch glitch animation delay shorter
 TODO Detect safari and display mixology cocktails in a 2x3 grid
 TODO Survey on cursor positioning
 TODO Fix visibility=hidden -> autoAlpha=1 flicker bugs
