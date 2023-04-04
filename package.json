@@ -22,6 +22,7 @@
         "cssnano": "^5.1.15",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
+        "split-type": "^0.3.3",
         "svelte": "^3.57.0",
         "svelte-preprocess": "^5.0.3",
         "swup": "^3.0.5"
