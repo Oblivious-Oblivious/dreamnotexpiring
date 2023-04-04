@@ -3,22 +3,12 @@
     import { underline_value } from "@persistence/underline_value";
     import Article from "@components/Article/Article.svelte";
     import Title from "@components/Article/Title.svelte";
-    import Line from "@components/Article/Line.svelte";
+    import Intro from "@components/Article/Intro.svelte";
     import Content from "@components/Article/Content.svelte";
     import Copyright from "@components/Article/Copyright.svelte";
 
     onMount(() => {
         $underline_value = "";
-
-        gsap.timeline({
-            delay: 0.95,
-        })
-        .set(".cspec-intro-word", {
-            duration: 1.5,
-            autoAlpha: 1,
-            stagger: 0.1,
-            onComplete: () => window.dispatchEvent(new CustomEvent("scrolling-start")),
-        });
     });
 </script>
 
@@ -29,60 +19,10 @@
         link_type="GitHub"
     />
 
-    <Line/>
-    <div class="cspec-intro">
-        <div>
-            <span class="cspec-intro-word">
-                A
-            </span>
-            <span class="cspec-intro-word">
-                lightweight,
-            </span>
-            <span class="cspec-intro-word">
-                compile
-            </span>
-            <span class="cspec-intro-word">
-                time
-            </span>
-            <span class="cspec-intro-word">
-                unit
-            </span>
-            <span class="cspec-intro-word">
-                testing
-            </span>
-            <span class="cspec-intro-word">
-                library
-            </span>
-            <span class="cspec-intro-word">
-                for
-            </span>
-            <span class="cspec-intro-word">
-                TDD
-            </span>
-            <span class="cspec-intro-word">
-                and
-            </span>
-            <span class="cspec-intro-word">
-                BDD
-            </span>
-            <span class="cspec-intro-word">
-                models
-            </span>
-            <span class="cspec-intro-word">
-                inspired
-            </span>
-            <span class="cspec-intro-word">
-                from
-            </span>
-            <span class="cspec-intro-word">
-                ruby's
-            </span>
-            <span class="cspec-intro-word">
-                rspec
-            </span>
-        </div>
-    </div>
-    <Line/>
+    <Intro content="
+        A lightweight, compile time unit testing library
+        for TDD and BDD models inspired from ruby's rspec.
+    "/>
 
     <Content
         headline="Importance of testing"
@@ -129,17 +69,6 @@
 <Copyright/>
 
 <style>
-    .cspec-intro {
-        display: flex;
-        font-family: var(--display-font);
-        font-size: 3vw;
-        text-align: center;
-    }
-
-    .cspec-intro-word {
-        visibility: hidden;
-    }
-
     a:hover {
         color: var(--accent-color);
     }
