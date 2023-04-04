@@ -12,7 +12,7 @@
 
 <Article number="no. 12" date="2018">
     <Title
-        name="CDATALIB"
+        name="ARTSXEDIO"
         link="https://github.com/Oblivious-Oblivious/ArtSxedio"
         link_type="GitHub"
     />

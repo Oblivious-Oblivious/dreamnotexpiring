@@ -12,7 +12,7 @@
 
 <Article number="no. 8" date="2021 - ?">
     <Title
-        name="EMERALDS"
+        name="DYNADESIGN"
         link="https://github.com/Oblivious-Oblivious/DynaDesign"
         link_type="GitHub"
     />
