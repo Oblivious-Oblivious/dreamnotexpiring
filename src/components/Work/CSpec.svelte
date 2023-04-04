@@ -1,47 +1,43 @@
 <script>
     import { onMount } from "svelte";
     import { underline_value } from "@persistence/underline_value";
+    import TopBorder from "@components/Article/TopBorder.svelte";
+    import BottomBorder from "@components/Article/BottomBorder.svelte";
+    import Line from "@components/Article/Line.svelte";
+    import Title from "@components/Article/Title.svelte";
+    import Content from "@components/Article/Content.svelte";
+    import Copyright from "@components/Article/Copyright.svelte";
 
     onMount(() => {
         $underline_value = "";
 
+        gsap.to(".cspec", {
+            autoAlpha: 1,
+        });
+
         gsap.timeline({
-            delay: 0.3,
-        })
-        .from(".cspec-title", {
-            duration: 0.5,
-            clipPath: "inset(0 100% 0 100%)",
+            delay: 0.95,
         })
         .set(".cspec-intro-word", {
             duration: 1.5,
             autoAlpha: 1,
             stagger: 0.1,
-        })
-        .from([".line", ".cspec-description", ".cspec-headline"], {
-            delay: 0.65,
-            duration: 1.75,
-            opacity: 0,
             onComplete: () => window.dispatchEvent(new CustomEvent("scrolling-start")),
         });
     });
 </script>
 
-<div class="cspec">
+<div class="cspec" style="visibility: hidden;">
     <div class="cspec-content">
-        <div class="article-top-border"></div>
+        <TopBorder/>
 
-        <div class="cspec-title">
-            <div class="cspec-name">
-                CSPEC
-            </div>
-            <div class="cspec-link">
-                <a href="https://github.com/Oblivious-Oblivious/cSpec" target="_blank" rel="noopener noreferrer" draggable="false">
-                    &lt;GitHub&gt;
-                </a>
-            </div>
-        </div>
+        <Title
+            name="CSPEC"
+            link="https://github.com/Oblivious-Oblivious/cSpec"
+            link_type="GitHub"
+        />
 
-        <div class="line"></div>
+        <Line/>
 
         <div class="cspec-intro">
             <div>
@@ -96,62 +92,56 @@
             </div>
         </div>
 
-        <div class="line"></div>
+        <Line/>
 
-        <br><br>
-        <div class="cspec-headline">
-            Importance of testing
-        </div>
-        <div class="line"></div>
-        <div class="cspec-description">
-            Modern programming has proven harder to do that most expected.
-            Long gone are the days of simple programs and simple operations.
-            Recent software is a mess of strongly dependent internal parts
-            with programmers trying to untangle them as best they can.  Tests
-            are an integral component of the process of refactoring.  Without
-            them, it is simply not possible.  Tests therefore serve a higher
-            purpose, having less to do with proving correctness, and much
-            more to do with have test coverage for future code enhancements,
-            deletions, or refactorings.
-        </div>
+        <Content
+            headline="Importance of testing"
+            description="
+                Modern programming has proven harder to do that most expected.
+                Long gone are the days of simple programs and simple operations.
+                Recent software is a mess of strongly dependent internal parts
+                with programmers trying to untangle them as best they can.  Tests
+                are an integral component of the process of refactoring.  Without
+                them, it is simply not possible.  Tests therefore serve a higher
+                purpose, having less to do with proving correctness, and much
+                more to do with have test coverage for future code enhancements,
+                deletions, or refactorings.
+            "
+        />
 
-        <br><br>
-        <div class="cspec-headline">
-            Why is BDD better than other forms of testing
-        </div>
-        <div class="line"></div>
-        <div class="cspec-description">
-            Behaviour driven development focuses on human collaboration.
-            It bridges the gaps between stakeholders, designers and
-            developers, because in a BDD spec one might include user flow
-            information, as well as tests and documentation all together.
-            Each professional can focus on their own specialization while
-            collaborating on the same piece of information.  That ultimately
-            provides much greater insight on the direction and implementation
-            of the product as both technical and non-technical people can
-            contribute.  The main advantage of BDD in comparison to TDD or
-            unit-testing after the fact, is that it provides descriptions
-            of `how` software is should behave, instead of internal code
-            information only developers could understand.
-        </div>
+        <Content
+            headline="Why is BDD better than other forms of testing"
+            description="
+                Behaviour driven development focuses on human collaboration.
+                It bridges the gaps between stakeholders, designers and
+                developers, because in a BDD spec one might include user flow
+                information, as well as tests and documentation all together.
+                Each professional can focus on their own specialization while
+                collaborating on the same piece of information.  That ultimately
+                provides much greater insight on the direction and implementation
+                of the product as both technical and non-technical people can
+                contribute.  The main advantage of BDD in comparison to TDD or
+                unit-testing after the fact, is that it provides descriptions
+                of `how` software is should behave, instead of internal code
+                information only developers could understand.
+            "
+        />
 
-        <br><br>
-        <div class="cspec-headline">
-            Technologies used
-        </div>
-        <div class="line"></div>
-        <div class="cspec-description">
+        <Content
+            headline="Technologies used"
+            description=""
+        >
             <a href="https://openlibrary.org/books/OL4558528M/The_C_programming_language" target="_blank" rel="noopener noreferrer" draggable="false">C language</a>
             ................................................................................................................................. MAIN LANGUAGE<br>
-        </div>
+        </Content>
 
         <br><br><br><br>
 
-        <div class="article-bottom-border"></div>
+        <BottomBorder/>
     </div>
-
 </div>
-<div class="copyright">© Oblivious</div>
+
+<Copyright/>
 
 <style>
     .cspec {
@@ -204,47 +194,7 @@
         right: 3.2vw;
     }
 
-    .line {
-        width: 100%;
-        height: 1vw;
-        background-color: var(--fg-color);
-        transform-origin: left top;
-        background: url("/img/horizontal-border.png") repeat-x bottom left;
-        background-size: 60vw;
-        margin: 1vw 0;
-        filter: invert(var(--invert-value));
-    }
-
-    .cspec-title {
-        display: flex;
-        align-items: baseline;
-    }
-
-    .cspec-name {
-        font-size: 7vw;
-        font-family: var(--display-font);
-        font-style: italic;
-    }
-
-    .cspec-link {
-        font-size: 1.5vw;
-        animation: under_line 1s infinite;
-    }
-
-    @keyframes under_line {
-        0% {
-            text-decoration: none;
-        }
-        50% {
-            text-decoration: underline;
-        }
-        100% {
-            text-decoration: none;
-        }
-    }
-
-    .cspec-intro,
-    .cspec-headline {
+    .cspec-intro {
         display: flex;
         font-family: var(--display-font);
         font-size: 3vw;
@@ -255,50 +205,7 @@
         visibility: hidden;
     }
 
-    .cspec-description {
-        font-size: 1.4vw;
-        text-align: justify;
-    }
-
     a:hover {
         color: var(--accent-color);
-    }
-
-    .article-top-border,
-    .article-bottom-border {
-        display: flex;
-        width: 79vw;
-        padding-top: 2vw;
-        background: url("/img/horizontal-border.png") repeat-x bottom left;
-        background-size: 100vw;
-        transform: translateY(-0.9vw);
-        filter: invert(var(--invert-value));
-    }
-
-    .article-top-border {
-        transform: translateY(-1.55vw);
-    }
-
-    .copyright {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 6vw;
-        font-size: 2vw;
-    }
-
-    .copyright:before {
-        content: "";
-        position: absolute;
-        /* top: 98.36vw; */
-        left: 11.66vw;
-        width: 0;
-        height: 0;
-        opacity: 0.92;
-        z-index: -1;
-        border-left: 7vw solid var(--bg-color);
-        border-top: 7vw solid transparent;
-        background: var(--fg-color) url("/img/halftone.png") repeat;
-        transform: rotate(180deg);
     }
 </style>
