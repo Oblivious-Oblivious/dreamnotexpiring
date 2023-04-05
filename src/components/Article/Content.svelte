@@ -11,7 +11,7 @@
     onMount(() => {
         gsap.from([headline_element, description_element], {
             delay: 3.1,
-            duration: 0.8,
+            duration: 1.25,
             opacity: 0,
         });
     });
