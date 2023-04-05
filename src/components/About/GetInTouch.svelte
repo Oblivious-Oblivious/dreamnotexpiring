@@ -73,6 +73,10 @@
     });
 </script>
 
+<div class="get-in-touch-profile">
+    <img src="/img/profile.jpg" alt="Profile">
+</div>
+
 <div class="get-in-touch-wrapper">
     <div class="get-in-touch-phrase">Get In Touch</div>
 
@@ -164,8 +168,17 @@
         justify-content: center;
     }
 
-    img {
+    .contact img {
         width: 10vw;
         filter: invert(var(--invert-value));
+    }
+
+    .get-in-touch-profile img {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        opacity: var(--profile-opacity-value);
+        z-index: -1;
     }
 </style>
