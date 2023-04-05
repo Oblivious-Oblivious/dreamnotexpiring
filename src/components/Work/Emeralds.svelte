@@ -36,6 +36,22 @@
     </Content>
 
     <Content
+        headline=""
+        description=""
+    >
+        <div class="videos">
+            <video autoplay muted loop>
+                <source src="/video/emeralds1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video autoplay muted loop>
+                <source src="/video/emeralds2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </Content>
+
+    <Content
         headline="Description"
         description="
             Emeralds offers decentralised dependency management, automated
@@ -57,5 +73,17 @@
 
     a:hover {
         color: var(--accent-color);
+    }
+
+    .videos {
+        display: flex;
+        gap: 1vw;
+        width: 100%;
+    }
+
+    video {
+        width: 49.3%;
+        box-shadow: var(--neuromorphic-shadow2);
+        border-radius: 0.5vw;
     }
 </style>

@@ -31,6 +31,32 @@
         <a href="https://scratch.mit.edu" target="_blank" rel="noopener noreferrer" draggable="false">Scratch</a>
         ................................................................................................................. DEVELOPMENT ENVIRONMENT<br>
     </Content>
+
+    <Content
+        headline=""
+        description=""
+    >
+        <div class="videos">
+            <video class="video-1" autoplay muted loop>
+                <source src="/video/princeofpersia1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <br>
+        <div class="videos">
+            <video class="video-2" autoplay muted loop>
+                <source src="/video/princeofpersia2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <br>
+        <div class="videos">
+            <video class="video-3" autoplay muted loop>
+                <source src="/video/princeofpersia3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </Content>
 </Article>
 
 <Copyright/>
@@ -42,5 +68,23 @@
 
     a:hover {
         color: var(--accent-color);
+    }
+
+    .videos {
+        display: flex;
+        width: 100%;
+    }
+
+    video {
+        width: 49.3%;
+        box-shadow: var(--neuromorphic-shadow2);
+        border-radius: 0.5vw;
+    }
+
+    .video-2 {
+        transform: translateX(50%);
+    }
+    .video-3 {
+        transform: translateX(100%);
     }
 </style>

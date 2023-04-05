@@ -33,6 +33,20 @@
     </Content>
 
     <Content
+        headline=""
+        description=""
+    >
+        <div class="photos">
+            <div class="photo">
+                <img src="/img/clitterbin1.jpg" alt="cLitterBin">
+            </div>
+            <div class="photo">
+                <img src="/img/clitterbin2.jpg" alt="cLitterBin">
+            </div>
+        </div>
+    </Content>
+
+    <Content
         headline="Description"
         description="
             cLitterBin, is a conservative mark and sweep garbage collector
@@ -56,5 +70,17 @@
 
     a:hover {
         color: var(--accent-color);
+    }
+
+    .photos {
+        display: flex;
+        gap: 1vw;
+        width: 100%;
+    }
+
+    .photo img {
+        width: 100%;
+        box-shadow: var(--neuromorphic-shadow3);
+        border-radius: 0.4vw;
     }
 </style>

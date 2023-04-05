@@ -25,6 +25,26 @@
     "/>
 
     <Content
+        headline="Technologies used"
+        description=""
+    >
+        <a href="https://openlibrary.org/books/OL4558528M/The_C_programming_language" target="_blank" rel="noopener noreferrer" draggable="false">C language</a>
+        ................................................................................................................................. MAIN LANGUAGE<br>
+    </Content>
+
+    <Content
+        headline=""
+        description=""
+    >
+        <div class="videos">
+            <video autoplay muted loop>
+                <source src="/video/cspec.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </Content>
+
+    <Content
         headline="Importance of testing"
         description="
             Modern programming has proven harder to do that most expected.
@@ -56,14 +76,6 @@
             information only developers could understand.
         "
     />
-
-    <Content
-        headline="Technologies used"
-        description=""
-    >
-        <a href="https://openlibrary.org/books/OL4558528M/The_C_programming_language" target="_blank" rel="noopener noreferrer" draggable="false">C language</a>
-        ................................................................................................................................. MAIN LANGUAGE<br>
-    </Content>
 </Article>
 
 <Copyright/>
@@ -75,5 +87,17 @@
 
     a:hover {
         color: var(--accent-color);
+    }
+
+    .videos {
+        display: flex;
+        gap: 1vw;
+        width: 100%;
+    }
+
+    video {
+        width: 100%;
+        box-shadow: var(--neuromorphic-shadow2);
+        border-radius: 0.5vw;
     }
 </style>

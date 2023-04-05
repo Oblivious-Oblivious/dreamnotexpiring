@@ -36,6 +36,20 @@
     </Content>
 
     <Content
+        headline=""
+        description=""
+    >
+        <div class="photos">
+            <div class="photo">
+                <img src="/img/zircon1.jpg" alt="Zircon">
+            </div>
+            <div class="photo">
+                <img src="/img/zircon2.jpg" alt="Zircon">
+            </div>
+        </div>
+    </Content>
+
+    <Content
         headline="Description"
         description="
             Zircon is the first of experiments on building a viable object
@@ -57,5 +71,17 @@
 
     a:hover {
         color: var(--accent-color);
+    }
+
+    .photos {
+        display: flex;
+        gap: 1vw;
+        width: 100%;
+    }
+
+    .photo img {
+        width: 100%;
+        box-shadow: var(--neuromorphic-shadow3);
+        border-radius: 0.4vw;
     }
 </style>

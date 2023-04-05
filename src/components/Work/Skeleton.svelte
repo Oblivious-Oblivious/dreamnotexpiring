@@ -35,6 +35,26 @@
     </Content>
 
     <Content
+        headline=""
+        description=""
+    >
+        <div class="photos">
+            <div class="photo">
+                <img src="/img/skeleton1.jpg" alt="Skeleton">
+            </div>
+            <div class="photo">
+                <img src="/img/skeleton2.jpg" alt="Skeleton">
+            </div>
+            <div class="photo">
+                <img src="/img/skeleton3.jpg" alt="Skeleton">
+            </div>
+            <div class="photo">
+                <img src="/img/skeleton4.jpg" alt="Skeleton">
+            </div>
+        </div>
+    </Content>
+
+    <Content
         headline="Description"
         description="
             Skeleton is a simplistic web framework for bootstraping http
@@ -55,5 +75,17 @@
 
     a:hover {
         color: var(--accent-color);
+    }
+
+    .photos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1vw;
+    }
+
+    .photo img {
+        width: 100%;
+        box-shadow: var(--neuromorphic-shadow3);
+        border-radius: 0.4vw;
     }
 </style>

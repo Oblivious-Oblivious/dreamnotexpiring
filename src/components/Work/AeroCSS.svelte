@@ -34,6 +34,18 @@
     </Content>
 
     <Content
+        headline=""
+        description=""
+    >
+        <div class="videos">
+            <video autoplay muted loop>
+                <source src="/video/aerocss.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </Content>
+
+    <Content
         headline="Description"
         description="
             Aero CSS is a css framework written in sass, inheritic from the
@@ -55,5 +67,17 @@
 
     a:hover {
         color: var(--accent-color);
+    }
+
+    .videos {
+        display: flex;
+        gap: 1vw;
+        width: 100%;
+    }
+
+    video {
+        width: 100%;
+        box-shadow: var(--neuromorphic-shadow3);
+        border-radius: 0.5vw;
     }
 </style>

@@ -38,6 +38,26 @@
         <a href="https://www.swig.org" target="_blank" rel="noopener noreferrer" draggable="false">SWIG</a>
         .................................................................................................................................. LANGUAGE EXTENSIONS<br>
     </Content>
+
+    <Content
+        headline=""
+        description=""
+    >
+        <div class="photos">
+            <div class="photo">
+                <img src="/img/multicore1.jpg" alt="MultiCore">
+            </div>
+            <div class="photo">
+                <img src="/img/multicore2.jpg" alt="MultiCore">
+            </div>
+            <div class="photo">
+                <img src="/img/multicore3.jpg" alt="MultiCore">
+            </div>
+            <div class="photo">
+                <img src="/img/multicore4.jpg" alt="MultiCore">
+            </div>
+        </div>
+    </Content>
 </Article>
 
 <Copyright/>
@@ -49,5 +69,17 @@
 
     a:hover {
         color: var(--accent-color);
+    }
+
+    .photos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1vw;
+    }
+
+    .photo img {
+        width: 100%;
+        box-shadow: var(--neuromorphic-shadow3);
+        border-radius: 0.4vw;
     }
 </style>
