@@ -3,6 +3,8 @@
     import { underline_value } from "@persistence/underline_value";
     import Article from "@components/Article/Article.svelte";
     import Title from "@components/Article/Title.svelte";
+    import Intro from "@components/Article/Intro.svelte";
+    import Content from "@components/Article/Content.svelte";
     import Copyright from "@components/Article/Copyright.svelte";
 
     onMount(() => {
@@ -16,9 +18,42 @@
         link="https://github.com/Oblivious-Oblivious/skeleton"
         link_type="GitHub"
     />
+
+    <Intro content="
+        A very minimal http server api serving as a
+        platform for adding middleware incrementally.
+    "/>
+
+    <Content
+        headline="Technologies used"
+        description=""
+    >
+        <a href="https://crystal-lang.org" target="_blank" rel="noopener noreferrer" draggable="false">Crystal</a>
+        ................................................................................................................................................ MAIN LANGUAGE<br>
+        <a href="https://docs.github.com/en/actions" target="_blank" rel="noopener noreferrer" draggable="false">GitHub Actions</a>
+        ............................................................................................................. CONTINUOUS INTEGRATION<br>
+    </Content>
+
+    <Content
+        headline="Description"
+        description="
+            Skeleton is a simplistic web framework for bootstraping http
+            servers for the backend.  It supports most REST operations,
+            with support for adding middleware such as CORS services, or
+            route handlers.  It is extremely efficient and takes the role
+            of a foundational starting point for back end solutions.
+        "
+    />
 </Article>
 
 <Copyright/>
 
 <style>
+    a {
+        font-style: italic;
+    }
+
+    a:hover {
+        color: var(--accent-color);
+    }
 </style>

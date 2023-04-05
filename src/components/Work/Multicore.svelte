@@ -3,6 +3,8 @@
     import { underline_value } from "@persistence/underline_value";
     import Article from "@components/Article/Article.svelte";
     import Title from "@components/Article/Title.svelte";
+    import Intro from "@components/Article/Intro.svelte";
+    import Content from "@components/Article/Content.svelte";
     import Copyright from "@components/Article/Copyright.svelte";
 
     onMount(() => {
@@ -16,9 +18,36 @@
         link="https://github.com/Oblivious-Oblivious/MultiCore"
         link_type="GitHub"
     />
+
+    <Intro content="
+        A platform for penetration testing using Ruby, C++ and QML.
+    "/>
+
+    <Content
+        headline="Technologies used"
+        description=""
+    >
+        <a href="https://www.ruby-lang.org/en/" target="_blank" rel="noopener noreferrer" draggable="false">Ruby</a>
+        ............................................................................................................................................................. MAIN LOGIC<br>
+        <a href="https://doc.qt.io/qt-6/qmlapplications.html" target="_blank" rel="noopener noreferrer" draggable="false">QML</a>
+        ............................................................................................................................................................ UI GRAPHICS<br>
+        <a href="https://www.stroustrup.com/4th.html" target="_blank" rel="noopener noreferrer" draggable="false">C++</a>
+        .......................................................................................................................................... EXTERNAL LIBRARIES<br>
+        <a href="https://openlibrary.org/books/OL4558528M/The_C_programming_language" target="_blank" rel="noopener noreferrer" draggable="false">C</a>
+        ........................................................................................................................................ PENTESTING SOFTWARE<br>
+        <a href="https://www.swig.org" target="_blank" rel="noopener noreferrer" draggable="false">SWIG</a>
+        .................................................................................................................................. LANGUAGE EXTENSIONS<br>
+    </Content>
 </Article>
 
 <Copyright/>
 
 <style>
+    a {
+        font-style: italic;
+    }
+
+    a:hover {
+        color: var(--accent-color);
+    }
 </style>

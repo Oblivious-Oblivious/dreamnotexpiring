@@ -3,6 +3,8 @@
     import { underline_value } from "@persistence/underline_value";
     import Article from "@components/Article/Article.svelte";
     import Title from "@components/Article/Title.svelte";
+    import Intro from "@components/Article/Intro.svelte";
+    import Content from "@components/Article/Content.svelte";
     import Copyright from "@components/Article/Copyright.svelte";
 
     onMount(() => {
@@ -16,9 +18,44 @@
         link="https://github.com/Oblivious-Oblivious/Zircon"
         link_type="GitHub"
     />
+
+    <Intro content="
+        A small parser for object oriented programming in C.
+    "/>
+
+    <Content
+        headline="Technologies used"
+        description=""
+    >
+    <a href="https://openlibrary.org/books/OL4558528M/The_C_programming_language" target="_blank" rel="noopener noreferrer" draggable="false">C language</a>
+    ................................................................................................................................. MAIN LANGUAGE<br>
+    <a href="https://linux.die.net/man/1/yacc" target="_blank" rel="noopener noreferrer" draggable="false">yacc</a>
+    ........................................................................................................................................ GRAMMAR PARSER<br>
+    <a href="https://linux.die.net/man/1/yacc" target="_blank" rel="noopener noreferrer" draggable="false">cDataLib</a>
+    ................................................................................................................................ DATA STRUCTURES<br>
+    </Content>
+
+    <Content
+        headline="Description"
+        description="
+            Zircon is the first of experiments on building a viable object
+            oriented system that is efficient in speed and memory.  With
+            zircon I hoped to extend C's capabilities to inlude pure objects
+            much the same way Objective-C implements this today.  The changes
+            are minimal, and are added using the yacc syntax tree itself. Much
+            knowledge was gained especially in how complicated grammars are set up.
+        "
+    />
 </Article>
 
 <Copyright/>
 
 <style>
+    a {
+        font-style: italic;
+    }
+
+    a:hover {
+        color: var(--accent-color);
+    }
 </style>
