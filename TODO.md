@@ -1,4 +1,3 @@
-TODO Convert mixology section dimensions into view height based
 TODO Add action indicators on custom mouse pointer
 TODO Use Observer instead of document event handlers
 TODO Remove view height repositioning on intro-description

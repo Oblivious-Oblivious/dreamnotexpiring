@@ -62,5 +62,6 @@
         line-height: 0;
         display: flex;
         gap: 0;
+        transform: translateY(-2vw);
     }
 </style>
