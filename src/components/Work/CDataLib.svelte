@@ -40,7 +40,7 @@
     >
         <div class="photos">
             <div class="photo">
-                <img src="/img/cdatalib1.jpg" alt="cDataLib">
+                <img src="/img/cdatalib1.jpg" alt="cDataLib" draggable="false">
             </div>
         </div>
     </Content>

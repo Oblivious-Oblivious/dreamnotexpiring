@@ -41,10 +41,10 @@
     >
         <div class="photos">
             <div class="photo">
-                <img src="/img/zircon1.jpg" alt="Zircon">
+                <img src="/img/zircon1.jpg" alt="Zircon" draggable="false">
             </div>
             <div class="photo">
-                <img src="/img/zircon2.jpg" alt="Zircon">
+                <img src="/img/zircon2.jpg" alt="Zircon" draggable="false">
             </div>
         </div>
     </Content>

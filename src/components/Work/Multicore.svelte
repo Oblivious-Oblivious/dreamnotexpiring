@@ -45,16 +45,16 @@
     >
         <div class="photos">
             <div class="photo">
-                <img src="/img/multicore1.jpg" alt="MultiCore">
+                <img src="/img/multicore1.jpg" alt="MultiCore" draggable="false">
             </div>
             <div class="photo">
-                <img src="/img/multicore2.jpg" alt="MultiCore">
+                <img src="/img/multicore2.jpg" alt="MultiCore" draggable="false">
             </div>
             <div class="photo">
-                <img src="/img/multicore3.jpg" alt="MultiCore">
+                <img src="/img/multicore3.jpg" alt="MultiCore" draggable="false">
             </div>
             <div class="photo">
-                <img src="/img/multicore4.jpg" alt="MultiCore">
+                <img src="/img/multicore4.jpg" alt="MultiCore" draggable="false">
             </div>
         </div>
     </Content>

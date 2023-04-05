@@ -40,16 +40,16 @@
     >
         <div class="photos">
             <div class="photo">
-                <img src="/img/skeleton1.jpg" alt="Skeleton">
+                <img src="/img/skeleton1.jpg" alt="Skeleton" draggable="false">
             </div>
             <div class="photo">
-                <img src="/img/skeleton2.jpg" alt="Skeleton">
+                <img src="/img/skeleton2.jpg" alt="Skeleton" draggable="false">
             </div>
             <div class="photo">
-                <img src="/img/skeleton3.jpg" alt="Skeleton">
+                <img src="/img/skeleton3.jpg" alt="Skeleton" draggable="false">
             </div>
             <div class="photo">
-                <img src="/img/skeleton4.jpg" alt="Skeleton">
+                <img src="/img/skeleton4.jpg" alt="Skeleton" draggable="false">
             </div>
         </div>
     </Content>

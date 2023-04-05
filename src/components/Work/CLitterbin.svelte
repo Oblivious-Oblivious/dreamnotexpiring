@@ -38,10 +38,10 @@
     >
         <div class="photos">
             <div class="photo">
-                <img src="/img/clitterbin1.jpg" alt="cLitterBin">
+                <img src="/img/clitterbin1.jpg" alt="cLitterBin" draggable="false">
             </div>
             <div class="photo">
-                <img src="/img/clitterbin2.jpg" alt="cLitterBin">
+                <img src="/img/clitterbin2.jpg" alt="cLitterBin" draggable="false">
             </div>
         </div>
     </Content>
