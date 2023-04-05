@@ -347,6 +347,10 @@
         text-align: justify;
     }
 
+    a {
+        font-style: italic;
+    }
+
     a:hover {
         color: var(--accent-color);
     }

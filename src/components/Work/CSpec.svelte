@@ -69,6 +69,10 @@
 <Copyright/>
 
 <style>
+    a {
+        font-style: italic;
+    }
+
     a:hover {
         color: var(--accent-color);
     }
