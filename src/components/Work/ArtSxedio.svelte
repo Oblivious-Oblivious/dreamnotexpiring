@@ -5,6 +5,7 @@
     import Title from "@components/Article/Title.svelte";
     import Intro from "@components/Article/Intro.svelte";
     import Content from "@components/Article/Content.svelte";
+    import Technology from "@components/Article/Technology.svelte";
     import Copyright from "@components/Article/Copyright.svelte";
 
     onMount(() => {
@@ -38,32 +39,42 @@
         headline="Technologies used"
         description=""
     >
-        <a href="https://www.mongodb.com" target="_blank" rel="noopener noreferrer" draggable="false">MongoDB</a>
-        ........................................................................................................................................................ DATABASE<br>
-        <a href="https://expressjs.com" target="_blank" rel="noopener noreferrer" draggable="false">Express</a>
-        ............................................................................................................................................................. BACK END<br>
-        <a href="https://angular.io" target="_blank" rel="noopener noreferrer" draggable="false">Angular</a>
-        ......................................................................................................................................................... FRONT END<br>
-        <a href="https://nodejs.org/en" target="_blank" rel="noopener noreferrer" draggable="false">Node</a>
-        ................................................................................................................................................................... RUNTIME<br>
-        <a href="https://sass-lang.com" target="_blank" rel="noopener noreferrer" draggable="false">Sass</a>
-        .............................................................................................................................................. CSS PREPROCESSOR<br>
-        <a href="https://www.typescriptlang.org" target="_blank" rel="noopener noreferrer" draggable="false">Typescript</a>
-        ................................................................................................................................................ TYPE SYSTEM<br>
+        <Technology
+            title="MongoDB"
+            link="https://www.mongodb.com"
+            role="DATABASE"
+        />
+        <Technology
+            title="Express"
+            link="https://expressjs.com"
+            role="BACK END"
+        />
+        <Technology
+            title="Angular"
+            link="https://angular.io"
+            role="FRONT END"
+        />
+        <Technology
+            title="Node"
+            link="https://nodejs.org/en"
+            role="RUNTIME"
+        />
+        <Technology
+            title="Sass"
+            link="https://sass-lang.com"
+            role="CSS PREPROCESSOR"
+        />
+        <Technology
+            title="Typescript"
+            link="https://www.typescriptlang.org"
+            role="TYPE SYSTEM"
+        />
     </Content>
 </Article>
 
 <Copyright/>
 
 <style>
-    a {
-        font-style: italic;
-    }
-
-    a:hover {
-        color: var(--accent-color);
-    }
-
     .videos {
         display: flex;
         gap: 1vw;

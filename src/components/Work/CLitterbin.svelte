@@ -5,6 +5,7 @@
     import Title from "@components/Article/Title.svelte";
     import Intro from "@components/Article/Intro.svelte";
     import Content from "@components/Article/Content.svelte";
+    import Technology from "@components/Article/Technology.svelte";
     import Copyright from "@components/Article/Copyright.svelte";
 
     onMount(() => {
@@ -28,8 +29,11 @@
         headline="Technologies used"
         description=""
     >
-        <a href="https://openlibrary.org/books/OL4558528M/The_C_programming_language" target="_blank" rel="noopener noreferrer" draggable="false">C language</a>
-        ................................................................................................................................. MAIN LANGUAGE<br>
+        <Technology
+            title="C language"
+            link="https://openlibrary.org/books/OL4558528M/The_C_programming_language"
+            role="MAIN LANGUAGE"
+        />
     </Content>
 
     <Content
@@ -64,14 +68,6 @@
 <Copyright/>
 
 <style>
-    a {
-        font-style: italic;
-    }
-
-    a:hover {
-        color: var(--accent-color);
-    }
-
     .photos {
         display: flex;
         gap: 1vw;

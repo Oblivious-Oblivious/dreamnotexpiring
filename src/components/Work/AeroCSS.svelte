@@ -5,6 +5,7 @@
     import Title from "@components/Article/Title.svelte";
     import Intro from "@components/Article/Intro.svelte";
     import Content from "@components/Article/Content.svelte";
+    import Technology from "@components/Article/Technology.svelte";
     import Copyright from "@components/Article/Copyright.svelte";
 
     onMount(() => {
@@ -27,10 +28,16 @@
         headline="Technologies used"
         description=""
     >
-        <a href="https://sass-lang.com" target="_blank" rel="noopener noreferrer" draggable="false">Sass</a>
-        .................................................................................................................................................. MAIN LANGUAGE<br>
-        <a href="https://gulpjs.com" target="_blank" rel="noopener noreferrer" draggable="false">Gulp</a>
-        ........................................................................................................................................................ AUTOMATION<br>
+        <Technology
+            title="Sass"
+            link="https://sass-lang.com"
+            role="MAIN LANGUAGE"
+        />
+        <Technology
+            title="Gulp"
+            link="https://gulpjs.com"
+            role="AUTOMATION"
+        />
     </Content>
 
     <Content
@@ -61,14 +68,6 @@
 <Copyright/>
 
 <style>
-    a {
-        font-style: italic;
-    }
-
-    a:hover {
-        color: var(--accent-color);
-    }
-
     .videos {
         display: flex;
         gap: 1vw;

@@ -1,6 +1,7 @@
 <script>
     import { onMount } from "svelte";
     import { underline_value } from "@persistence/underline_value";
+    import Technology from "@components/Article/Technology.svelte";
 
     onMount(() => {
         $underline_value = "";
@@ -186,6 +187,34 @@
 
         <br><br>
         <div class="margaret-headline">
+            Technologies used
+        </div>
+        <div class="line"></div>
+        <div class="margaret-description">
+            <Technology
+                title="C language"
+                link="https://openlibrary.org/books/OL4558528M/The_C_programming_language"
+                role="MAIN LANGUAGE"
+            />
+            <Technology
+                title="cSpec"
+                link="https://github.com/Oblivious-Oblivious/cSpec"
+                role="TESTING"
+            />
+            <Technology
+                title="Boehm Garbage Collector"
+                link="https://github.com/ivmai/bdwgc"
+                role="MEMORY MANAGEMENT"
+            />
+            <Technology
+                title="Readline"
+                link="https://tiswww.case.edu/php/chet/readline/rltop.html"
+                role="TERMINAL EMULATION"
+            />
+        </div>
+
+        <br><br>
+        <div class="margaret-headline">
             Is this just nu-smalltalk ?
         </div>
         <div class="line"></div>
@@ -241,22 +270,6 @@
             and more efficient data management solutions.  Margaret utilizes
             object based literals for tensors (with a heavy-loaded API for
             tensor operations) as well as efficient hashmaps.
-        </div>
-
-        <br><br>
-        <div class="margaret-headline">
-            Technologies used
-        </div>
-        <div class="line"></div>
-        <div class="margaret-description">
-            <a href="https://openlibrary.org/books/OL4558528M/The_C_programming_language" target="_blank" rel="noopener noreferrer" draggable="false">C language</a>
-            .......................................................................................................................... MAIN LANGUAGE<br>
-            <a href="https://github.com/Oblivious-Oblivious/cSpec" target="_blank" rel="noopener noreferrer" draggable="false">cSpec</a>
-            .................................................................................................................................................... TESTING<br>
-            <a href="https://github.com/ivmai/bdwgc" target="_blank" rel="noopener noreferrer" draggable="false">Boehm Garbage Collector</a>
-            ................................................................................ MEMORY MANAGEMENT<br>
-            <a href="https://tiswww.case.edu/php/chet/readline/rltop.html" target="_blank" rel="noopener noreferrer" draggable="false">Readline library</a>
-            .....................................................................................................TERMINAL EMULATION<br>
         </div>
 
         <br><br><br><br>

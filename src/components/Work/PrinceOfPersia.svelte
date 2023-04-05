@@ -5,6 +5,7 @@
     import Title from "@components/Article/Title.svelte";
     import Intro from "@components/Article/Intro.svelte";
     import Content from "@components/Article/Content.svelte";
+    import Technology from "@components/Article/Technology.svelte";
     import Copyright from "@components/Article/Copyright.svelte";
 
     onMount(() => {
@@ -28,8 +29,11 @@
         headline="Technologies used"
         description=""
     >
-        <a href="https://scratch.mit.edu" target="_blank" rel="noopener noreferrer" draggable="false">Scratch</a>
-        ................................................................................................................. DEVELOPMENT ENVIRONMENT<br>
+        <Technology
+            title="Scratch"
+            link="https://scratch.mit.edu"
+            role="DEVELOPMENT ENVIRONMENT"
+        />
     </Content>
 
     <Content
@@ -62,14 +66,6 @@
 <Copyright/>
 
 <style>
-    a {
-        font-style: italic;
-    }
-
-    a:hover {
-        color: var(--accent-color);
-    }
-
     .videos {
         display: flex;
         width: 100%;

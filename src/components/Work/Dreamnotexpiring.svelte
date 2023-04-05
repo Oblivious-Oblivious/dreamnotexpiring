@@ -5,6 +5,7 @@
     import Title from "@components/Article/Title.svelte";
     import Intro from "@components/Article/Intro.svelte";
     import Content from "@components/Article/Content.svelte";
+    import Technology from "@components/Article/Technology.svelte";
     import Copyright from "@components/Article/Copyright.svelte";
 
     onMount(() => {
@@ -27,33 +28,63 @@
         headline="Technologies used"
         description=""
     >
-        <a href="https://svelte.dev" target="_blank" rel="noopener noreferrer" draggable="false">Svelte</a>
-        ................................................................................................................................................... FRAMEWORK<br>
-        <a href="https://astro.build" target="_blank" rel="noopener noreferrer" draggable="false">Astro</a>
-        ....................................................................................................................................... META-FRAMEWORK<br>
-        <a href="https://react.dev" target="_blank" rel="noopener noreferrer" draggable="false">React</a>
-        .............................................................................................................................................. SOUND EFFECTS<br>
-        <a href="https://postcss.org" target="_blank" rel="noopener noreferrer" draggable="false">PostCSS</a>
-        .................................................................................................................................. CSS TRANSFORMER<br>
-        <a href="https://greensock.com/gsap/" target="_blank" rel="noopener noreferrer" draggable="false">GSAP</a>
-        ..................................................................................................................................................... ANIMATIONS<br>
-        <a href="https://greensock.com/scrolltrigger/" target="_blank" rel="noopener noreferrer" draggable="false">ScrollTrigger</a>
-        ........................................................................................................... SCROLL-TIED ANIMATIONS<br>
-        <a href="https://lenis.studiofreight.com" target="_blank" rel="noopener noreferrer" draggable="false">Lenis</a>
-        ...................................................................................................................................... SMOOTH SCROLLING<br>
-        <a href="https://swup.js.org" target="_blank" rel="noopener noreferrer" draggable="false">Swup</a>
-        ........................................................................................................................................ PAGE TRANSITIONS<br>
-        <a href="https://github.com/lukePeavey/SplitType" target="_blank" rel="noopener noreferrer" draggable="false">SplitType</a>
-        ...................................................................................................................................... TEXT SPLITTING<br>
-        <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer" draggable="false">Vercel</a>
-        .................................................................................................................................................. DEPLOYMENT<br>
+        <Technology
+            title="Svelte"
+            link="https://svelte.dev"
+            role="FRAMEWORK"
+        />
+        <Technology
+            title="Astro"
+            link="https://astro.build"
+            role="META-FRAMEWORK"
+        />
+        <Technology
+            title="React"
+            link="https://react.dev"
+            role="SOUND EFFECTS"
+        />
+        <Technology
+            title="PostCSS"
+            link="https://postcss.org"
+            role="CSS TRANSFORMER"
+        />
+        <Technology
+            title="GSAP"
+            link="https://greensock.com/gsap/"
+            role="ANIMATIONS"
+        />
+        <Technology
+            title="ScrollTrigger"
+            link="https://greensock.com/scrolltrigger/"
+            role="SCROLL-TIED ANIMATIONS"
+        />
+        <Technology
+            title="Lenis"
+            link="https://lenis.studiofreight.com"
+            role="SMOOTH SCROLLING"
+        />
+        <Technology
+            title="Swup"
+            link="https://swup.js.org"
+            role="PAGE TRANSITIONS"
+        />
+        <Technology
+            title="SplitType"
+            link="https://github.com/lukePeavey/SplitType"
+            role="TEXT SPLITTING"
+        />
+        <Technology
+            title="Vercel"
+            link="https://vercel.com/"
+            role="DEPLOYMENT"
+        />
     </Content>
 
     <Content
         headline=""
         description=""
     >
-        <div class="dreamnotexpiring-videos">
+        <div class="videos">
             <video width="1280" height="720" autoplay muted loop>
                 <source src="/video/crt-intro.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -152,15 +183,7 @@
 <Copyright/>
 
 <style>
-    a {
-        font-style: italic;
-    }
-
-    a:hover {
-        color: var(--accent-color);
-    }
-
-    .dreamnotexpiring-videos {
+    .videos {
         display: flex;
         gap: 1vw;
         width: 100%;

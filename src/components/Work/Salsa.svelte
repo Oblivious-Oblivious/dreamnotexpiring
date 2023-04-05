@@ -5,6 +5,7 @@
     import Title from "@components/Article/Title.svelte";
     import Intro from "@components/Article/Intro.svelte";
     import Content from "@components/Article/Content.svelte";
+    import Technology from "@components/Article/Technology.svelte";
     import Copyright from "@components/Article/Copyright.svelte";
 
     onMount(() => {
@@ -27,10 +28,31 @@
         headline="Technologies used"
         description=""
     >
-        <a href="https://www.swift.org" target="_blank" rel="noopener noreferrer" draggable="false">Swift</a>
-        ................................................................................................................................................. MAIN LANGUAGE<br>
-        <a href="https://github.com/Oblivious-Oblivious/swispec" target="_blank" rel="noopener noreferrer" draggable="false">swispec</a>
-        ............................................................................................................................................................ TESTING<br>
+        <Technology
+            title="Swift"
+            link="https://www.swift.org"
+            role="MAIN LANGUAGE"
+        />
+        <Technology
+            title="SwiftUI"
+            link="https://developer.apple.com/xcode/swiftui/"
+            role="UI GRAPHICS"
+        />
+        <Technology
+            title="swispec"
+            link="https://github.com/Oblivious-Oblivious/swispec"
+            role="TESTING"
+        />
+        <Technology
+            title="Core Data"
+            link="https://developer.apple.com/documentation/coredata"
+            role="DATABASE"
+        />
+        <Technology
+            title="CloudKit"
+            link="https://developer.apple.com/icloud/cloudkit/"
+            role="CLOUD STORAGE"
+        />
     </Content>
 
     <Content
@@ -69,14 +91,6 @@
 <Copyright/>
 
 <style>
-    a {
-        font-style: italic;
-    }
-
-    a:hover {
-        color: var(--accent-color);
-    }
-
     .salsa-videos {
         display: flex;
         gap: 1vw;

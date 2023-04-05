@@ -5,6 +5,7 @@
     import Title from "@components/Article/Title.svelte";
     import Intro from "@components/Article/Intro.svelte";
     import Content from "@components/Article/Content.svelte";
+    import Technology from "@components/Article/Technology.svelte";
     import Copyright from "@components/Article/Copyright.svelte";
 
     onMount(() => {
@@ -28,10 +29,16 @@
         headline="Technologies used"
         description=""
     >
-        <a href="https://crystal-lang.org" target="_blank" rel="noopener noreferrer" draggable="false">Crystal</a>
-        ................................................................................................................................................ MAIN LANGUAGE<br>
-        <a href="https://docs.github.com/en/actions" target="_blank" rel="noopener noreferrer" draggable="false">GitHub Actions</a>
-        ............................................................................................................. CONTINUOUS INTEGRATION<br>
+        <Technology
+            title="Crystal"
+            link="https://crystal-lang.org"
+            role="MAIN LANGUAGE"
+        />
+        <Technology
+            title="GitHub Actions"
+            link="https://docs.github.com/en/actions"
+            role="CONTINUOUS INTEGRATION"
+        />
     </Content>
 
     <Content
@@ -69,14 +76,6 @@
 <Copyright/>
 
 <style>
-    a {
-        font-style: italic;
-    }
-
-    a:hover {
-        color: var(--accent-color);
-    }
-
     .photos {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
