@@ -279,8 +279,28 @@
         align-items: center;
         justify-content: center;
         width: 60vw;
-        padding-top: 5vw;
+        padding-top: 7vw;
         transform: translateX(16.5vw);
+    }
+
+    .margaret-content:before,
+    .margaret-content:after {
+        font-size: 1.4vw;
+        font-style: italic;
+    }
+
+    .margaret-content:before {
+        content: "no. 1";
+        position: absolute;
+        top: 7vw;
+        left: 0;
+    }
+
+    .margaret-content:after {
+        content: "2022 - PRESENT";
+        position: absolute;
+        top: 7vw;
+        right: 0;
     }
 
     .line {
@@ -337,7 +357,7 @@
     .margaret-image {
         position: absolute;
         opacity: 0.9;
-        transform: translate(-32vw, -20vw);
+        transform: translate(-32vw, -30vw);
         width: 30vw;
         z-index: -1;
     }
