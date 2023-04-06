@@ -61,7 +61,7 @@
 
 <div class="software-wrapper" style="visibility: hidden;">
     <div class="software-link software-salsa">
-        <a href="https://apps.apple.com/app/salsa-pomodoro-timer/id1669985996" draggable="false">
+        <a href="https://apps.apple.com/app/salsa-pomodoro-timer/id1669985996" target="_blank" rel="noopener noreferrer" draggable="false">
             <img src="/img/salsa.png" alt="Salsa Pomodoro" draggable="false">
         </a>
 
@@ -83,7 +83,7 @@
     </div>
 
     <div class="software-link software-aerocss">
-        <a href="https://github.com/Oblivious-Oblivious/AeroCSS" draggable="false">
+        <a href="https://github.com/Oblivious-Oblivious/AeroCSS" target="_blank" rel="noopener noreferrer" draggable="false">
             <img src="/img/aerocss.png" alt="Salsa Pomodoro" draggable="false">
         </a>
 
@@ -105,7 +105,7 @@
     </div>
 
     <div class="software-link software-margaret">
-        <a href="https://github.com/Oblivious-Oblivious/margaret" draggable="false">
+        <a href="https://github.com/Oblivious-Oblivious/margaret" target="_blank" rel="noopener noreferrer" draggable="false">
             <img src="/img/margaret.png" alt="Salsa Pomodoro" draggable="false">
         </a>
 

@@ -122,7 +122,7 @@
 
 <div class="djing-parallax-wrapper" style="visibility: hidden;">
     <div class="parallax-card parallax-genre-river">
-        <a href="https://www.mixcloud.com/itsoblivious/genre-river/" draggable="false">
+        <a href="https://www.mixcloud.com/itsoblivious/genre-river/" target="_blank" rel="noopener noreferrer" draggable="false">
             <img src="/img/genre-river.jpg" alt="Genre River" draggable="false">
             <div class="parallax-title">Genre River</div>
             <div class="noise"></div>
@@ -135,7 +135,7 @@
     </div>
 
     <div class="parallax-card parallax-charmer">
-        <a href="https://www.mixcloud.com/itsoblivious/charmer/" draggable="false">
+        <a href="https://www.mixcloud.com/itsoblivious/charmer/" target="_blank" rel="noopener noreferrer" draggable="false">
             <img src="/img/charmer.jpg" alt="Charmer" draggable="false">
             <div class="parallax-title">Charmer</div>
             <div class="noise"></div>
@@ -148,7 +148,7 @@
     </div>
 
     <div class="parallax-card parallax-future-house-sessions">
-        <a href="https://www.mixcloud.com/itsoblivious/future-house-sessions-1/" draggable="false">
+        <a href="https://www.mixcloud.com/itsoblivious/future-house-sessions-1/" target="_blank" rel="noopener noreferrer" draggable="false">
             <img src="/img/future-house-sessions-1.jpg" alt="Future House Sessions 1" draggable="false">
             <div class="parallax-title">Future House Sessions</div>
             <div class="noise"></div>
@@ -161,7 +161,7 @@
     </div>
 
     <div class="parallax-card parallax-waiting-for-summer">
-        <a href="https://www.mixcloud.com/itsoblivious/waiting-for-summer-mix/" draggable="false">
+        <a href="https://www.mixcloud.com/itsoblivious/waiting-for-summer-mix/" target="_blank" rel="noopener noreferrer" draggable="false">
             <img src="/img/waiting-for-summer.jpg" alt="Waiting For Summer" draggable="false">
             <div class="parallax-title">Waiting For Summer</div>
             <div class="noise"></div>
