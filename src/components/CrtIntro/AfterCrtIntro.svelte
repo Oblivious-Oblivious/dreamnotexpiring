@@ -10,6 +10,7 @@
             ease: "power2.inOut",
             autoAlpha: 1,
             onStart: () => {
+                ScrollTrigger.refresh();
                 window.dispatchEvent(new CustomEvent("scrolling-stop"));
                 window.scrollTo(0, 0);
             },
