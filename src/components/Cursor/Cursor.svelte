@@ -56,6 +56,7 @@
         align-items: center;
         justify-content: center;
         font-family: var(--display-font);
+        font-size: 1.25vw;
         text-transform: uppercase;
         width: 3vw;
         height: 3vw;
