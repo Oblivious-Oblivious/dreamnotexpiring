@@ -16,6 +16,19 @@
             duration: 1.25,
             opacity: 0,
         });
+
+        gsap.utils.toArray(".technology-link").forEach(link => {
+            link.addEventListener("mouseenter", () => {
+                window.dispatchEvent(new CustomEvent("cursor-hover", {
+                    detail: "LEARN",
+                }));
+            });
+        });
+        gsap.utils.toArray(".technology-link").forEach(link => {
+            link.addEventListener("mouseleave", () => {
+                window.dispatchEvent(new CustomEvent("cursor-reset"));
+            });
+        });
     });
 </script>
 

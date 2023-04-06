@@ -26,6 +26,19 @@
             xPercent: -100 * (cocktails.length - 1),
             ease: "power1.inOut",
         });
+
+        cocktails.forEach(cocktail => {
+            cocktail.addEventListener("mouseenter", () => {
+                window.dispatchEvent(new CustomEvent("cursor-hover", {
+                    detail: "CREATE",
+                }));
+            });
+        });
+        cocktails.forEach(cocktail => {
+            cocktail.addEventListener("mouseleave", () => {
+                window.dispatchEvent(new CustomEvent("cursor-reset"));
+            });
+        });
     });
 </script>
 

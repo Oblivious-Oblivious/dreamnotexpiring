@@ -89,6 +89,10 @@
                 image_flip.play();
                 card_rotate.play();
                 text_reveal.play();
+
+                window.dispatchEvent(new CustomEvent("cursor-hover", {
+                    detail: "LISTEN",
+                }));
             });
 
             card.addEventListener("mouseleave", () => {
@@ -97,6 +101,8 @@
                 image_flip.reverse();
                 card_rotate.reverse();
                 text_reveal.reverse();
+
+                window.dispatchEvent(new CustomEvent("cursor-reset"));
             });
         });
 

@@ -62,14 +62,19 @@
                 move_image_up.play();
                 move_text_up.play();
                 glitch_text.play();
+
+                window.dispatchEvent(new CustomEvent("cursor-hover", {
+                    detail: "CONTACT",
+                }));
             });
             contact.addEventListener("mouseleave", () => {
                 move_image_up.reverse();
                 move_text_up.reverse();
                 glitch_text.pause(0);
+
+                window.dispatchEvent(new CustomEvent("cursor-reset"));
             });
         });
-
     });
 </script>
 

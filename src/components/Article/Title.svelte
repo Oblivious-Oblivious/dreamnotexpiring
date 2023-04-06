@@ -13,6 +13,15 @@
             duration: 0.65,
             clipPath: "inset(0 100% 0 100%)",
         });
+
+        document.querySelector(".link").addEventListener("mouseenter", () => {
+            window.dispatchEvent(new CustomEvent("cursor-hover", {
+                detail: "READ",
+            }));
+        });
+        document.querySelector(".link").addEventListener("mouseleave", () => {
+            window.dispatchEvent(new CustomEvent("cursor-reset"));
+        });
     });
 </script>
 

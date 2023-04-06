@@ -1,4 +1,3 @@
-TODO Add action indicators on custom mouse pointer
 TODO Implement How I Learn section -> film-like wide image with animated point for cartesian graph animation.
 
 AFTER IMPLEMENTING ALL COMPONENT ELEMENTS

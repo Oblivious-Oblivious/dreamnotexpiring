@@ -44,13 +44,19 @@
             link.addEventListener("mouseenter", () => {
                 scale_image.play();
                 reveal_text.play();
+
+                window.dispatchEvent(new CustomEvent("cursor-hover", {
+                    detail: "VISIT",
+                }));
             });
             link.addEventListener("mouseleave", () => {
                 scale_image.reverse();
                 reveal_text.reverse();
+
+                window.dispatchEvent(new CustomEvent("cursor-reset"));
             });
         });
-    })
+    });
 </script>
 
 <div class="software-wrapper" style="visibility: hidden;">

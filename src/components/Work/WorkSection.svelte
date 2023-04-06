@@ -33,6 +33,19 @@
             onComplete: () => window.dispatchEvent(new CustomEvent("scrolling-start")),
         });
 
+        gsap.utils.toArray(".work-title").forEach(work => {
+            work.addEventListener("mouseenter", () => {
+                window.dispatchEvent(new CustomEvent("cursor-hover", {
+                    detail: "EXPLORE",
+                }));
+            });
+        });
+        gsap.utils.toArray(".work-title").forEach(work => {
+            work.addEventListener("mouseleave", () => {
+                window.dispatchEvent(new CustomEvent("cursor-reset"));
+            });
+        });
+
         Array.prototype.shuffle = function() {
             const input = this;
 
