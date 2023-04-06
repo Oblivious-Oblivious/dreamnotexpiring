@@ -10,7 +10,7 @@
     });
 </script>
 
-<div class="how-i-learn" style="visibility: hidden;">
+<!-- <div class="how-i-learn" style="visibility: hidden;">
     <p>How I learn.</p>
     <p>Horizontal graph, animate line</p>
     <p>2012-2016 - (Ascent) - watch a video tutorial</p>
@@ -19,10 +19,10 @@
     <p>2019-2021 - (Dread/Despair/Hate) - stare at the problem</p>
     <p>2021-Present - (Light) - visualize the result, work backwards toward the solution</p>
     <p>Show full diagram in the end</p>
-</div>
+</div> -->
 
 <style>
-    .how-i-learn p {
+    /* .how-i-learn p {
         font-size: 2.5vw;
-    }
+    } */
 </style>
