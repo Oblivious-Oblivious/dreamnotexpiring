@@ -5,6 +5,11 @@ export const SoundPlayer = ({ sound }) => {
     audio_player.volume = 0.2;
     audio_player.currentTime = 1;
 
+    document.addEventListener("visibilitychange", () => {
+        if(document.visibilityState != "visible")
+            audio_player.pause();
+    });
+
     return (
         <div
             className="sound-player"
