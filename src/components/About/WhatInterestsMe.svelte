@@ -8,7 +8,7 @@
     onMount(() => {
         gsap.to(".what-interests-me", {
             autoAlpha: 1,
-        })
+        });
     });
 </script>
 
