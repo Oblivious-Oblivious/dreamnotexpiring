@@ -1,5 +1,19 @@
 <script>
     import { underline_value } from "@persistence/underline_value";
+    import { onMount } from "svelte";
+
+    onMount(() => {
+        window.addEventListener("scrolling-stop", () => {
+            gsap.set("a", {
+                pointerEvents: "none",
+            });
+        });
+        window.addEventListener("scrolling-start", () => {
+            gsap.set("a", {
+                pointerEvents: "all",
+            });
+        });
+    });
 </script>
 
 <header>
