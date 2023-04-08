@@ -1,0 +1,12 @@
+---
+import MobileEmeralds from "@components/Work/MobileEmeralds.svelte";
+
+import MobileLayout from "@layouts/MobileLayout.astro";
+import MobilePageLifecycle from "@pages/MobilePageLifecycle.svelte";
+---
+
+<MobileLayout title="Emeralds - A package manager">
+    <MobileEmeralds client:load/>
+</MobileLayout>
+
+<MobilePageLifecycle current_page="" client:load/>

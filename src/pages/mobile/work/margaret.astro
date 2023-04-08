@@ -1,0 +1,12 @@
+---
+import MobileMargaret from "@components/Work/MobileMargaret.svelte";
+
+import MobileLayout from "@layouts/MobileLayout.astro";
+import MobilePageLifecycle from "@pages/MobilePageLifecycle.svelte";
+---
+
+<MobileLayout title="Margaret - A programming language">
+    <MobileMargaret client:load/>
+</MobileLayout>
+
+<MobilePageLifecycle current_page="" client:load/>

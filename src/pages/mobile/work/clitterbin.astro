@@ -1,0 +1,12 @@
+---
+import MobileCLitterbin from "@components/Work/MobileCLitterbin.svelte";
+
+import MobileLayout from "@layouts/MobileLayout.astro";
+import MobilePageLifecycle from "@pages/MobilePageLifecycle.svelte";
+---
+
+<MobileLayout title="cLitterbin - A mark & sweep conservative garbage collector">
+    <MobileCLitterbin client:load/>
+</MobileLayout>
+
+<MobilePageLifecycle current_page="" client:load/>

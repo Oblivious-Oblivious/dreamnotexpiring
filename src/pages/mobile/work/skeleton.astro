@@ -1,0 +1,12 @@
+---
+import MobileSkeleton from "@components/Work/MobileSkeleton.svelte";
+
+import MobileLayout from "@layouts/MobileLayout.astro";
+import MobilePageLifecycle from "@pages/MobilePageLifecycle.svelte";
+---
+
+<MobileLayout title="Skeleton - An http server">
+    <MobileSkeleton client:load/>
+</MobileLayout>
+
+<MobilePageLifecycle current_page="" client:load/>

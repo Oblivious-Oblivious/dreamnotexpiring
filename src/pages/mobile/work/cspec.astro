@@ -1,0 +1,12 @@
+---
+import MobileCSpec from "@components/Work/MobileCSpec.svelte";
+
+import MobileLayout from "@layouts/MobileLayout.astro";
+import MobilePageLifecycle from "@pages/MobilePageLifecycle.svelte";
+---
+
+<MobileLayout title="cSpec - Behaviour driven development for C">
+    <MobileCSpec client:load/>
+</MobileLayout>
+
+<MobilePageLifecycle current_page="" client:load/>

@@ -1,0 +1,12 @@
+---
+import MobileMulticore from "@components/Work/MobileMulticore.svelte";
+
+import MobileLayout from "@layouts/MobileLayout.astro";
+import MobilePageLifecycle from "@pages/MobilePageLifecycle.svelte";
+---
+
+<MobileLayout title="Multicore - A penetration testing platform">
+    <MobileMulticore client:load/>
+</MobileLayout>
+
+<MobilePageLifecycle current_page="" client:load/>

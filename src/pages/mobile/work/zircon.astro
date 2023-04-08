@@ -1,0 +1,12 @@
+---
+import MobileZircon from "@components/Work/MobileZircon.svelte";
+
+import MobileLayout from "@layouts/MobileLayout.astro";
+import MobilePageLifecycle from "@pages/MobilePageLifecycle.svelte";
+---
+
+<MobileLayout title="Zircon - A programming language">
+    <MobileZircon client:load/>
+</MobileLayout>
+
+<MobilePageLifecycle current_page="" client:load/>

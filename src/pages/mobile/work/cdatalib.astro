@@ -1,0 +1,12 @@
+---
+import MobileCDataLib from "@components/Work/MobileCDataLib.svelte";
+
+import MobileLayout from "@layouts/MobileLayout.astro";
+import MobilePageLifecycle from "@pages/MobilePageLifecycle.svelte";
+---
+
+<MobileLayout title="cDataLib - Efficiency oriented data structures">
+    <MobileCDataLib client:load/>
+</MobileLayout>
+
+<MobilePageLifecycle current_page="" client:load/>

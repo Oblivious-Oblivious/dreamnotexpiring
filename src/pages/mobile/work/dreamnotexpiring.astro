@@ -1,0 +1,12 @@
+---
+import MobileDreamnotexpiring from "@components/Work/MobileDreamnotexpiring.svelte";
+
+import MobileLayout from "@layouts/MobileLayout.astro";
+import MobilePageLifecycle from "@pages/MobilePageLifecycle.svelte";
+---
+
+<MobileLayout title="oblivious to the dream not expiring">
+    <MobileDreamnotexpiring client:load/>
+</MobileLayout>
+
+<MobilePageLifecycle current_page="" client:load/>

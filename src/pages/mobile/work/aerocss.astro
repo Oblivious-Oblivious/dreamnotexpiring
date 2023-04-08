@@ -1,0 +1,12 @@
+---
+import MobileAeroCSS from "@components/Work/MobileAeroCSS.svelte";
+
+import MobileLayout from "@layouts/MobileLayout.astro";
+import MobilePageLifecycle from "@pages/MobilePageLifecycle.svelte";
+---
+
+<MobileLayout title="Aero CSS - A utility first css platform">
+    <MobileAeroCSS client:load/>
+</MobileLayout>
+
+<MobilePageLifecycle current_page="about" client:load/>
