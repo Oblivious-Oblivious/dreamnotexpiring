@@ -1,7 +1,6 @@
 AFTER IMPLEMENTING ALL COMPONENT ELEMENTS
 TODO Add a `next project` button on work pages (moving from no. 2 to no. 3).
 TODO Move all intro animations into the MainLayout swup functions
-TODO Make get-in-touch glitch animation delay shorter
 TODO Survey on cursor positioning
 TODO Fix visibility=hidden -> autoAlpha=1 flicker bugs
 TODO Fix timeline delays with keyframes, and figure out delays (prob according to view heights aka. remove `rems`)

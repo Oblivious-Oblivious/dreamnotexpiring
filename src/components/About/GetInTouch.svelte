@@ -27,9 +27,7 @@
             const glitch_text = gsap.timeline({
                 paused: true,
                 repeat: -1,
-            })
-            .to(contact_text, {
-                duration: 0.5,
+                repeatDelay: 0.5,
             })
             .to(contact_text, {
                 duration: 0.1,
