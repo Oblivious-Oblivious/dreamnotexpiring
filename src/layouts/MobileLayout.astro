@@ -53,7 +53,9 @@ import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
 <html lang="en" class="dark-theme || light-theme">
     <Head {title}/>
 
-    <body onload="">
+    <body onload="if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+    }">
         <div class="main-content">            
             <main id="swup">
                 <GrainEffect/>
