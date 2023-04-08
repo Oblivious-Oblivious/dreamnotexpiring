@@ -51,7 +51,7 @@
     ul {
         display: flex;
         justify-content: space-between;
-        gap: 50vw;
+        gap: 55vw;
     }
 
     a {
