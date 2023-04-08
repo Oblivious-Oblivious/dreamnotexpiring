@@ -4,6 +4,7 @@
     import Article from "@components/Article/Article.svelte";
     import Title from "@components/Article/Title.svelte";
     import Copyright from "@components/Article/Copyright.svelte";
+    import Intro from "@components/Article/Intro.svelte";
 
     onMount(() => {
         $underline_value = "";
@@ -16,6 +17,10 @@
         link="https://github.com/Oblivious-Oblivious/DynaDesign"
         link_type="GitHub"
     />
+
+    <Intro content="
+        Hardware design for the new age.
+    "/>
 </Article>
 
 <Copyright/>
