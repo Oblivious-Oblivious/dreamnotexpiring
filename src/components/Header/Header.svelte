@@ -10,6 +10,7 @@
         });
         window.addEventListener("scrolling-start", () => {
             gsap.set("a", {
+                delay: 1,
                 pointerEvents: "all",
             });
         });
