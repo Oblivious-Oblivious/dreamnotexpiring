@@ -20,6 +20,7 @@
                 pin: true,
                 scrub: true,
                 end: "+=2000",
+                refreshPriority: 7,
             },
         })
         .to(cocktails, {

@@ -32,6 +32,7 @@
                 end: "+=2500",
                 pin: true,
                 scrub: true,
+                refreshPriority: 10,
             },
         })
         .to(".intro-word", {

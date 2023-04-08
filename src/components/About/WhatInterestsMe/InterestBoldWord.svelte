@@ -22,6 +22,7 @@
                 end: "+=5000",
                 pin: true,
                 scrub: true,
+                refreshPriority: 9,
             },
         });
 

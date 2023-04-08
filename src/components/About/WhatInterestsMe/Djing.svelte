@@ -112,6 +112,7 @@
                 start: "top top",
                 end: "+=1500",
                 scrub: true,
+                refreshPriority: 8,
             },
         })
         .to(".parallax-card", {
