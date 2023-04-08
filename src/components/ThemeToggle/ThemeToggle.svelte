@@ -1,7 +1,5 @@
 <script>
-    import { onMount } from "svelte";
-
-    let is_theme_dark = false;
+    let is_theme_dark = true;
 
     const toggle_theme = () => {
         if(is_theme_dark) {
@@ -17,11 +15,6 @@
     }
 
     $: is_theme_dark, toggle_theme();
-
-    onMount(() => {
-        if(window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches)
-            is_theme_dark = true;
-    });
 </script>
 
 <input class="theme-toggle" type="checkbox" id="darkmode-toggle" bind:checked={is_theme_dark}/>
