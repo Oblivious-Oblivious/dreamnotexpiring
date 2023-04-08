@@ -3,8 +3,6 @@
     import { browser_engine } from "@persistence/browser_engine";
 
     onMount(() => {
-        gsap.registerPlugin(ScrollTrigger);
-
         gsap.to(".work-section", {
             autoAlpha: 1,
         });
