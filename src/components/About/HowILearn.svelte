@@ -344,10 +344,10 @@
     }
 
     .how-i-learn-border {
+        --current-color: var(--lapis);
         background-color: var(--current-color);
         border-radius: 50%;
         padding: 0.25vw;
-        --current-color: var(--lapis);
         box-shadow: 0 0 0.4vw 0 var(--current-color);
     }
 
@@ -390,6 +390,7 @@
     }
     .how-i-learn-content-date:before {
         content: var(--current-date);
+        text-shadow: var(--current-color) 0.1vw 0.1vw 0.5vw;
     }
 
     .how-i-learn-content-experience {
@@ -410,6 +411,18 @@
         content: var(--current-experience);
     }
 
+    @supports (font: -apple-system-body) and (-webkit-appearance: none) {
+        .how-i-learn-content-experience:before {
+            text-shadow:
+                0 0 1px var(--fg-color),
+                0 0 3px var(--fg-color),
+                0 0 7px var(--current-color),
+                0 0 12px var(--current-color),
+                0 0 18px var(--current-color),
+                0 0 22px var(--current-color);
+        }
+    }
+
     .how-i-learn-content-method {
         display: flex;
         text-align: center;
@@ -425,6 +438,7 @@
     }
     .how-i-learn-content-method:before {
         content: var(--current-method);
+        text-shadow: var(--current-color) 0.1vw 0.1vw 0.5vw;
     }
 
     .how-i-learn-content-productivity {
@@ -443,6 +457,7 @@
         font-style: italic;
         text-transform: uppercase;
         content: "Productivity: ";
+        text-shadow: var(--current-color) 0.1vw 0.1vw 0.5vw;
     }
 
     .progress {
@@ -457,13 +472,11 @@
     }
 
     .progress-value {
-        --current-animation: none;
         box-shadow: 0 10px 40px -10px var(--fg-color);
         border-radius: 100px;
         background: var(--fg-color);
         height: 2vw;
         width: var(--current-productivity);
-        animation: var(--current-animation);
     }
 
     @keyframes neonize {
@@ -475,7 +488,7 @@
                 0 0 25px var(--current-color),
                 0 0 35px var(--current-color),
                 0 0 45px var(--current-color);
-                transform: translate(8vw, -5.5vw);
+            transform: translate(8vw, -5.5vw);
         }
         to {
             text-shadow:
@@ -485,7 +498,7 @@
                 0 0 12px var(--current-color),
                 0 0 18px var(--current-color),
                 0 0 22px var(--current-color);
-                transform: translate(8vw, -5.25vw);
+            transform: translate(8vw, -5.25vw);
         }
     }
 
