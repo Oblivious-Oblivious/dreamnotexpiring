@@ -16,7 +16,7 @@
 <Article number="no. 3" date="2023">
     <Title
         name="DREAMNOTEXPIRING"
-        link="https://www.dreamnotexpiring.com"
+        link="https://github.com/Oblivious-Oblivious/dreamnotexpiring"
         link_type="Website"
     />
 
