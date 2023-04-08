@@ -157,7 +157,7 @@
         padding: 1vw;
         border-radius: 2vw;
         background: var(--bg-color);
-        box-shadow: var(--neuromorphic-shadow3);
+        box-shadow: var(--neumorphic-shadow3);
     }
 
     span {

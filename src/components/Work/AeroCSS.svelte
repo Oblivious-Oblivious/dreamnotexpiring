@@ -76,7 +76,7 @@
 
     video {
         width: 100%;
-        box-shadow: var(--neuromorphic-shadow3);
+        box-shadow: var(--neumorphic-shadow3);
         border-radius: 0.5vw;
     }
 </style>

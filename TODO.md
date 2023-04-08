@@ -1,6 +1,5 @@
 AFTER IMPLEMENTING ALL COMPONENT ELEMENTS
 TODO Add a `next project` button on work pages (moving from no. 2 to no. 3).
-TODO Rename `neuromorphic` to `neumorphic`
 TODO Move all intro animations into the MainLayout swup functions
 TODO Make get-in-touch glitch animation delay shorter
 TODO Survey on cursor positioning

@@ -189,7 +189,7 @@
         display: block;
         text-align: center;
         border-radius: 5px;
-        box-shadow: var(--neuromorphic-shadow2);
+        box-shadow: var(--neumorphic-shadow2);
         background-color: var(--bg-color);
         cursor: pointer;
         outline: 0;
