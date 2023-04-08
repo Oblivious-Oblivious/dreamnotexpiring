@@ -1,18 +1,11 @@
-AFTER IMPLEMENTING ALL COMPONENT ELEMENTS
-TODO Add a `next project` button on work pages (moving from no. 2 to no. 3).
 TODO Move all intro animations into the MainLayout swup functions
-TODO Survey on cursor positioning
-TODO Fix visibility=hidden -> autoAlpha=1 flicker bugs
 TODO Fix timeline delays with keyframes, and figure out delays (prob according to view heights aka. remove `rems`)
-TODO Remove unnecessary `client:load` attributes
+TODO Add a `next project` button on work pages (moving from no. 2 to no. 3).
+
 TODO Use Observer instead of document event handlers
-TODO Extract common design language for all elements
-TODO Fix safari animation lags (will-change:)
-TODO Fix audio interaction perimissions for ..safari
-TODO Detect safari and display mixology cocktails in a 2x3 grid
+TODO Fix audio interaction perimissions for safari
 TODO Possibly convert imports to requires for Pale Moon browser
 TODO Possibly use get-in-touch icons with thinner strokes
-TODO Use common names for work projects
 TODO Add proper SEO and sitemaps
 TODO Add 3d objects in how-i-learn section
 TODO Add a noscript page
