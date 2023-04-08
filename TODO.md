@@ -1,3 +1,4 @@
+TODO Firefox not respecting work pages paddings or margins.
 TODO Add a `next project` button on work pages (moving from no. 2 to no. 3).
 TODO Use Observer instead of document event handlers
 TODO Fix audio interaction perimissions for safari
