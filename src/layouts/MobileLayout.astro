@@ -1,0 +1,116 @@
+---
+const { title } = Astro.props;
+import Head from "@components/Head/Head.svelte";
+import MobileHeader from "@components/Header/MobileHeader.svelte";
+import GrainEffect from "@components/GrainEffect/GrainEffect.svelte";
+---
+
+<script>
+    // Swup
+    import Swup from "swup";
+    import SwupHeadPlugin from "@swup/head-plugin";
+    import SwupJsPlugin from "@swup/js-plugin";
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    const to_any_page_in = next => {
+        gsap.to("#swup", {
+            duration: 0.2,
+            autoAlpha: 1,
+            onStart: ScrollTrigger.refresh,
+            onComplete: next,
+        });
+    }
+
+    const from_any_page_out = next => {
+        gsap.to("#swup", {
+            duration: 0.2,
+            autoAlpha: 0,
+            onStart: ScrollTrigger.refresh,
+            onComplete: next,
+        });
+    }
+
+    const start_from_page_top = () => window.scrollTo(0, 0);
+
+    new Swup({
+        animateHistoryBrowsing: true,
+        plugins: [
+            new SwupHeadPlugin(),
+            new SwupJsPlugin([
+                {
+                    from: "(.*)",
+                    to: "(.*)",
+                    out: next => from_any_page_out(next),
+                    in: next => to_any_page_in(next),
+                },
+            ]),
+        ],
+    }).on("pageView", start_from_page_top);
+</script>
+
+<!DOCTYPE html>
+<html lang="en" class="dark-theme || light-theme">
+    <Head {title}/>
+
+    <body onload="">
+        <div class="main-content">            
+            <main id="swup">
+                <GrainEffect/>
+                <MobileHeader client:load/>
+                <slot/>
+            </main>
+        </div>
+    </body>
+</html>
+
+<style is:global>
+    @import "/styles/resets.css";
+    @import "/styles/colors.css";
+    @import "/styles/fonts.css";
+
+    :root {
+        font-family: var(--text-font);
+        font-weight: normal;
+        font-feature-settings: "lnum";
+        color-scheme: light dark;
+
+        /* Font smoothing */
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-text-size-adjust: 100%;
+
+        /* Non-selectable text */
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: default;
+
+        /* Animated values */
+        transition: background-color 600ms,
+                    color 600ms,
+                    box-shadow 600ms,
+                    filter 600ms;
+    }
+
+    body {
+        overscroll-behavior: none;
+        overflow: hidden;
+    }
+
+    .main-content {
+        height: 100vh;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 15vh;
+    }
+
+    code {
+        font-family: "Fira Code", Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+    }
+</style>

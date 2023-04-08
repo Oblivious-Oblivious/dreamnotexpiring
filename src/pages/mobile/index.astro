@@ -1,0 +1,12 @@
+---
+import MobileWorkSection from "@components/Work/MobileWorkSection.svelte";
+
+import MobileLayout from "@layouts/MobileLayout.astro";
+import MobilePageLifecycle from "@pages/MobilePageLifecycle.svelte";
+---
+
+<MobileLayout title="Thanasis Papapostolou - oblivious to the dream">
+    <MobileWorkSection client:load/>
+</MobileLayout>
+
+<MobilePageLifecycle current_page="work" client:load/>

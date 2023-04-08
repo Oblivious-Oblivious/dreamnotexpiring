@@ -1,0 +1,12 @@
+---
+import MobileIntroDescription from "@components/About/MobileIntroDescription.svelte";
+
+import MobileLayout from "@layouts/MobileLayout.astro";
+import MobilePageLifecycle from "@pages/MobilePageLifecycle.svelte";
+---
+
+<MobileLayout title="Thanasis Papapostolou - oblivious to the dream">
+    <MobileIntroDescription client:load/>
+</MobileLayout>
+
+<MobilePageLifecycle current_page="about" client:load/>
