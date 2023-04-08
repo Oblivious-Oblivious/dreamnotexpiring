@@ -1,11 +1,10 @@
-TODO Move all intro animations into the MainLayout swup functions
-TODO Fix timeline delays with keyframes, and figure out delays (prob according to view heights aka. remove `rems`)
 TODO Add a `next project` button on work pages (moving from no. 2 to no. 3).
-
 TODO Use Observer instead of document event handlers
 TODO Fix audio interaction perimissions for safari
 TODO Possibly convert imports to requires for Pale Moon browser
 TODO Possibly use get-in-touch icons with thinner strokes
+TODO Fix timeline delays with keyframes, and figure out delays (prob according to view heights aka. remove `rems`)
+TODO Move all intro animations into the MainLayout swup functions
 TODO Add proper SEO and sitemaps
 TODO Add 3d objects in how-i-learn section
 TODO Add a noscript page
