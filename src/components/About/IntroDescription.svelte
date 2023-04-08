@@ -106,8 +106,6 @@
 
 <style>
     .intro-description {
-        will-change: transform, opacity;
-        transform: translateZ(0);
         padding-left: 42vw;
     }
 
