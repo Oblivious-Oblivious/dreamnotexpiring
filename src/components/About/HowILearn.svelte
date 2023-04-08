@@ -285,10 +285,7 @@
 </script>
 
 <div class="how-i-learn" style="visibility: hidden;">
-    <div class="how-i-learn-title">
-        <div>How I Learn:</div>
-        <div class="typography-criminal">(as a typography criminal)</div>
-    </div>
+    <div class="how-i-learn-title">How I Learn:</div>
 
     <div class="spacer"></div>
 
@@ -330,10 +327,6 @@
         left: 5%;
         font-size: 5vw;
         width: 28vw;
-    }
-
-    .typography-criminal {
-        font-size: 1.8vw;
     }
 
     .grain {
@@ -385,13 +378,15 @@
         text-align: center;
         align-items: center;
         justify-content: center;
-        font-family: var(--vogue-font);
+        font-family: var(--display-font);
         font-size: 2.3vw;
+        font-style: italic;
+        text-transform: uppercase;
 
         width: 16vw;
         height: 5vw;
 
-        transform: translate(-11vw, 0vw);
+        transform: translate(-11.5vw, 0vw);
     }
     .how-i-learn-content-date:before {
         content: var(--current-date);
@@ -426,7 +421,7 @@
 
         width: 32.4vw;
         height: 5vw;
-        transform: translate(-2.5vw, -2.5vw);
+        transform: translate(0vw, -2.5vw);
     }
     .how-i-learn-content-method:before {
         content: var(--current-method);
@@ -441,11 +436,12 @@
 
         width: 44vw;
         height: 5vw;
-        transform: translate(2.5vw, 0vw);
+        transform: translate(0vw, 0vw);
     }
     .how-i-learn-content-productivity:before {
-        font-family: "Courier New", Courier, monospace;
+        font-family: var(--display-font);
         font-style: italic;
+        text-transform: uppercase;
         content: "Productivity: ";
     }
 
