@@ -1,5 +1,7 @@
 <script>
     import { onMount } from "svelte";
+    import { gsap } from "gsap/dist/gsap";
+
     import InterestBoldWord from "./WhatInterestsMe/InterestBoldWord.svelte";
     import Software from "./WhatInterestsMe/Software.svelte";
     import Djing from "./WhatInterestsMe/Djing.svelte";

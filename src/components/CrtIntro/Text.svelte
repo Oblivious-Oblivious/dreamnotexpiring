@@ -1,5 +1,6 @@
 <script>
     import { onMount } from "svelte";
+    import gsap from "gsap";
 
     onMount(() => {
         window.dispatchEvent(new CustomEvent("crt-intro-start"));

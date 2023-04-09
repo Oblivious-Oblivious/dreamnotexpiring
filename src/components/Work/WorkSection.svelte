@@ -1,5 +1,6 @@
 <script>
     import { onMount } from "svelte";
+    import { gsap } from "gsap/dist/gsap";
     import { browser_engine } from "@persistence/browser_engine";
 
     onMount(() => {

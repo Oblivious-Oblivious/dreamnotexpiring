@@ -1,5 +1,6 @@
 <script>
     import { onMount } from "svelte";
+    import { gsap } from "gsap/dist/gsap";
 
     var scrollbar_progress = 0;
 

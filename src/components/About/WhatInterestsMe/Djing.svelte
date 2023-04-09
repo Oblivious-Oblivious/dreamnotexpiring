@@ -1,5 +1,8 @@
 <script>
     import { onMount } from "svelte";
+    import { gsap } from "gsap/dist/gsap";
+    import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
     import ReactAdapter from "./ReactAdapter.svelte";
     import { SoundPlayer } from "./SoundPlayer.jsx";
 

@@ -1,9 +1,11 @@
 <script>
     export let content;
 
-    import Line from "./Line.svelte";
     import { onMount } from "svelte";
     import SplitType from "split-type";
+    import { gsap } from "gsap/dist/gsap";
+
+    import Line from "./Line.svelte";
 
     onMount(() => {
         new SplitType(".intro-content", {

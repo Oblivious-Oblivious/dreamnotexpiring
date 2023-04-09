@@ -1,5 +1,6 @@
 <script>
     import { onMount } from "svelte";
+    import { gsap } from "gsap/dist/gsap";
 
     onMount(() => {
         gsap.to(".computer-related-topics-i-enjoy", {

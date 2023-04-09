@@ -4,6 +4,7 @@
     export let link_type;
     
     import { onMount } from "svelte";
+    import { gsap } from "gsap/dist/gsap";
 
     onMount(() => {
         gsap.timeline({

@@ -3,6 +3,8 @@
     export let description;
 
     import { onMount } from "svelte";
+    import { gsap } from "gsap/dist/gsap";
+
     import Line from "./Line.svelte";
 
     let headline_element;

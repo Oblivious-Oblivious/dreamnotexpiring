@@ -1,9 +1,11 @@
 <script>
     export let content;
 
-    import MobileLine from "./MobileLine.svelte";
     import { onMount } from "svelte";
+    import { gsap } from "gsap/dist/gsap";
     import SplitType from "split-type";
+
+    import MobileLine from "./MobileLine.svelte";
 
     onMount(() => {
         new SplitType(".intro-content", {

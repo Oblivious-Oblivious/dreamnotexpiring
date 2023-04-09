@@ -4,6 +4,7 @@
     export let role;
 
     import { onMount } from "svelte";
+    import { gsap } from "gsap/dist/gsap";
 
     let technology_element;
     let technology_link;

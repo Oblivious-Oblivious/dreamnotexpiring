@@ -1,6 +1,7 @@
 <script>
     import { underline_value } from "@persistence/underline_value";
     import { onMount } from "svelte";
+    import { gsap } from "gsap/dist/gsap";
 
     onMount(() => {
         window.addEventListener("scrolling-stop", () => {

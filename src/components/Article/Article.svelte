@@ -3,6 +3,8 @@
     export let date;
     
     import { onMount } from "svelte";
+    import { gsap } from "gsap/dist/gsap";
+
     import TopBorder from "./TopBorder.svelte";
     import BottomBorder from "./BottomBorder.svelte";
 
