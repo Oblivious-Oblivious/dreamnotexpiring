@@ -6,7 +6,7 @@
         align-items: center;
         justify-content: center;
         font-size: 5vw;
-        padding-bottom: 5vw;
+        padding-bottom: 15vw;
     }
 
     .copyright:before {
