@@ -3,7 +3,6 @@
     export let date;
     
     import { onMount } from "svelte";
-    import { gsap } from "gsap/dist/gsap";
 
     onMount(() => {
         gsap.to(".article", {

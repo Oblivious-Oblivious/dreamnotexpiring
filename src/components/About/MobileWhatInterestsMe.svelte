@@ -1,7 +1,5 @@
 <script>
     import { onMount } from "svelte";
-    import { gsap } from "gsap/dist/gsap";
-
     import MobileSoftware from "./WhatInterestsMe/MobileSoftware.svelte";
     import MobileDjing from "./WhatInterestsMe/MobileDjing.svelte";
     import MobileMixology from "./WhatInterestsMe/MobileMixology.svelte";

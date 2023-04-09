@@ -1,7 +1,5 @@
 <script>
     import { onMount } from "svelte";
-    import gsap from "gsap";
-
     import Text from "./Text.svelte";
 
     onMount(() => {

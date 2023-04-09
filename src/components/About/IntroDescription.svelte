@@ -1,7 +1,5 @@
 <script>
     import { onMount } from "svelte";
-    import { gsap } from "gsap/dist/gsap";
-    import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
     var years_of_experience = new Date().getUTCFullYear() - 2012;
 

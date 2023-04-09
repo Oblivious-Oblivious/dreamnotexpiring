@@ -1,6 +1,5 @@
 <script>
     import { onMount } from "svelte";
-    import { gsap } from "gsap/dist/gsap";
 
     let line_element;
     onMount(() => {

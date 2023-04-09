@@ -20,6 +20,12 @@
     <link rel="icon" type="image/svg+xml" href="/icon/favicon.svg">
     <link rel="icon" type="image/png" href="/icon/favicon.png">
 
+    <!-- GSAP -->
+    <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <!-- <script is:inline src="/js/gsap.min.js"></script> -->
+    <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <!-- <script is:inline src="/js/ScrollTrigger.min.js"></script> -->
+
     <!-- Sitemap -->
     <!-- <link rel="sitemap" href="/sitemap.xml"> -->
 

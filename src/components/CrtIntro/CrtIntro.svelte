@@ -1,6 +1,5 @@
 <script>
     import { onMount } from "svelte";
-    import gsap from "gsap";
 
     import Image from "./Image.svelte";
     import Noise from "./Noise.svelte";
