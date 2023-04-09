@@ -20,10 +20,6 @@
     <link rel="icon" type="image/svg+xml" href="/icon/favicon.svg">
     <link rel="icon" type="image/png" href="/icon/favicon.png">
 
-    <!-- Neonderthaw Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap" rel="stylesheet">
     <!-- Sitemap -->
     <!-- <link rel="sitemap" href="/sitemap.xml"> -->
 
