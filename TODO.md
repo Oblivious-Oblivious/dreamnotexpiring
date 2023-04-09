@@ -1,14 +1,20 @@
-TODO Add a `How I Learn` section on the mobile version
+--> REFACTOR <--
+TODO Integrate Astro more deeply, use multiple svelte components instead of just one.
+TODO Integrate the `use` directive for animations
 TODO Combine mobile components using responsive css.
-TODO Firefox not respecting work pages paddings or margins.
-TODO Add a `next project` button on work pages (moving from no. 2 to no. 3).
 TODO Use Observer instead of document event handlers
+TODO Move all intro animations into the MainLayout swup functions
+
+--> BUGS <--
+TODO Firefox not respecting work pages paddings or margins.
 TODO Fix audio interaction perimissions for safari
 TODO Refactor 404 page to a responsive design
 TODO Possibly convert imports to requires for Pale Moon browser
+
+--> ADDITIONS <--
+TODO Add a `How I Learn` section on the mobile version
+TODO Add a `next project` button on work pages (moving from no. 2 to no. 3).
 TODO Possibly use get-in-touch icons with thinner strokes
-TODO Fix timeline delays with keyframes, and figure out delays (prob according to view heights aka. remove `rems`)
-TODO Move all intro animations into the MainLayout swup functions
 TODO Add proper SEO and sitemaps
 TODO Add 3d objects in how-i-learn section
 TODO Add a noscript page
