@@ -1,7 +1,10 @@
+TODO Add a `How I Learn` section on the mobile version
+TODO Combine mobile components using responsive css.
 TODO Firefox not respecting work pages paddings or margins.
 TODO Add a `next project` button on work pages (moving from no. 2 to no. 3).
 TODO Use Observer instead of document event handlers
 TODO Fix audio interaction perimissions for safari
+TODO Refactor 404 page to a responsive design
 TODO Possibly convert imports to requires for Pale Moon browser
 TODO Possibly use get-in-touch icons with thinner strokes
 TODO Fix timeline delays with keyframes, and figure out delays (prob according to view heights aka. remove `rems`)
