@@ -1,12 +1,20 @@
 ---
-import MobileAbout from "@components/About/MobileAbout.svelte";
+import MobileComputerRelatedTopicsIEnjoy from "@components/About/MobileComputerRelatedTopicsIEnjoy.svelte";
+import MobileGetInTouch from "@components/About/MobileGetInTouch.svelte";
+import MobileHowILearn from "@components/About/MobileHowILearn.svelte";
+import MobileIntroDescription from "@components/About/MobileIntroDescription.svelte";
+import MobileWhatInterestsMe from "@components/About/MobileWhatInterestsMe.svelte";
 
 import MobileLayout from "@layouts/MobileLayout.astro";
 import MobilePageLifecycle from "@pages/MobilePageLifecycle.svelte";
 ---
 
 <MobileLayout title="Thanasis Papapostolou - oblivious to the dream">
-    <MobileAbout client:load/>
+    <MobileIntroDescription client:load/>
+    <MobileWhatInterestsMe client:load/>
+    <MobileHowILearn client:load/>
+    <MobileComputerRelatedTopicsIEnjoy client:load/>
+    <MobileGetInTouch client:load/>
 </MobileLayout>
 
 <MobilePageLifecycle current_page="about" client:load/>
