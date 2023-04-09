@@ -1,7 +1,7 @@
 <script>
     export let content;
 
-    import Line from "./Line.svelte";
+    import MobileLine from "./MobileLine.svelte";
     import { onMount } from "svelte";
     import SplitType from "split-type";
 
@@ -21,13 +21,13 @@
     });
 </script>
 
-<Line/>
+<MobileLine/>
 <div class="intro">
     <div class="intro-content">
         {content}
     </div>
 </div>
-<Line/>
+<MobileLine/>
 
 <style>
     .intro {

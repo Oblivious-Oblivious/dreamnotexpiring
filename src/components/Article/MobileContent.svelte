@@ -3,7 +3,7 @@
     export let description;
 
     import { onMount } from "svelte";
-    import Line from "./Line.svelte";
+    import MobileLine from "./MobileLine.svelte";
 
     let headline_element;
     let description_element;
@@ -21,7 +21,7 @@
 <div bind:this={headline_element} class="headline">
     {headline}
 </div>
-<Line/>
+<MobileLine/>
 <div bind:this={description_element} class="description">
     {description}
     <slot/>
