@@ -12,8 +12,8 @@
 
     onMount(() => {
         gsap.from(technology_element, {
-            delay: 3.1,
-            duration: 1.25,
+            delay: 2,
+            duration: 0.75,
             opacity: 0,
         });
     });

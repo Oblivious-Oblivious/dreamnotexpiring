@@ -11,7 +11,7 @@
         });
 
         gsap.timeline({
-            delay: 0.95,
+            delay: 0.45,
         })
         .from(".intro-content .word", {
             duration: 0.0001,

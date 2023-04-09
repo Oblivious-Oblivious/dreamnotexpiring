@@ -7,10 +7,10 @@
 
     onMount(() => {
         gsap.timeline({
-            delay: 0.3,
+            delay: 0.2,
         })
         .from(".title", {
-            duration: 0.65,
+            duration: 0.4,
             clipPath: "inset(0 100% 0 100%)",
         });
     });
