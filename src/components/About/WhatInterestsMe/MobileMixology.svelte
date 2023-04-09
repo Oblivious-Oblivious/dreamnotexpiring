@@ -145,7 +145,8 @@
         overflow: hidden;
         align-items: center;
         justify-content: center;
-        width: 100%;
+        width: 95%;
+        transform: translateX(2.5%);
     }
 
     .cocktail {
