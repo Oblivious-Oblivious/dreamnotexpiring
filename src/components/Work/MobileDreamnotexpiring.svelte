@@ -55,7 +55,7 @@
         <MobileTechnology
             title="ScrollTrigger"
             link="https://greensock.com/scrolltrigger/"
-            role="SCROLL-TIED ANIMATIONS"
+            role="SCROLL ANIMATIONS"
         />
         <MobileTechnology
             title="Lenis"
