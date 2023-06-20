@@ -1,7 +1,7 @@
 <script>
     import { onMount } from "svelte";
 
-    var years_of_experience = new Date().getUTCFullYear() - 2012;
+    var years_of_experience = (Date.now() - Date.parse("May 25 2012")) / 1000 / 60 / 60 / 24 / 365 | 0;
 
     onMount(() => {
         gsap.registerPlugin(ScrollTrigger);
