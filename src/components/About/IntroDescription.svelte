@@ -72,7 +72,7 @@
     <div class="intro-line">
         <div class="intro-word">{years_of_experience}</div>
         <div class="intro-word">years</div>
-        <div class="intro-word">of</div>
+        <div class="intro-word">in</div>
         <div class="intro-word">building</div>
         <div class="interactive">interactive</div>
     </div>
@@ -82,7 +82,7 @@
     <br>
     <div class="intro-line">
         <div class="intro-word">I</div>
-        <div class="intro-word">vow</div>
+        <div class="intro-word">strive</div>
         <div class="intro-word">to</div>
         <div class="intro-word">create</div>
         <div class="intro-word">dynamic</div>
