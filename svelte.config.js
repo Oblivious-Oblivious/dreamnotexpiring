@@ -1,3 +1,3 @@
 export default {
-    preprocess: null
-}
+  preprocess: null,
+};

@@ -20,15 +20,13 @@ TODO Add 3d objects in how-i-learn section
 TODO Add a noscript page
 
 TODO margaret page
-    * Explain importance of literal based programming (graph literal example)
-    * Add color highlighting to code parts
+_ Explain importance of literal based programming (graph literal example)
+_ Add color highlighting to code parts
 
 TODO cSpec page
-    * cSpec as a generic platform for bdd libraries
-    * Screenshot of test run example
+_ cSpec as a generic platform for bdd libraries
+_ Screenshot of test run example
 
-TODO dreamnotexpiring page
-    * Explain why react was used
+TODO dreamnotexpiring page \* Explain why react was used
 
-TODO dynadesign page
-    * Write description
+TODO dynadesign page \* Write description
