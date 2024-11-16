@@ -62,21 +62,23 @@
         <div class="intro-word">designer</div>
     </div>
     <div class="intro-line">
-        <div class="intro-word">blending</div>
+        <div class="intro-word">weaving</div>
+        <div class="intro-word">together</div>
         <div class="technical">technical</div>
+        <div class="intro-word">precision</div>
+    </div>
+    <div class="intro-line">
         <div class="intro-word">and</div>
         <div class="artistic">artistic</div>
-        <div class="intro-word">skills</div>
-        <div class="intro-word">with</div>
-    </div>
-    <div class="intro-line">
+        <div class="intro-word">vision</div>
+        <div class="intro-word">through</div>
         <div class="intro-word">{years_of_experience}</div>
         <div class="intro-word">years</div>
-        <div class="intro-word">in</div>
-        <div class="intro-word">building</div>
-        <div class="interactive">interactive</div>
     </div>
     <div class="intro-line">
+        <div class="intro-word">of</div>
+        <div class="intro-word">crafting</div>
+        <div class="interactive">interactive</div>
         <div class="intro-word">experiences.</div>
     </div>
     <br>
@@ -88,19 +90,13 @@
         <div class="intro-word">dynamic</div>
         <div class="intro-word">systems</div>
         <div class="intro-word">that</div>
-    </div>
-    <div class="intro-line">
-        <div class="intro-word">interact</div>
-        <div class="intro-word">in</div>
-        <div class="intro-word">meaningful</div>
-        <div class="intro-word">and</div>
-        <div class="intro-word">internalized</div>
-    </div>
-    <div class="intro-line">
-        <div class="intro-word">ways</div>
+      </div>
+      <div class="intro-line">
+        <div class="intro-word">resonate</div>
+        <div class="intro-word">meaningfully</div>
         <div class="intro-word">with</div>
-        <div class="intro-word">the</div>
-        <div class="intro-word">individual.</div>
+        <div class="intro-word">human</div>
+        <div class="intro-word">intuition.</div>
     </div>
 </div>
 

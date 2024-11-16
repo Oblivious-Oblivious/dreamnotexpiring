@@ -116,9 +116,9 @@
             <br><br>
         </div>
         <div class="software-text software-description-details">
-            Margaret is a modern programming language focused around
-            objects and messages. It offers powerful literals, easy
-            to use objects and smalltalk-like message structures.
+            Margaret is a modern Smalltalk-inspired, object-oriented
+            programming language that emphasizes message-passing paradigms,
+            intuitive interactions and powerful object capabilities.
         </div>
         <div class="software-text software-copyright">
             © Oblivious
