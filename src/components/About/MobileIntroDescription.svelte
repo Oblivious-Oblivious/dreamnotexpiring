@@ -1,7 +1,10 @@
 <script>
     import { onMount } from "svelte";
 
-    var years_of_experience = new Date().getUTCFullYear() - 2012;
+    var years_of_experience = (function() {
+      const daysPassed = (Date.now() - Date.parse("May 25 2012")) / (1000 * 60 * 60 * 24);
+      return Math.floor(daysPassed / 365) + (daysPassed % 365 > 182.5 ? 1 : 0);
+    })();
 
     onMount(() => {
         window.dispatchEvent(new CustomEvent("on-mobile-about"));
