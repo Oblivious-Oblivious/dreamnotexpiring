@@ -1,61 +1,61 @@
 :root {
-    --coral: #f88379;       --red: #ed1c24;     --crimson: #dc143c;     --rosewood: #65000b;
-    --almond: #efdecd;      --brown: #9F8170;   --coffee: #6f4e37;      --umbral: #635147;
-    --gold: #ffd700;        --orange: #f7941d;  --pomodoro: #ff6347;    --mahogany: #c04000;
-    --cream: #fffcc9;       --yellow: #fff200;  --citrine: #e4d00a;     --saffron: #f4c431;
-    --lime: #9efd3f;        --green: #00a651;   --olive: #7ba05b;       --forest: #00563B;
-    --azure: #e4ffff;       --cyan: #15f4ee;    --tiffany: #81D8D0;     --teal: #009494;
-    --periwinkle: #ccccff;  --blue: #1414ff;    --lapis: #26619c;       --navy: #000094;
-    --lilac: #c8a2c8;       --purple: #a020f0;  --royal: #7851a9;       --indigo: #4b0082;
-    --blush: #e082b7;       --magenta: #ff0090; --violet: #c71585;      --murrey: #7d0047;
-    --champagne: #f1ddcf;   --pink: #ffc0cb;    --valentine: #e6a6be;   --rose: #c08081;
-    --snow: #fffafa;        --white: #f7f7f7;   --smoke: #f5f5f5;       --bone: #e3dac9;
-    --silver: #c0c0c0;      --gray: #848482;    --dim: #555555;         --metal: #2a3439;
-    --onyx: #353839;        --black: #1b1b1b;   --raisin: #242124;      --night: #111111;
+  --coral: #f88379;       --red: #ed1c24;     --crimson: #dc143c;     --rosewood: #65000b;
+  --almond: #efdecd;      --brown: #9F8170;   --coffee: #6f4e37;      --umbral: #635147;
+  --gold: #ffd700;        --orange: #f7941d;  --pomodoro: #ff6347;    --mahogany: #c04000;
+  --cream: #fffcc9;       --yellow: #fff200;  --citrine: #e4d00a;     --saffron: #f4c431;
+  --lime: #9efd3f;        --green: #00a651;   --olive: #7ba05b;       --forest: #00563B;
+  --azure: #e4ffff;       --cyan: #15f4ee;    --tiffany: #81D8D0;     --teal: #009494;
+  --periwinkle: #ccccff;  --blue: #1414ff;    --lapis: #26619c;       --navy: #000094;
+  --lilac: #c8a2c8;       --purple: #a020f0;  --royal: #7851a9;       --indigo: #4b0082;
+  --blush: #e082b7;       --magenta: #ff0090; --violet: #c71585;      --murrey: #7d0047;
+  --champagne: #f1ddcf;   --pink: #ffc0cb;    --valentine: #e6a6be;   --rose: #c08081;
+  --snow: #fffafa;        --white: #f7f7f7;   --smoke: #f5f5f5;       --bone: #e3dac9;
+  --silver: #c0c0c0;      --gray: #848482;    --dim: #555555;         --metal: #2a3439;
+  --onyx: #353839;        --black: #1b1b1b;   --raisin: #242124;      --night: #111111;
 
-    /* Colors */
-    color: var(--fg-color);
-    background-color: var(--bg-color);
+  /* Colors */
+  color: var(--fg-color);
+  background-color: var(--bg-color);
 }
 
 .light-theme {
-    --fg-color: var(--night);
-    --bg-color: var(--bone);
-    --accent-color: var(--rose);
-    --overlay-color: #dbd0c0;
-    --neumorphic-shadow: 5px 5px 6.5px 0 rgba(0, 0, 0, 0.25),
-                           -3px -3px 4.5px 0 rgba(255, 255, 255, 0.3);
-    --neumorphic-shadow2: 10px 10px 13px 0 rgba(0, 0, 0, 0.25),
-                           -6px -6px 9px 0 rgba(255, 255, 255, 0.3);
-    --neumorphic-shadow3: 29px 29px 40px rgba(0, 0, 0, 0.25),
-                           -8px -8px 40px rgba(255, 255, 255, 0.3);
-    --neumorphic-shadow-pressed: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.3),
-                                   inset -6px -6px 10px 0 rgba(255, 255, 255, 0.25);
-    --neumorphic-shadow-pressed2: inset 12px 12px 20px 0 rgba(0, 0, 0, 0.3),
-                                    inset -12px -12px 20px 0 rgba(255, 255, 255, 0.25);
-    --neumorphic-shadow-pressed3: inset 29px 29px 40px rgba(0, 0, 0, 0.25),
-                                    inset -8px -8px 40px rgba(255, 255, 255, 0.3);
-    --invert-value: 0;
-    --profile-opacity-value: 0.75;
+  --fg-color: var(--night);
+  --bg-color: var(--bone);
+  --accent-color: var(--rose);
+  --overlay-color: #dbd0c0;
+  --neumorphic-shadow: 5px 5px 6.5px 0 rgba(0, 0, 0, 0.25),
+                         -3px -3px 4.5px 0 rgba(255, 255, 255, 0.3);
+  --neumorphic-shadow2: 10px 10px 13px 0 rgba(0, 0, 0, 0.25),
+                         -6px -6px 9px 0 rgba(255, 255, 255, 0.3);
+  --neumorphic-shadow3: 29px 29px 40px rgba(0, 0, 0, 0.25),
+                         -8px -8px 40px rgba(255, 255, 255, 0.3);
+  --neumorphic-shadow-pressed: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.3),
+                                 inset -6px -6px 10px 0 rgba(255, 255, 255, 0.25);
+  --neumorphic-shadow-pressed2: inset 12px 12px 20px 0 rgba(0, 0, 0, 0.3),
+                                  inset -12px -12px 20px 0 rgba(255, 255, 255, 0.25);
+  --neumorphic-shadow-pressed3: inset 29px 29px 40px rgba(0, 0, 0, 0.25),
+                                  inset -8px -8px 40px rgba(255, 255, 255, 0.3);
+  --invert-value: 0;
+  --profile-opacity-value: 0.75;
 }
 
 .dark-theme {
-    --fg-color: var(--smoke);
-    --bg-color: var(--night);
-    --accent-color: var(--rose);
-    --overlay-color: #141414;
-    --neumorphic-shadow: 5px 5px 6.5px 0 rgba(0, 0, 0, 1),
-                           -3px -3px 4.5px 0 rgba(255, 255, 255, 0.05);
-    --neumorphic-shadow2: 10px 10px 13px 0 rgba(0, 0, 0, 1),
-                           -6px -6px 9px 0 rgba(255, 255, 255, 0.05);
-    --neumorphic-shadow3: 29px 29px 40px rgba(0, 0, 0, 1),
-                           -8px -8px 40px rgba(255, 255, 255, 0.05);
-    --neumorphic-shadow-pressed: inset 6px 6px 10px 0 rgba(0, 0, 0, 1),
-                                   inset -6px -6px 10px 0 rgba(255, 255, 255, 0.05);
-    --neumorphic-shadow-pressed2: inset 12px 12px 20px 0 rgba(0, 0, 0, 1),
-                                    inset -12px -12px 20px 0 rgba(255, 255, 255, 0.05);
-    --neumorphic-shadow-pressed3: inset 29px 29px 40px rgba(0, 0, 0, 1),
-                                    inset -8px -8px 40px rgba(255, 255, 255, 0.05);
-    --invert-value: 1;
-    --profile-opacity-value: 0.45;
+  --fg-color: var(--smoke);
+  --bg-color: var(--night);
+  --accent-color: var(--rose);
+  --overlay-color: #141414;
+  --neumorphic-shadow: 5px 5px 6.5px 0 rgba(0, 0, 0, 1),
+                         -3px -3px 4.5px 0 rgba(255, 255, 255, 0.05);
+  --neumorphic-shadow2: 10px 10px 13px 0 rgba(0, 0, 0, 1),
+                         -6px -6px 9px 0 rgba(255, 255, 255, 0.05);
+  --neumorphic-shadow3: 29px 29px 40px rgba(0, 0, 0, 1),
+                         -8px -8px 40px rgba(255, 255, 255, 0.05);
+  --neumorphic-shadow-pressed: inset 6px 6px 10px 0 rgba(0, 0, 0, 1),
+                                 inset -6px -6px 10px 0 rgba(255, 255, 255, 0.05);
+  --neumorphic-shadow-pressed2: inset 12px 12px 20px 0 rgba(0, 0, 0, 1),
+                                  inset -12px -12px 20px 0 rgba(255, 255, 255, 0.05);
+  --neumorphic-shadow-pressed3: inset 29px 29px 40px rgba(0, 0, 0, 1),
+                                  inset -8px -8px 40px rgba(255, 255, 255, 0.05);
+  --invert-value: 1;
+  --profile-opacity-value: 0.45;
 }

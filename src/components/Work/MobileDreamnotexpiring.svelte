@@ -1,112 +1,105 @@
 <script>
-    import { onMount } from "svelte";
-    import MobileArticle from "@components/Article/MobileArticle.svelte";
-    import MobileTitle from "@components/Article/MobileTitle.svelte";
-    import MobileIntro from "@components/Article/MobileIntro.svelte";
-    import MobileContent from "@components/Article/MobileContent.svelte";
-    import MobileTechnology from "@components/Article/MobileTechnology.svelte";
-    import MobileCopyright from "@components/Article/MobileCopyright.svelte";
+  import { onMount } from "svelte";
+  import MobileArticle from "@components/Article/MobileArticle.svelte";
+  import MobileTitle from "@components/Article/MobileTitle.svelte";
+  import MobileIntro from "@components/Article/MobileIntro.svelte";
+  import MobileContent from "@components/Article/MobileContent.svelte";
+  import MobileTechnology from "@components/Article/MobileTechnology.svelte";
+  import MobileCopyright from "@components/Article/MobileCopyright.svelte";
 
-    onMount(() => {
-        window.dispatchEvent(new CustomEvent("on-mobile-about"));
-    });
+  onMount(() => {
+    window.dispatchEvent(new CustomEvent("on-mobile-about"));
+  });
 </script>
 
 <MobileArticle number="no. 3" date="2023">
-    <MobileTitle
-        name="SELF"
-        link="https://github.com/Oblivious-Oblivious/dreamnotexpiring"
-        link_type="Website"
-    />
+  <MobileTitle
+    name="SELF"
+    link="https://github.com/Oblivious-Oblivious/dreamnotexpiring"
+    link_type="Website"
+  />
 
-    <MobileIntro content="
+  <MobileIntro
+    content="
         Basically using any hipster new techonlogy I can find.
-    "/>
+    "
+  />
 
-    <MobileContent
-        headline="Technologies used"
-        description=""
-    >
-        <MobileTechnology
-            title="Svelte"
-            link="https://svelte.dev"
-            role="FRAMEWORK"
-        />
-        <MobileTechnology
-            title="Astro"
-            link="https://astro.build"
-            role="META-FRAMEWORK"
-        />
-        <MobileTechnology
-            title="React"
-            link="https://react.dev"
-            role="SOUND EFFECTS"
-        />
-        <MobileTechnology
-            title="PostCSS"
-            link="https://postcss.org"
-            role="CSS TRANSFORMER"
-        />
-        <MobileTechnology
-            title="GSAP"
-            link="https://greensock.com/gsap/"
-            role="ANIMATIONS"
-        />
-        <MobileTechnology
-            title="ScrollTrigger"
-            link="https://greensock.com/scrolltrigger/"
-            role="SCROLL ANIMATIONS"
-        />
-        <MobileTechnology
-            title="Lenis"
-            link="https://lenis.studiofreight.com"
-            role="SMOOTH SCROLLING"
-        />
-        <MobileTechnology
-            title="Swup"
-            link="https://swup.js.org"
-            role="PAGE TRANSITIONS"
-        />
-        <MobileTechnology
-            title="SplitType"
-            link="https://github.com/lukePeavey/SplitType"
-            role="TEXT SPLITTING"
-        />
-        <MobileTechnology
-            title="Vercel"
-            link="https://vercel.com/"
-            role="DEPLOYMENT"
-        />
-    </MobileContent>
-
-    <MobileContent
-        headline=""
-        description=""
-    >
-        <div class="videos">
-            <video width="1280" height="720" autoplay muted loop playsinline>
-                <source src="/video/crt-intro.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <video width="1280" height="720" autoplay muted loop playsinline>
-                <source src="/video/work.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <video width="1280" height="720" autoplay muted loop playsinline>
-                <source src="/video/about.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-    </MobileContent>
-
-    <MobileContent
-        headline="Why all the new stuff ?"
-        description="Why not ?"
+  <MobileContent headline="Technologies used" description="">
+    <MobileTechnology
+      title="Svelte"
+      link="https://svelte.dev"
+      role="FRAMEWORK"
     />
+    <MobileTechnology
+      title="Astro"
+      link="https://astro.build"
+      role="META-FRAMEWORK"
+    />
+    <MobileTechnology
+      title="React"
+      link="https://react.dev"
+      role="SOUND EFFECTS"
+    />
+    <MobileTechnology
+      title="PostCSS"
+      link="https://postcss.org"
+      role="CSS TRANSFORMER"
+    />
+    <MobileTechnology
+      title="GSAP"
+      link="https://greensock.com/gsap/"
+      role="ANIMATIONS"
+    />
+    <MobileTechnology
+      title="ScrollTrigger"
+      link="https://greensock.com/scrolltrigger/"
+      role="SCROLL ANIMATIONS"
+    />
+    <MobileTechnology
+      title="Lenis"
+      link="https://lenis.studiofreight.com"
+      role="SMOOTH SCROLLING"
+    />
+    <MobileTechnology
+      title="Swup"
+      link="https://swup.js.org"
+      role="PAGE TRANSITIONS"
+    />
+    <MobileTechnology
+      title="SplitType"
+      link="https://github.com/lukePeavey/SplitType"
+      role="TEXT SPLITTING"
+    />
+    <MobileTechnology
+      title="Vercel"
+      link="https://vercel.com/"
+      role="DEPLOYMENT"
+    />
+  </MobileContent>
 
-    <MobileContent
-        headline="Svelte as a framework"
-        description="
+  <MobileContent headline="" description="">
+    <div class="videos">
+      <video width="1280" height="720" autoplay muted loop playsinline>
+        <source src="/video/crt-intro.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <video width="1280" height="720" autoplay muted loop playsinline>
+        <source src="/video/work.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <video width="1280" height="720" autoplay muted loop playsinline>
+        <source src="/video/about.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </MobileContent>
+
+  <MobileContent headline="Why all the new stuff ?" description="Why not ?" />
+
+  <MobileContent
+    headline="Svelte as a framework"
+    description="
             The Svelte framework provides a radical new approach to working
             with UI development on the web.  As a compiler, Svelte optimizes
             many of the problems that runtime libraries produce mainly in
@@ -116,11 +109,11 @@
             'framework-less' vanilla javascript one takes advantage of all
             modern component based separation without any of the overhead.
         "
-    />
+  />
 
-    <MobileContent
-        headline="Astro as a meta-framework"
-        description="
+  <MobileContent
+    headline="Astro as a meta-framework"
+    description="
             Picking a meta-framework depends heavily on the type of web
             application one might be working on.  Usually there is no cookie
             cutter framework case for everything, some apps fit better with
@@ -141,11 +134,11 @@
             its full potential, it is still a concept that will transform
             the way do web development for the forseable future.
         "
-    />
+  />
 
-    <MobileContent
-        headline="Use of GSAP animations"
-        description="
+  <MobileContent
+    headline="Use of GSAP animations"
+    description="
             An exciting website needs interactivity, interesting visual
             elements and animation to bring components to life.  A distinct
             design language for a website is no longer enough to present
@@ -158,11 +151,11 @@
             the ease of use and incredible performance that allows complex
             animations without lags, even for the slowest of computers.
         "
-    />
+  />
 
-    <MobileContent
-        headline="Some very new libraries"
-        description="
+  <MobileContent
+    headline="Some very new libraries"
+    description="
             Smooth scrolling introduces a refreshing layer of eye (and scroll)
             candy when navigating a website.  Most solutions however create
             problems in implementation.  Libraries like smooth-scrollbar,
@@ -176,22 +169,22 @@
             as position elements as fixed, since there is no `scrolling layer`
             over the scrollable content that other libraries need.
         "
-    />
+  />
 </MobileArticle>
 
-<MobileCopyright/>
+<MobileCopyright />
 
 <style>
-    .videos {
-        display: flex;
-        flex-direction: column;
-        gap: 10vw;
-        width: 100%;
-    }
+  .videos {
+    display: flex;
+    flex-direction: column;
+    gap: 10vw;
+    width: 100%;
+  }
 
-    video {
-        width: 100%;
-        box-shadow: var(--neumorphic-shadow2);
-        border-radius: 0.5vw;
-    }
+  video {
+    width: 100%;
+    box-shadow: var(--neumorphic-shadow2);
+    border-radius: 0.5vw;
+  }
 </style>

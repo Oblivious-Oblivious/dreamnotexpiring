@@ -12,264 +12,265 @@ import AfterCrtIntro from "@components/CrtIntro/AfterCrtIntro.svelte";
 ---
 
 <script is:inline>
-    document.addEventListener("unload", (e) => {
-        e.preventDefault();
-        location.reload();
-        return false;
-    });
+  document.addEventListener("unload", (e) => {
+    e.preventDefault();
+    location.reload();
+    return false;
+  });
 
-    window.addEventListener("unload", (e) => {
-        e.preventDefault();
-        location.reload();
-        return false;
-    });
+  window.addEventListener("unload", (e) => {
+    e.preventDefault();
+    location.reload();
+    return false;
+  });
 </script>
 
 <script>
-    if(window.matchMedia && window.matchMedia("only screen and (max-width: 431px)").matches)
-        window.location.href = "https://dreamnotexpiring.com/mobile/index.html";
+  if(window.matchMedia && window.matchMedia("only screen and (max-width: 431px)").matches) {
+    window.location.href = "https://dreamnotexpiring.com/mobile/index.html";
+  }
 
-    // Swup
-    import Swup from "swup";
-    import SwupHeadPlugin from "@swup/head-plugin";
-    import SwupJsPlugin from "@swup/js-plugin";
+  // Swup
+  import Swup from "swup";
+  import SwupHeadPlugin from "@swup/head-plugin";
+  import SwupJsPlugin from "@swup/js-plugin";
 
-    gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollTrigger);
 
-    // Smooth scrolling without jacking
-    import Lenis from "@studio-freight/lenis";
-    const lenis = new Lenis({
-        duration: 2,
-        lerp: 0.25,
-    });
-    const raf = time => {
-        lenis.raf(time);
-        requestAnimationFrame(raf);
-    }
+  // Smooth scrolling without jacking
+  import Lenis from "@studio-freight/lenis";
+  const lenis = new Lenis({
+    duration: 2,
+    lerp: 0.25,
+  });
+  const raf = time => {
+    lenis.raf(time);
     requestAnimationFrame(raf);
+  }
+  requestAnimationFrame(raf);
 
-    window.addEventListener("crt-intro-start", () => lenis.stop());
-    window.addEventListener("crt-intro-end", () => lenis.start());
+  window.addEventListener("crt-intro-start", () => lenis.stop());
+  window.addEventListener("crt-intro-end", () => lenis.start());
 
-    window.addEventListener("scrolling-stop", () => lenis.stop());
-    window.addEventListener("scrolling-start", () => lenis.start());
+  window.addEventListener("scrolling-stop", () => lenis.stop());
+  window.addEventListener("scrolling-start", () => lenis.start());
 
-    const to_any_page_in = next => {
-        gsap.to("#swup", {
-            duration: 0.55,
-            onStart: ScrollTrigger.refresh,
-            onComplete: next,
-        });
+  const to_any_page_in = next => {
+    gsap.to("#swup", {
+      duration: 0.55,
+      onStart: ScrollTrigger.refresh,
+      onComplete: next,
+    });
 
-        gsap.timeline()
-            .to(".transition-overlay", {
-                duration: 0.55,
-                yPercent: 200,
-                ease: "power2.in",
-            })
-            .set(".transition-overlay", {
-                yPercent: -100,
-            });
-    }
+    gsap.timeline()
+      .to(".transition-overlay", {
+        duration: 0.55,
+        yPercent: 200,
+        ease: "power2.in",
+      })
+      .set(".transition-overlay", {
+        yPercent: -100,
+      });
+  }
 
-    const from_any_page_out = next => {
-        window.dispatchEvent(new CustomEvent("scrolling-stop"));
-        gsap.to("#swup", {
-            duration: 0.75,
-            onStart: ScrollTrigger.refresh,
-            onComplete: next,
-        });
+  const from_any_page_out = next => {
+    window.dispatchEvent(new CustomEvent("scrolling-stop"));
+    gsap.to("#swup", {
+      duration: 0.75,
+      onStart: ScrollTrigger.refresh,
+      onComplete: next,
+    });
 
-        gsap.to(".transition-overlay", {
-            duration: 0.75,
-            yPercent: 100,
-            ease: "power2.out",
-        });
-    }
+    gsap.to(".transition-overlay", {
+      duration: 0.75,
+      yPercent: 100,
+      ease: "power2.out",
+    });
+  }
 
-    const from_work_project_out = next => {
-        window.dispatchEvent(new CustomEvent("scrolling-stop"));
-        gsap.to("#swup", {
-            duration: 0.65,
-            opacity: 0,
-            onStart: ScrollTrigger.refresh,
-            onComplete: next,
-        });
-    }
+  const from_work_project_out = next => {
+    window.dispatchEvent(new CustomEvent("scrolling-stop"));
+    gsap.to("#swup", {
+      duration: 0.65,
+      opacity: 0,
+      onStart: ScrollTrigger.refresh,
+      onComplete: next,
+    });
+  }
 
-    const to_about_in = next => {
-        gsap.to("#swup", {
-            duration: 0.65,
-            onStart: ScrollTrigger.refresh,
-            onComplete: () => {
-                gsap.getById("scrollbar-tween").progress(0);
-                next();
-            },
-        });
-    }
+  const to_about_in = next => {
+    gsap.to("#swup", {
+      duration: 0.65,
+      onStart: ScrollTrigger.refresh,
+      onComplete: () => {
+        gsap.getById("scrollbar-tween").progress(0);
+        next();
+      },
+    });
+  }
 
-    const from_work_out = next => {
-        window.dispatchEvent(new CustomEvent("scrolling-stop"));
-        gsap.to("#swup", {
-            duration: 0.65,
-            onStart: ScrollTrigger.refresh,
-            onComplete: next,
-        });
+  const from_work_out = next => {
+    window.dispatchEvent(new CustomEvent("scrolling-stop"));
+    gsap.to("#swup", {
+      duration: 0.65,
+      onStart: ScrollTrigger.refresh,
+      onComplete: next,
+    });
 
-        gsap.to(".work", {
-            duration: 0.65,
-            xPercent: 250,
-            stagger: 0.01,
-            ease: "power2.in",
-        });
+    gsap.to(".work", {
+      duration: 0.65,
+      xPercent: 250,
+      stagger: 0.01,
+      ease: "power2.in",
+    });
 
-        gsap.to(".work-line", {
-            duration: 0.35,
-            width: "0%",
-            stagger: 0.025,
-        });
-    }
+    gsap.to(".work-line", {
+      duration: 0.35,
+      width: "0%",
+      stagger: 0.025,
+    });
+  }
 
-    const to_work_in = next => {
-        gsap.to("#swup", {
-            duration: 0.4,
-            onStart: ScrollTrigger.refresh,
-            onComplete: () => {
-                next();
-                gsap.getById("scrollbar-tween").progress(0);
-            },
-        });
-    }
+  const to_work_in = next => {
+    gsap.to("#swup", {
+      duration: 0.4,
+      onStart: ScrollTrigger.refresh,
+      onComplete: () => {
+        next();
+        gsap.getById("scrollbar-tween").progress(0);
+      },
+    });
+  }
 
-    const from_about_out = next => {
-        window.dispatchEvent(new CustomEvent("scrolling-stop"));
-        gsap.to("#swup", {
-            duration: 0.6,
-            ease: "power4.out",
-            autoAlpha: 0,
-            onStart: ScrollTrigger.refresh,
-            onComplete: next,
-        });
-    }
+  const from_about_out = next => {
+    window.dispatchEvent(new CustomEvent("scrolling-stop"));
+    gsap.to("#swup", {
+      duration: 0.6,
+      ease: "power4.out",
+      autoAlpha: 0,
+      onStart: ScrollTrigger.refresh,
+      onComplete: next,
+    });
+  }
 
-    const start_from_page_top = () => window.scrollTo(0, 0);
+  const start_from_page_top = () => window.scrollTo(0, 0);
 
-    new Swup({
-        animateHistoryBrowsing: true,
-        plugins: [
-            new SwupHeadPlugin(),
-            new SwupJsPlugin([
-                {
-                    from: "(.*)",
-                    to: "(.*)",
-                    out: next => from_any_page_out(next),
-                    in: next => to_any_page_in(next),
-                },
-                {
-                    from: "(.*)",
-                    to: "/",
-                    out: next => from_work_project_out(next),
-                    in: next => to_work_in(next),
-                },
-                {
-                    from: "(.*)",
-                    to: "/about",
-                    out: next => from_work_project_out(next),
-                    in: next => to_about_in(next),
-                },
-                {
-                    from: "/",
-                    to: "/about",
-                    out: next => from_work_out(next),
-                    in: next => to_about_in(next),
-                },
-                {
-                    from: "/about",
-                    to: "/",
-                    out: next => from_about_out(next),
-                    in: next => to_work_in(next),
-                },
-            ]),
-        ],
-    }).on("pageView", start_from_page_top);
+  new Swup({
+    animateHistoryBrowsing: true,
+    plugins: [
+      new SwupHeadPlugin(),
+      new SwupJsPlugin([
+        {
+          from: "(.*)",
+          to: "(.*)",
+          out: next => from_any_page_out(next),
+          in: next => to_any_page_in(next),
+        },
+        {
+          from: "(.*)",
+          to: "/",
+          out: next => from_work_project_out(next),
+          in: next => to_work_in(next),
+        },
+        {
+          from: "(.*)",
+          to: "/about",
+          out: next => from_work_project_out(next),
+          in: next => to_about_in(next),
+        },
+        {
+          from: "/",
+          to: "/about",
+          out: next => from_work_out(next),
+          in: next => to_about_in(next),
+        },
+        {
+          from: "/about",
+          to: "/",
+          out: next => from_about_out(next),
+          in: next => to_work_in(next),
+        },
+      ]),
+    ],
+  }).on("pageView", start_from_page_top);
 </script>
 
 <!DOCTYPE html>
 <html lang="en" class="dark-theme || light-theme">
-    <Head {title}/>
+  <Head {title}/>
 
-    <body onload="">
-        <CrtIntro client:load/>
+  <body onload="">
+    <CrtIntro client:load/>
 
-        <div class="main-content">
-            <Header client:load/>
-            <Cursor client:load/>
-            <Scrollbar client:load/>
-            <ThemeToggle client:only="svelte"/>
-            <GrainEffect/>
-            <TransitionOverlay/>
-            
-            <main id="swup">
-                <slot/>
-            </main>
-        </div>
+    <div class="main-content">
+      <Header client:load/>
+      <Cursor client:load/>
+      <Scrollbar client:load/>
+      <ThemeToggle client:only="svelte"/>
+      <GrainEffect/>
+      <TransitionOverlay/>
 
-        <!-- Reveals main content -->
-        <AfterCrtIntro client:load/>
-    </body>
+      <main id="swup">
+        <slot/>
+      </main>
+    </div>
+
+    <!-- Reveals main content -->
+    <AfterCrtIntro client:load/>
+  </body>
 </html>
 
 <style is:global>
-    @import "/styles/resets.css";
-    @import "/styles/colors.css";
-    @import "/styles/fonts.css";
+  @import "/styles/resets.css";
+  @import "/styles/colors.css";
+  @import "/styles/fonts.css";
 
-    :root {
-        font-family: var(--text-font);
-        font-weight: normal;
-        font-feature-settings: "lnum";
-        color-scheme: light dark;
+  :root {
+    font-family: var(--text-font);
+    font-weight: normal;
+    font-feature-settings: "lnum";
+    color-scheme: light dark;
 
-        /* Font smoothing */
-        font-synthesis: none;
-        text-rendering: optimizeLegibility;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        -webkit-text-size-adjust: 100%;
+    /* Font smoothing */
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
 
-        /* Non-selectable text */
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        cursor: default;
+    /* Non-selectable text */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
 
-        /* Animated values */
-        transition: background-color 600ms,
-                    color 600ms,
-                    box-shadow 600ms,
-                    filter 600ms;
-    }
+    /* Animated values */
+    transition: background-color 600ms,
+                color 600ms,
+                box-shadow 600ms,
+                filter 600ms;
+  }
 
-    /* Hide scrollbar */
-    * {
-        /* Firefox */
-        scrollbar-width: none;
-    }
-    body {
-        overscroll-behavior: none;
-    }
-    body::-webkit-scrollbar {
-        display: none;
-    }
+  /* Hide scrollbar */
+  * {
+    /* Firefox */
+    scrollbar-width: none;
+  }
+  body {
+    overscroll-behavior: none;
+  }
+  body::-webkit-scrollbar {
+    display: none;
+  }
 
-    code {
-        font-family: "Fira Code", Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-    }
+  code {
+    font-family: "Fira Code", Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+  }
 
-    .main-content {
-        visibility: hidden;
-    }
+  .main-content {
+    visibility: hidden;
+  }
 </style>

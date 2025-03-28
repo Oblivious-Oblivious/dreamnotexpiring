@@ -1,83 +1,83 @@
 @font-face {
-    font-family: "Saol Display";
-    src: url("/fonts/SaolDisplay/SaolDisplayThin");
-    font-weight: 100;
-    font-style: normal;
+  font-family: "Saol Display";
+  src: url("/fonts/SaolDisplay/SaolDisplayThin");
+  font-weight: 100;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Saol Display";
-    src: url("/fonts/SaolDisplay/SaolDisplayThinItalic");
-    font-weight: 100;
-    font-style: italic;
+  font-family: "Saol Display";
+  src: url("/fonts/SaolDisplay/SaolDisplayThinItalic");
+  font-weight: 100;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: "Saol Display";
-    src: url("/fonts/SaolDisplay/SaolDisplayLight");
-    font-weight: 300;
-    font-style: normal;
+  font-family: "Saol Display";
+  src: url("/fonts/SaolDisplay/SaolDisplayLight");
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Saol Display";
-    src: url("/fonts/SaolDisplay/SaolDisplayLightItalic");
-    font-weight: 300;
-    font-style: italic;
+  font-family: "Saol Display";
+  src: url("/fonts/SaolDisplay/SaolDisplayLightItalic");
+  font-weight: 300;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: "Saol Display";
-    src: url("/fonts/SaolDisplay/SaolDisplayRegular");
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Saol Display";
+  src: url("/fonts/SaolDisplay/SaolDisplayRegular");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Saol Display";
-    src: url("/fonts/SaolDisplay/SaolDisplayRegularItalic");
-    font-weight: 400;
-    font-style: italic;
+  font-family: "Saol Display";
+  src: url("/fonts/SaolDisplay/SaolDisplayRegularItalic");
+  font-weight: 400;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: "Saol Display";
-    src: url("/fonts/SaolDisplay/SaolDisplayMedium");
-    font-weight: 500;
-    font-style: normal;
+  font-family: "Saol Display";
+  src: url("/fonts/SaolDisplay/SaolDisplayMedium");
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Saol Display";
-    src: url("/fonts/SaolDisplay/SaolDisplayMediumItalic");
-    font-weight: 500;
-    font-style: italic;
+  font-family: "Saol Display";
+  src: url("/fonts/SaolDisplay/SaolDisplayMediumItalic");
+  font-weight: 500;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: "Saol Display";
-    src: url("/fonts/SaolDisplay/SaolDisplaySemibold");
-    font-weight: 600;
-    font-style: normal;
+  font-family: "Saol Display";
+  src: url("/fonts/SaolDisplay/SaolDisplaySemibold");
+  font-weight: 600;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Saol Display";
-    src: url("/fonts/SaolDisplay/SaolDisplaySemiboldItalic");
-    font-weight: 600;
-    font-style: italic;
+  font-family: "Saol Display";
+  src: url("/fonts/SaolDisplay/SaolDisplaySemiboldItalic");
+  font-weight: 600;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: "Saol Display";
-    src: url("/fonts/SaolDisplay/SaolDisplayBold");
-    font-weight: 700;
-    font-style: normal;
+  font-family: "Saol Display";
+  src: url("/fonts/SaolDisplay/SaolDisplayBold");
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Saol Display";
-    src: url("/fonts/SaolDisplay/SaolDisplayBoldItalic");
-    font-weight: 700;
-    font-style: italic;
+  font-family: "Saol Display";
+  src: url("/fonts/SaolDisplay/SaolDisplayBoldItalic");
+  font-weight: 700;
+  font-style: italic;
 }

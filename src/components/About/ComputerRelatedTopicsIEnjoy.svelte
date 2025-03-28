@@ -108,20 +108,20 @@
     <div class="topic-title">Penetration Testing</div>
     <code>
       <span class="topic-code-cyan">unsigned char</span> code[] = <br />
-      &nbsp;&nbsp;&nbsp;<span class="topic-code-blue">"</span><span
+      &nbsp;&nbsp;<span class="topic-code-blue">"</span><span
         class="topic-code-green"
         >\x56\x5a\x56\x48\xbf\x2f\x62\x69\x6e\x2f\x2f</span
       ><br />
-      &nbsp;&nbsp;&nbsp;&nbsp;<span class="topic-code-green"
+      &nbsp;&nbsp;&nbsp;<span class="topic-code-green"
         >\x73\x68\x57\x54\x5f\xb0\x3b\x0f\x05</span
       ><span class="topic-code-blue">"</span>;<br />
       <br />
       <span class="topic-code-cyan">int</span> main(<span
         class="topic-code-cyan">void</span
       >) &lbrace;<br />
-      &nbsp;&nbsp;&nbsp;&nbsp;<span class="topic-code-cyan">int</span> (*s)() =
+      &nbsp;&nbsp;<span class="topic-code-cyan">int</span> (*s)() =
       (<span class="topic-code-cyan">int</span>(*)())code;<br />
-      &nbsp;&nbsp;&nbsp;&nbsp;s();<br />
+      &nbsp;&nbsp;s();<br />
       &rbrace;
     </code>
   </div>
@@ -131,20 +131,20 @@
     <code>
       <span class="topic-code-orange">eval</span>[e;a] = [atom[e] ->
       <span class="topic-code-orange">cdr</span>[assoc[e;a]];<br />
-      &nbsp;&nbsp;&nbsp;&nbsp;atom[<span class="topic-code-orange">car</span
+      &nbsp;&nbsp;atom[<span class="topic-code-orange">car</span
       >[e]] -><br />
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[eq[<span
+      &nbsp;&nbsp;&nbsp;&nbsp;[eq[<span
         class="topic-code-orange">car</span
       >[e],QUOTE] -> cadr[e];<br />
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;eq[<span
+      &nbsp;&nbsp;&nbsp;&nbsp;eq[<span
         class="topic-code-orange">car</span
       >[e];COND] -> evcon[<span class="topic-code-orange">cdr</span>[e];a];<br
       />
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;T ->
+      &nbsp;&nbsp;&nbsp;&nbsp;T ->
       <span class="topic-code-orange">apply</span>[<span
         class="topic-code-orange">car</span
       >[e];evlis[<span class="topic-code-orange">cdr</span>[e];a];a]];<br />
-      &nbsp;&nbsp;&nbsp;&nbsp;T ->
+      &nbsp;&nbsp;T ->
       <span class="topic-code-orange">apply</span>[<span
         class="topic-code-orange">car</span
       >[e];evlis[<span class="topic-code-orange">cdr</span>[e];a];a]]<br />
@@ -204,26 +204,26 @@
     <div class="topic-title">Garbage Collectors</div>
     <code>
       <span class="topic-code-cyan">if</span>(esp &gt; ebp) &lbrace; <br />
-      &nbsp;&nbsp;&nbsp;&nbsp;<span class="topic-code-cyan">void</span> *ptr;<br
+      &nbsp;&nbsp;<span class="topic-code-cyan">void</span> *ptr;<br
       />
-      &nbsp;&nbsp;&nbsp;&nbsp;<span class="topic-code-cyan">for</span>(ptr =
+      &nbsp;&nbsp;<span class="topic-code-cyan">for</span>(ptr =
       esp; ptr &gt;= ebp; ptr = ((<span class="topic-code-cyan">char</span
       >*)ptr) - <span class="topic-code-purple">sizeof</span>(<span
         class="topic-code-cyan">void</span
       >*))<br />
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iterate_mark(bin, *((<span
+      &nbsp;&nbsp;&nbsp;&nbsp;iterate_mark(bin, *((<span
         class="topic-code-cyan">void</span
       >**)ptr));<br />
       &rbrace;<br />
       <span class="topic-code-cyan">if</span>(esp &lt; ebp) &lbrace;<br />
-      &nbsp;&nbsp;&nbsp;&nbsp;<span class="topic-code-cyan">void</span> *ptr;<br
+      &nbsp;&nbsp;<span class="topic-code-cyan">void</span> *ptr;<br
       />
-      &nbsp;&nbsp;&nbsp;&nbsp;<span class="topic-code-cyan">for</span>(ptr =
+      &nbsp;&nbsp;<span class="topic-code-cyan">for</span>(ptr =
       esp; ptr &lt;= ebp; ptr = ((<span class="topic-code-cyan">char</span
       >*)ptr) + <span class="topic-code-purple">sizeof</span>(<span
         class="topic-code-cyan">void</span
       >*))<br />
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iterate_mark(bin, *((<span
+      &nbsp;&nbsp;&nbsp;&nbsp;iterate_mark(bin, *((<span
         class="topic-code-cyan">void</span
       >**)ptr));<br />
       &rbrace;<br />

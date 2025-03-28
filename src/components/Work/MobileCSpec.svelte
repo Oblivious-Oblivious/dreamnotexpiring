@@ -1,55 +1,51 @@
 <script>
-    import { onMount } from "svelte";
-    import MobileArticle from "@components/Article/MobileArticle.svelte";
-    import MobileTitle from "@components/Article/MobileTitle.svelte";
-    import MobileIntro from "@components/Article/MobileIntro.svelte";
-    import MobileContent from "@components/Article/MobileContent.svelte";
-    import MobileTechnology from "@components/Article/MobileTechnology.svelte";
-    import MobileCopyright from "@components/Article/MobileCopyright.svelte";
+  import { onMount } from "svelte";
+  import MobileArticle from "@components/Article/MobileArticle.svelte";
+  import MobileTitle from "@components/Article/MobileTitle.svelte";
+  import MobileIntro from "@components/Article/MobileIntro.svelte";
+  import MobileContent from "@components/Article/MobileContent.svelte";
+  import MobileTechnology from "@components/Article/MobileTechnology.svelte";
+  import MobileCopyright from "@components/Article/MobileCopyright.svelte";
 
-    onMount(() => {
-        window.dispatchEvent(new CustomEvent("on-mobile-about"));
-    });
+  onMount(() => {
+    window.dispatchEvent(new CustomEvent("on-mobile-about"));
+  });
 </script>
 
 <MobileArticle number="no. 2" date="2021 - PRESENT">
-    <MobileTitle
-        name="CSPEC"
-        link="https://github.com/Oblivious-Oblivious/cSpec"
-        link_type="GitHub"
-    />
+  <MobileTitle
+    name="CSPEC"
+    link="https://github.com/Oblivious-Oblivious/cSpec"
+    link_type="GitHub"
+  />
 
-    <MobileIntro content="
+  <MobileIntro
+    content="
         A lightweight, compile time unit testing library
         for TDD and BDD models inspired from ruby's rspec.
-    "/>
+    "
+  />
 
-    <MobileContent
-        headline="Technologies used"
-        description=""
-    >
-        <MobileTechnology
-            title="C language"
-            link="https://openlibrary.org/books/OL4558528M/The_C_programming_language"
-            role="MAIN LANGUAGE"
-        />
-    </MobileContent>
+  <MobileContent headline="Technologies used" description="">
+    <MobileTechnology
+      title="C language"
+      link="https://openlibrary.org/books/OL4558528M/The_C_programming_language"
+      role="MAIN LANGUAGE"
+    />
+  </MobileContent>
 
-    <MobileContent
-        headline=""
-        description=""
-    >
-        <div class="videos">
-            <video autoplay muted loop playsinline>
-                <source src="/video/cspec.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-    </MobileContent>
+  <MobileContent headline="" description="">
+    <div class="videos">
+      <video autoplay muted loop playsinline>
+        <source src="/video/cspec.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </MobileContent>
 
-    <MobileContent
-        headline="Importance of testing"
-        description="
+  <MobileContent
+    headline="Importance of testing"
+    description="
             Modern programming has proven harder to do that most expected.
             Long gone are the days of simple programs and simple operations.
             Recent software is a mess of strongly dependent internal parts
@@ -60,11 +56,11 @@
             more to do with have test coverage for future code enhancements,
             deletions, or refactorings.
         "
-    />
+  />
 
-    <MobileContent
-        headline="Why is BDD better than other forms of testing"
-        description="
+  <MobileContent
+    headline="Why is BDD better than other forms of testing"
+    description="
             Behaviour driven development focuses on human collaboration.
             It bridges the gaps between stakeholders, designers and
             developers, because in a BDD spec one might include user flow
@@ -78,21 +74,21 @@
             of `how` software is should behave, instead of internal code
             information only developers could understand.
         "
-    />
+  />
 </MobileArticle>
 
-<MobileCopyright/>
+<MobileCopyright />
 
 <style>
-    .videos {
-        display: flex;
-        gap: 1vw;
-        width: 100%;
-    }
+  .videos {
+    display: flex;
+    gap: 1vw;
+    width: 100%;
+  }
 
-    video {
-        width: 100%;
-        box-shadow: var(--neumorphic-shadow2);
-        border-radius: 0.5vw;
-    }
+  video {
+    width: 100%;
+    box-shadow: var(--neumorphic-shadow2);
+    border-radius: 0.5vw;
+  }
 </style>

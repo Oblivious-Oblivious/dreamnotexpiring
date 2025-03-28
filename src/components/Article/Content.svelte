@@ -1,42 +1,42 @@
 <script>
-    export let headline;
-    export let description;
+  export let headline;
+  export let description;
 
-    import { onMount } from "svelte";
-    import Line from "./Line.svelte";
+  import { onMount } from "svelte";
+  import Line from "./Line.svelte";
 
-    let headline_element;
-    let description_element;
+  let headline_element;
+  let description_element;
 
-    onMount(() => {
-        gsap.from([headline_element, description_element], {
-            delay: 3.1,
-            duration: 1.25,
-            opacity: 0,
-        });
+  onMount(() => {
+    gsap.from([headline_element, description_element], {
+      delay: 3.1,
+      duration: 1.25,
+      opacity: 0,
     });
+  });
 </script>
 
-<br><br>
+<br /><br />
 <div bind:this={headline_element} class="headline">
-    {headline}
+  {headline}
 </div>
-<Line/>
+<Line />
 <div bind:this={description_element} class="description">
-    {description}
-    <slot/>
+  {description}
+  <slot />
 </div>
 
 <style>
-    .headline {
-        display: flex;
-        font-family: var(--display-font);
-        font-size: 3vw;
-        text-align: center;
-    }
+  .headline {
+    display: flex;
+    font-family: var(--display-font);
+    font-size: 3vw;
+    text-align: center;
+  }
 
-    .description {
-        font-size: 1.4vw;
-        text-align: justify;
-    }
+  .description {
+    font-size: 1.4vw;
+    text-align: justify;
+  }
 </style>

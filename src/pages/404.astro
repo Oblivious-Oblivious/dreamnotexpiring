@@ -1,113 +1,113 @@
 <script>
-    const color_list = [
-        {fg: "var(--coral)", bg: "var(--rosewood)"},
-        {fg: "var(--almond)", bg: "var(--umbral)"},
-        {fg: "var(--gold)", bg: "var(--mahogany)"},
-        {fg: "var(--onyx)", bg: "var(--saffron)"},
-        {fg: "var(--lime)", bg: "var(--forest)"},
-        {fg: "var(--azure)", bg: "var(--teal)"},
-        {fg: "var(--periwinkle)", bg: "var(--navy)"},
-        {fg: "var(--lilac)", bg: "var(--indigo)"},
-        {fg: "var(--blush)", bg: "var(--murrey)"},
-        {fg: "var(--champagne)", bg: "var(--rose)"},
-        {fg: "var(--silver)", bg: "var(--metal)"},
-        {fg: "var(--silver)", bg: "var(--night)"},
-    ];
+  const color_list = [
+    {fg: "var(--coral)", bg: "var(--rosewood)"},
+    {fg: "var(--almond)", bg: "var(--umbral)"},
+    {fg: "var(--gold)", bg: "var(--mahogany)"},
+    {fg: "var(--onyx)", bg: "var(--saffron)"},
+    {fg: "var(--lime)", bg: "var(--forest)"},
+    {fg: "var(--azure)", bg: "var(--teal)"},
+    {fg: "var(--periwinkle)", bg: "var(--navy)"},
+    {fg: "var(--lilac)", bg: "var(--indigo)"},
+    {fg: "var(--blush)", bg: "var(--murrey)"},
+    {fg: "var(--champagne)", bg: "var(--rose)"},
+    {fg: "var(--silver)", bg: "var(--metal)"},
+    {fg: "var(--silver)", bg: "var(--night)"},
+  ];
 
-    var color = color_list[Math.floor(Math.random() * color_list.length)];
-    console.log(color);
+  var color = color_list[Math.floor(Math.random() * color_list.length)];
+  console.log(color);
 
-    document.documentElement.style.setProperty("--fof-fg", `${color.fg}`);
-    document.documentElement.style.setProperty("--fof-bg", `${color.bg}`);
+  document.documentElement.style.setProperty("--fof-fg", `${color.fg}`);
+  document.documentElement.style.setProperty("--fof-bg", `${color.bg}`);
 </script>
 
 <main class="four-oh-four-page">
-    <div class="image-container">
-        <img src="/img/cat.jpg" alt="A cat on the 404 department" draggable="false">
-        <div class="image-title">The cat that works on the 404 department</div>
-        <div class="image-body">
-            kindly informs you to
-            <br>
-            <a href="/">GO BACK TO MY PAGE.</a>
-        </div>
+  <div class="image-container">
+    <img src="/img/cat.jpg" alt="A cat on the 404 department" draggable="false">
+    <div class="image-title">The cat that works on the 404 department</div>
+    <div class="image-body">
+      kindly informs you to
+      <br>
+      <a href="/">GO BACK TO MY PAGE.</a>
     </div>
+  </div>
 </main>
 
 <style>
-    @import "/styles/resets.css";
-    @import "/styles/colors.css";
-    @import "/styles/fonts.css";
+  @import "/styles/resets.css";
+  @import "/styles/colors.css";
+  @import "/styles/fonts.css";
 
-    main {
-        width: 100vw;
-        height: 100vh;
-        padding: 2rem;
+  main {
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
 
-        font-family: var(--text-font);
-        font-weight: 400;
-        font-feature-settings: "lnum";
-        color-scheme: light dark;
+    font-family: var(--text-font);
+    font-weight: 400;
+    font-feature-settings: "lnum";
+    color-scheme: light dark;
 
-        /* Font smoothing */
-        font-synthesis: none;
-        text-rendering: optimizeLegibility;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        -webkit-text-size-adjust: 100%;
+    /* Font smoothing */
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
 
-        /* Non-selectable text */
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        cursor: default;
+    /* Non-selectable text */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
 
-        /* Colors */
-        color: var(--fof-fg);
-        background-color: var(--fof-bg);
+    /* Colors */
+    color: var(--fof-fg);
+    background-color: var(--fof-bg);
+  }
+
+  .image-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 101vh;
+    padding: 0.5rem;
+    box-shadow: 2px 4px 8px var(--fof-fg);
+    border-radius: 0.25rem;
+    border: 1px solid var(--fof-fg);
+    background-color: var(--fof-bg);
+  }
+
+  .image-title {
+    font-size: 3vw;
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .image-body {
+    font-size: 3vw;
+    text-align: center;
+  }
+
+  img {
+    width: 66vw;
+  }
+
+  a {
+    /* text-decoration: underline; */
+    animation: under_line 0.8s infinite;
+  }
+
+  @keyframes under_line {
+    0% {
+      text-decoration: none;
     }
-
-    .image-container {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 101vh;
-        padding: 0.5rem;
-        box-shadow: 2px 4px 8px var(--fof-fg);
-        border-radius: 0.25rem;
-        border: 1px solid var(--fof-fg);
-        background-color: var(--fof-bg);
+    100% {
+      text-decoration: underline;
     }
-
-    .image-title {
-        font-size: 3vw;
-        padding-bottom: 0.5rem;
-        font-weight: bold;
-        text-align: center;
-    }
-
-    .image-body {
-        font-size: 3vw;
-        text-align: center;
-    }
-
-    img {
-        width: 66vw;
-    }
-
-    a {
-        /* text-decoration: underline; */
-        animation: under_line 0.8s infinite;
-    }
-
-    @keyframes under_line {
-        0% {
-            text-decoration: none;
-        }
-        100% {
-            text-decoration: underline;
-        }
-    }
+  }
 </style>

@@ -1,38 +1,38 @@
 <script>
-    import { onMount } from "svelte";
-    import MobileSoftware from "./WhatInterestsMe/MobileSoftware.svelte";
-    import MobileDjing from "./WhatInterestsMe/MobileDjing.svelte";
-    import MobileMixology from "./WhatInterestsMe/MobileMixology.svelte";
+  import { onMount } from "svelte";
+  import MobileSoftware from "./WhatInterestsMe/MobileSoftware.svelte";
+  import MobileDjing from "./WhatInterestsMe/MobileDjing.svelte";
+  import MobileMixology from "./WhatInterestsMe/MobileMixology.svelte";
 
-    onMount(() => {
-        gsap.to(".what-interests-me", {
-            autoAlpha: 1,
-        });
+  onMount(() => {
+    gsap.to(".what-interests-me", {
+      autoAlpha: 1,
     });
+  });
 </script>
 
 <div class="what-interests-me" style="visibility: hidden;">
-    <MobileSoftware/>
+  <MobileSoftware />
 
-    <div class="spacer"></div>
-    <div class="spacer"></div>
+  <div class="spacer"></div>
+  <div class="spacer"></div>
 
-    <MobileDjing/>
+  <MobileDjing />
 
-    <div class="spacer"></div>
-    <div class="spacer"></div>
-    <div class="spacer"></div>
-    <div class="spacer"></div>
+  <div class="spacer"></div>
+  <div class="spacer"></div>
+  <div class="spacer"></div>
+  <div class="spacer"></div>
 
-    <MobileMixology/>
+  <MobileMixology />
 </div>
 
 <style>
-    .what-interests-me {
-        overflow: hidden;
-    }
+  .what-interests-me {
+    overflow: hidden;
+  }
 
-    .spacer {
-        padding: 4vw 0;
-    }
+  .spacer {
+    padding: 4vw 0;
+  }
 </style>
