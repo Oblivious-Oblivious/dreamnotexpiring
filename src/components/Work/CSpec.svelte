@@ -43,39 +43,6 @@
       </video>
     </div>
   </Content>
-
-  <Content
-    headline="Importance of testing"
-    description="
-            Modern programming has proven harder to do that most expected.
-            Long gone are the days of simple programs and simple operations.
-            Recent software is a mess of strongly dependent internal parts
-            with programmers trying to untangle them as best they can.  Tests
-            are an integral component of the process of refactoring.  Without
-            them, it is simply not possible.  Tests therefore serve a higher
-            purpose, having less to do with proving correctness, and much
-            more to do with have test coverage for future code enhancements,
-            deletions, or refactorings.
-        "
-  />
-
-  <Content
-    headline="Why is BDD better than other forms of testing"
-    description="
-            Behaviour driven development focuses on human collaboration.
-            It bridges the gaps between stakeholders, designers and
-            developers, because in a BDD spec one might include user flow
-            information, as well as tests and documentation all together.
-            Each professional can focus on their own specialization while
-            collaborating on the same piece of information.  That ultimately
-            provides much greater insight on the direction and implementation
-            of the product as both technical and non-technical people can
-            contribute.  The main advantage of BDD in comparison to TDD or
-            unit-testing after the fact, is that it provides descriptions
-            of `how` software is should behave, instead of internal code
-            information only developers could understand.
-        "
-  />
 </Article>
 
 <Copyright />
