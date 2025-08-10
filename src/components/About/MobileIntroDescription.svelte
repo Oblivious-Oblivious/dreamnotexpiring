@@ -51,7 +51,7 @@
         scale: 1.4,
         stagger: 0.05,
       })
-      .to([".technical", ".artistic", ".interactive"], {
+      .to([".technical", ".creative", ".interactive"], {
         xPercent: -750,
         opacity: 0,
       });
@@ -76,7 +76,7 @@
   </div>
   <div class="intro-line">
     <div class="intro-word">and</div>
-    <div class="artistic">artistic</div>
+    <div class="creative">creative</div>
     <div class="intro-word">vision</div>
     <div class="intro-word">through</div>
     <div class="intro-word">{years_of_experience}</div>
@@ -91,15 +91,13 @@
   <br />
   <div class="intro-line">
     <div class="intro-word">I</div>
-    <div class="intro-word">strive</div>
-    <div class="intro-word">to</div>
-    <div class="intro-word">create</div>
+    <div class="intro-word">architect</div>
     <div class="intro-word">dynamic</div>
     <div class="intro-word">systems</div>
     <div class="intro-word">that</div>
+    <div class="intro-word">resonate</div>
   </div>
   <div class="intro-line">
-    <div class="intro-word">resonate</div>
     <div class="intro-word">meaningfully</div>
     <div class="intro-word">with</div>
     <div class="intro-word">human</div>
@@ -120,7 +118,7 @@
   }
 
   .technical,
-  .artistic,
+  .creative,
   .interactive {
     font-size: 5vw;
     font-weight: 800;
